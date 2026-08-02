@@ -9,8 +9,11 @@
             <span class="brand-text">NueZip</span>
           </VPLink>
         </div>
-        <div class="nav-links">
-          <VPNavBarMenu />
+        <div class="nav-right">
+          <div class="nav-links">
+            <VPNavBarMenu />
+          </div>
+          <VPSwitchAppearance class="nav-appearance" />
         </div>
       </div>
     </nav>
@@ -195,6 +198,7 @@ import { withBase } from 'vitepress'
 import HomeActions from './HomeActions.vue'
 import { VPLink } from 'vitepress/theme'
 import VPNavBarMenu from 'vitepress/dist/client/theme-default/components/VPNavBarMenu.vue'
+import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/VPSwitchAppearance.vue'
 
 interface Props {
   data: any
@@ -254,7 +258,7 @@ const faqs = [
 .advanced-home {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
-  color: #1a1a1a;
+  color: var(--vp-c-text-1);
 }
 
 /* Navigation */
@@ -263,9 +267,9 @@ const faqs = [
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--ah-navbar-bg);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--ah-navbar-border);
   z-index: 1000;
   transition: all 0.3s ease;
 }
@@ -286,7 +290,7 @@ const faqs = [
   gap: 12px;
   font-size: 24px;
   font-weight: 700;
-  color: #000000;
+  color: var(--vp-c-text-1);
   text-decoration: none;
 }
 
@@ -298,7 +302,7 @@ const faqs = [
 .brand-text {
   font-size: 24px;
   font-weight: 700;
-  color: #000000;
+  color: var(--vp-c-text-1);
 }
 
 .nav-links {
@@ -313,22 +317,33 @@ const faqs = [
   }
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-appearance {
+  display: flex;
+  align-items: center;
+}
+
 .dropdown-toggle {
   background: none;
   border: none;
   cursor: pointer;
   font-weight: 500;
-  color: #666666;
+  color: var(--vp-c-text-2);
 }
 
 .dropdown-menu {
   position: absolute;
   top: 100%;
   right: 0;
-  background: white;
-  border: 1px solid #e5e5e5;
+  background: var(--ah-card-bg);
+  border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--ah-card-shadow);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -344,20 +359,20 @@ const faqs = [
 .dropdown-item {
   display: block;
   padding: 12px 20px;
-  color: #666666;
+  color: var(--vp-c-text-2);
   text-decoration: none;
   transition: background-color 0.2s;
 }
 
 .dropdown-item:hover {
-  background: #f8f9fa;
-  color: #000000;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
 }
 
 /* Hero Section */
 .hero-section {
   padding: 120px 0 100px;
-  background: #ffffff;
+  background: var(--ah-hero-bg);
   position: relative;
   overflow: hidden;
 }
@@ -385,7 +400,8 @@ const faqs = [
   font-weight: 800;
   margin: 0 0 20px;
   line-height: 1.1;
-  background: linear-gradient(135deg, #000000 0%, #333333 100%);
+  color: var(--vp-c-text-1);
+  background: linear-gradient(135deg, var(--ah-hero-title-from) 0%, var(--ah-hero-title-to) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -395,14 +411,14 @@ const faqs = [
   font-size: 2.5rem;
   font-weight: 600;
   margin: 0 0 20px;
-  color: #333333;
+  color: var(--vp-c-text-1);
   opacity: 0.9;
 }
 
 .hero-description {
   font-size: 1.25rem;
   margin: 0 0 40px;
-  color: #666666;
+  color: var(--vp-c-text-2);
   line-height: 1.6;
   max-width: 500px;
 }
@@ -485,10 +501,10 @@ const faqs = [
 
 .floating-card {
   position: absolute;
-  background: white;
+  background: var(--ah-card-bg);
   padding: 16px 20px;
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--ah-card-shadow);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -548,7 +564,7 @@ const faqs = [
 /* Features Section */
 .features-section {
   padding: 120px 0;
-  background: #ffffff;
+  background: var(--vp-c-bg);
 }
 
 .features-container {
@@ -566,12 +582,12 @@ const faqs = [
   font-size: 3rem;
   font-weight: 700;
   margin: 0 0 16px;
-  color: #000000;
+  color: var(--vp-c-text-1);
 }
 
 .section-subtitle {
   font-size: 1.25rem;
-  color: #666666;
+  color: var(--vp-c-text-2);
   margin: 0;
   max-width: 600px;
   margin: 0 auto;
@@ -584,13 +600,13 @@ const faqs = [
 }
 
 .feature-card {
-  background: white;
+  background: var(--ah-card-bg);
   padding: 40px 30px;
   border-radius: 20px;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--ah-card-shadow);
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
+  border: 1px solid var(--vp-c-divider);
   animation: fadeInUp 0.6s ease-out forwards;
   opacity: 0;
   transform: translateY(30px);
@@ -598,8 +614,8 @@ const faqs = [
 
 .feature-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  border-color: #e0e0e0;
+  box-shadow: var(--ah-card-shadow-hover);
+  border-color: var(--vp-c-brand-1);
 }
 
 .feature-icon {
@@ -622,19 +638,19 @@ const faqs = [
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0 0 16px;
-  color: #1a1a1a;
+  color: var(--vp-c-text-1);
   line-height: 1.3;
 }
 
 .feature-description {
-  color: #666666;
+  color: var(--vp-c-text-2);
   line-height: 1.6;
   margin: 0 0 24px;
   font-size: 1rem;
 }
 
 .feature-link {
-  color: #000000;
+  color: var(--vp-c-text-1);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -642,17 +658,13 @@ const faqs = [
 }
 
 .feature-link:hover {
-  color: #333333;
+  color: var(--vp-c-brand-1);
 }
 
 /* Formats Preview Section */
 .formats-section {
   padding: 120px 0;
-  background: #f0f4ff;
-}
-
-.dark .formats-section {
-  background: #0f172a;
+  background: var(--vp-c-bg-soft);
 }
 
 .formats-container {
@@ -669,26 +681,21 @@ const faqs = [
 }
 
 .format-card {
-  background: white;
+  background: var(--ah-card-bg);
   border-radius: 20px;
   padding: 32px 24px;
   display: flex;
   align-items: center;
   gap: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  border: 1px solid #f0f0f0;
+  box-shadow: var(--ah-card-shadow);
+  border: 1px solid var(--vp-c-divider);
   transition: all 0.3s ease;
-}
-
-.dark .format-card {
-  background: #1e293b;
-  border-color: #334155;
 }
 
 .format-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  border-color: #2563eb;
+  box-shadow: var(--ah-card-shadow);
+  border-color: var(--vp-c-brand-1);
 }
 
 .format-icon {
@@ -718,23 +725,15 @@ const faqs = [
 .format-name {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--vp-c-text-1);
   margin: 0 0 4px;
-}
-
-.dark .format-name {
-  color: #f1f5f9;
 }
 
 .format-desc {
   font-size: 0.9rem;
-  color: #666666;
+  color: var(--vp-c-text-2);
   margin: 0;
   line-height: 1.5;
-}
-
-.dark .format-desc {
-  color: #94a3b8;
 }
 
 .formats-cta {
@@ -744,7 +743,7 @@ const faqs = [
 /* How It Works Section */
 .how-section {
   padding: 120px 0;
-  background: #ffffff;
+  background: var(--vp-c-bg);
 }
 
 .how-container {
@@ -762,20 +761,15 @@ const faqs = [
 .step-card {
   text-align: center;
   padding: 40px 24px;
-  background: #f8fafc;
+  background: var(--vp-c-bg-soft);
   border-radius: 20px;
-  border: 1px solid #f0f0f0;
+  border: 1px solid var(--vp-c-divider);
   transition: all 0.3s ease;
-}
-
-.dark .step-card {
-  background: #1e293b;
-  border-color: #334155;
 }
 
 .step-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--ah-card-shadow);
 }
 
 .step-number {
@@ -789,25 +783,17 @@ const faqs = [
 .step-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--vp-c-text-1);
   margin: 0 0 12px;
-}
-
-.dark .step-title {
-  color: #f1f5f9;
 }
 
 .step-desc {
   font-size: 1rem;
-  color: #666666;
+  color: var(--vp-c-text-2);
   margin: 0;
   line-height: 1.6;
   max-width: 280px;
   margin: 0 auto;
-}
-
-.dark .step-desc {
-  color: #94a3b8;
 }
 
 @media (max-width: 768px) {
@@ -819,7 +805,7 @@ const faqs = [
 /* FAQ Section */
 .faq-section {
   padding: 120px 0;
-  background: #ffffff;
+  background: var(--vp-c-bg);
 }
 
 .faq-container {
@@ -834,15 +820,15 @@ const faqs = [
 }
 
 .faq-item {
-  background: white;
+  background: var(--ah-card-bg);
   border-radius: 12px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--vp-c-divider);
   overflow: hidden;
   transition: all 0.2s ease;
 }
 
 .faq-item:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--ah-card-shadow);
 }
 
 .faq-details {
@@ -851,11 +837,11 @@ const faqs = [
 
 .faq-question {
   padding: 24px 30px;
-  background: #f8f9fa;
+  background: var(--vp-c-bg-soft);
   cursor: pointer;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #1a1a1a;
+  color: var(--vp-c-text-1);
   border: none;
   outline: none;
   transition: background-color 0.2s;
@@ -867,7 +853,7 @@ const faqs = [
 }
 
 .faq-question:hover {
-  background: #e9ecef;
+  background: var(--ah-faq-hover-bg);
 }
 
 .faq-question::after {
@@ -883,7 +869,7 @@ const faqs = [
 
 .faq-answer {
   padding: 0 30px 24px;
-  color: #666666;
+  color: var(--vp-c-text-2);
   line-height: 1.6;
 }
 
