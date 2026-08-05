@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress'
 // only the chrome labels are localized here.
 const STR = {
   en: {
-    home: 'Home', marketplace: 'Marketplace', guide: 'Guide', faq: 'FAQ',
+    home: 'Home', marketplace: 'Marketplace', ecosystem: 'Ecosystem', guide: 'Guide', faq: 'FAQ',
     github: 'GitHub',
     guideGroup: 'Guide',
     intro: 'Introduction', install: 'Installation', usage: 'Usage',
@@ -19,7 +19,7 @@ const STR = {
     company: 'Company',
   },
   'zh-CN': {
-    home: '首页', marketplace: '动作市场', guide: '指南', faq: '常见问题',
+    home: '首页', marketplace: '动作市场', ecosystem: '生态合作', guide: '指南', faq: '常见问题',
     github: 'GitHub',
     guideGroup: '指南',
     intro: '简介', install: '安装', usage: '使用',
@@ -33,7 +33,7 @@ const STR = {
     company: '公司',
   },
   'zh-TW': {
-    home: '首頁', marketplace: '動作市場', guide: '指南', faq: '常見問題',
+    home: '首頁', marketplace: '動作市場', ecosystem: '生態合作', guide: '指南', faq: '常見問題',
     github: 'GitHub',
     guideGroup: '指南',
     intro: '簡介', install: '安裝', usage: '使用',
@@ -47,7 +47,7 @@ const STR = {
     company: '公司',
   },
   ja: {
-    home: 'ホーム', marketplace: 'アクション市場', guide: 'ガイド', faq: 'よくある質問',
+    home: 'ホーム', marketplace: 'アクション市場', ecosystem: 'エコシステム', guide: 'ガイド', faq: 'よくある質問',
     github: 'GitHub',
     guideGroup: 'ガイド',
     intro: 'はじめに', install: 'インストール', usage: '使い方',
@@ -68,11 +68,18 @@ function tc(S: typeof STR.en, marketplaceLink: string) {
     nav: [
       { text: S.home, link: '/' },
       { text: S.marketplace, link: marketplaceLink },
+      { text: S.ecosystem, link: '/ecosystem/' },
       { text: S.guide, link: '/guide/introduction' },
       { text: S.faq, link: '/guide/faq' },
       { text: S.github, link: 'https://github.com/clipboardxAI' },
     ],
     sidebar: [
+      {
+        text: S.ecosystem,
+        items: [
+          { text: S.ecosystem, link: '/ecosystem/' },
+        ],
+      },
       {
         text: S.guideGroup,
         items: [
@@ -103,6 +110,7 @@ function tc(S: typeof STR.en, marketplaceLink: string) {
             { text: S.about, link: '/guide/introduction' },
             { text: S.features, link: '/#features' },
             { text: S.marketplace, link: marketplaceLink },
+            { text: S.ecosystem, link: '/ecosystem/' },
             { text: S.install, link: '/guide/installation' },
           ],
         },

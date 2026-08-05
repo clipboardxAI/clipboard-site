@@ -66,7 +66,10 @@
         <div v-else class="grid">
           <article v-for="a in filtered" :key="a.id" class="card">
             <div class="top">
-              <div class="ic" :style="{ background: tint(a.id) }">{{ glyph(a) }}</div>
+              <div class="ic" :style="{ background: tint(a.id) }">
+                <img v-if="a.appIcon" class="ic-img" :src="marketplaceBase + a.appIcon" :alt="a.author" />
+                <template v-else>{{ glyph(a) }}</template>
+              </div>
               <div class="head">
                 <h3>{{ loc(a, 'name') }}</h3>
                 <div class="by">by {{ a.author }}</div>
@@ -74,7 +77,7 @@
             </div>
             <p class="desc">{{ loc(a, 'description') }}</p>
             <div class="tags">
-              <span v-for="t in (loc(a,'tags') || [])" :key="t" class="tag">#{{ t }}</span>
+              <span v-for="t in (Array.isArray(loc(a,'tags')) ? loc(a,'tags') : [])" :key="t" class="tag">#{{ t }}</span>
             </div>
             <details class="prompt">
               <summary>Prompt</summary>
@@ -140,6 +143,7 @@ interface Action {
   description: string
   tags: string[]
   prompt: string
+  appIcon?: string
   locales?: Locales
 }
 interface Category { id: string; name: string; icon: string; locales?: Locales }
@@ -154,6 +158,8 @@ const error = ref<string | null>(null)
 const { lang } = useData()
 const SUPPORTED = ['en', 'zh-CN', 'zh-TW', 'ja']
 const currentLang = computed(() => (SUPPORTED.includes(lang.value) ? lang.value : 'en'))
+// Icons in the catalog are stored relative to the marketplace data root.
+const marketplaceBase = withBase('/marketplace/')
 
 const filtered = computed(() =>
   actions.value.filter(a => active.value === null || a.category === active.value)
@@ -288,8 +294,9 @@ onMounted(async () => {
 .ic {
   width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  font-size: 20px; font-weight: 700; color: #1a1a1a;
+  font-size: 20px; font-weight: 700; color: #1a1a1a; overflow: hidden;
 }
+.ic-img { width: 100%; height: 100%; object-fit: contain; padding: 7px; }
 .head h3 { margin: 0; font-size: 16px; color: var(--vp-c-text-1); }
 .by { font-size: 12px; color: var(--vp-c-text-3); }
 .desc { font-size: 13px; color: var(--vp-c-text-2); margin: 0; min-height: 34px; }

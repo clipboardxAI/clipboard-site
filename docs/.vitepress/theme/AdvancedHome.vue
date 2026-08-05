@@ -87,7 +87,7 @@
           </a>
         </div>
         <div class="formats-cta">
-          <a href="/marketplace" class="btn btn-primary">Open the Marketplace</a>
+          <a href="/marketplace/" class="btn btn-primary">Open the Marketplace</a>
         </div>
       </div>
     </section>
@@ -154,7 +154,7 @@
               <h4 class="footer-heading">Product</h4>
               <a href="/guide/introduction" class="footer-link">About</a>
               <a href="/#features" class="footer-link">Features</a>
-              <a href="/marketplace" class="footer-link">Marketplace</a>
+              <a href="/marketplace/" class="footer-link">Marketplace</a>
               <a href="/guide/installation" class="footer-link">Download</a>
             </div>
             <div class="footer-column">
