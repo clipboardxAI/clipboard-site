@@ -30,7 +30,7 @@ A: Your history stays on your device. Cloud AI is opt-in and sends content only 
 
 **Q: How do I add more actions?**
 
-A: Browse the [Marketplace](/marketplace) and click **Install** on any action. It opens the app via a deep link and appears in your **Installed** list.
+A: Browse the [Marketplace](/marketplace/) and click **Install** on any action. It opens the app via a deep link and appears in your **Installed** list.
 
 **Q: How do I update the app?**
 
