@@ -28,11 +28,7 @@
             Community-curated AI actions for your clipboard. Browse, then click
             <strong>Install</strong> to open the app and add the action in one tap.
           </p>
-          <div class="hero-langbar">
-            <label for="mk-lang">Language:</label>
-            <select id="mk-lang" v-model="lang" class="mk-select">
-              <option v-for="l in langs" :key="l" :value="l">{{ l }}</option>
-            </select>
+          <div class="hero-langbar" v-if="!loading && !error">
             <span class="hero-count">{{ actions.length }} actions · {{ categories.length }} categories</span>
           </div>
         </div>
@@ -121,8 +117,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
-import { withBase } from 'vitepress'
+import { ref, computed, onMounted } from 'vue'
+import { withBase, useData } from 'vitepress'
 import { VPLink } from 'vitepress/theme'
 import VPNavBarMenu from 'vitepress/dist/client/theme-default/components/VPNavBarMenu.vue'
 import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/VPSwitchAppearance.vue'
@@ -144,11 +140,13 @@ interface Category { id: string; name: string; icon: string; locales?: Locales }
 const categories = ref<Category[]>([])
 const actions = ref<Action[]>([])
 const active = ref<string | null>(null)
-const lang = ref('en')
 const loading = ref(true)
 const error = ref<string | null>(null)
 
-const langs = ref<string[]>(['en'])
+// ── Language is driven by VitePress i18n (no in-component switcher) ──
+const { lang } = useData()
+const SUPPORTED = ['en', 'zh-CN', 'zh-TW', 'ja']
+const currentLang = computed(() => (SUPPORTED.includes(lang.value) ? lang.value : 'en'))
 
 const filtered = computed(() =>
   actions.value.filter(a => active.value === null || a.category === active.value)
@@ -156,14 +154,14 @@ const filtered = computed(() =>
 
 // ── Localization ──────────────────────────────────────────────
 function loc(a: Action, field: 'name' | 'description' | 'tags' | 'prompt'): any {
-  if (lang.value !== 'en' && a.locales && a.locales[lang.value] && a.locales[lang.value][field] != null) {
-    return a.locales[lang.value][field]
+  if (currentLang.value !== 'en' && a.locales && a.locales[currentLang.value] && a.locales[currentLang.value][field] != null) {
+    return a.locales[currentLang.value][field]
   }
   return a[field]
 }
 function locCat(c: Category): string {
-  if (lang.value !== 'en' && c.locales && c.locales[lang.value] && c.locales[lang.value].name) {
-    return c.locales[lang.value].name
+  if (currentLang.value !== 'en' && c.locales && c.locales[currentLang.value] && c.locales[currentLang.value].name) {
+    return c.locales[currentLang.value].name
   }
   return c.name
 }
@@ -171,7 +169,6 @@ function categoryName(id: string): string {
   const c = categories.value.find(x => x.id === id)
   return c ? locCat(c) : ''
 }
-watch(lang, () => { /* reactive re-render via computed/loc */ })
 
 // ── Deterministic tint (mirrors the macOS TintedIcon FNV-1a hash) ─
 const SUNNY = [0.05, 0.10, 0.15, 0.33, 0.40, 0.48, 0.55, 0.62, 0.70, 0.83, 0.92]
@@ -207,10 +204,6 @@ onMounted(async () => {
     const data = await res.json()
     categories.value = data.categories || []
     actions.value = data.actions || []
-    const set = new Set<string>(['en'])
-    categories.value.forEach(c => c.locales && Object.keys(c.locales).forEach(l => set.add(l)))
-    actions.value.forEach(a => a.locales && Object.keys(a.locales).forEach(l => set.add(l)))
-    langs.value = [...set]
     loading.value = false
   } catch (e: any) {
     error.value = 'Failed to load the catalog. Make sure the site is deployed with the marketplace data.'
