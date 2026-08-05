@@ -29,6 +29,16 @@
       "id": "analysis",
       "name": "Analytics",
       "icon": "chart.bar"
+    },
+    {
+      "id": "ecosystem",
+      "name": "Ecosystem",
+      "icon": "shippingbox",
+      "locales": {
+        "zh-CN": {
+          "name": "生态合作"
+        }
+      }
     }
   ]
 }
