@@ -1,0 +1,29 @@
+[
+  {
+    "id": "nicasa",
+    "name": "Nicasa",
+    "description": "AI 图像查看工具",
+    "description_en": "AI Image Viewer Tool",
+    "bundleId": "com.nicasa.nue",
+    "appStoreUrl": "https://apps.apple.com/us/app/nicasa/id6756032669",
+    "logo": "https://reminder.w3cub.com/sister-apps/nicasa.png"
+  },
+  {
+    "id": "gomoku",
+    "name": "Gomoku",
+    "description": "五子棋游戏",
+    "description_en": "Gomoku Game",
+    "bundleId": "com.w3cub.gomoku",
+    "appStoreUrl": "https://apps.apple.com/us/app/gomoku/id6771268165",
+    "logo": "https://reminder.w3cub.com/sister-apps/gomoku.png"
+  },
+  {
+    "id": "reminder",
+    "name": "Reminder",
+    "description": "桌面宠物提醒工具",
+    "description_en": "Desktop Pet Reminder",
+    "bundleId": "com.w3cub.reminder",
+    "appStoreUrl": "https://apps.apple.com/us/app/reminder/id6776577400",
+    "logo": "https://reminder.w3cub.com/sister-apps/reminder.png"
+  }
+]
