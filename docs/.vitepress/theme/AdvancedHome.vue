@@ -1,22 +1,7 @@
 <template>
   <div class="advanced-home">
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-brand">
-          <VPLink href="/" class="brand-link">
-            <img src="/logo.png" alt="NueZip Logo" class="brand-logo" />
-            <span class="brand-text">NueZip</span>
-          </VPLink>
-        </div>
-        <div class="nav-right">
-          <div class="nav-links">
-            <VPNavBarMenu />
-          </div>
-          <VPSwitchAppearance class="nav-appearance" />
-        </div>
-      </div>
-    </nav>
+    <!-- Shared navigation (brand + menu + i18n switcher + appearance) -->
+    <SiteNav />
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -196,9 +181,7 @@
 <script setup lang="ts">
 import { withBase } from 'vitepress'
 import HomeActions from './HomeActions.vue'
-import { VPLink } from 'vitepress/theme'
-import VPNavBarMenu from 'vitepress/dist/client/theme-default/components/VPNavBarMenu.vue'
-import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/VPSwitchAppearance.vue'
+import SiteNav from './SiteNav.vue'
 
 interface Props {
   data: any
@@ -261,113 +244,7 @@ const faqs = [
   color: var(--vp-c-text-1);
 }
 
-/* Navigation */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: var(--ah-navbar-bg);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--ah-navbar-border);
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-}
-
-.nav-brand .brand-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--vp-c-text-1);
-  text-decoration: none;
-}
-
-.brand-logo {
-  height: 32px;
-  width: auto;
-}
-
-.brand-text {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--vp-c-text-1);
-}
-
-.nav-links {
-  display: none;
-  align-items: center;
-  gap: 30px;
-}
-
-@media (min-width: 768px) {
-  .nav-links {
-    display: flex;
-  }
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.nav-appearance {
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  color: var(--vp-c-text-2);
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: var(--ah-card-bg);
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  box-shadow: var(--ah-card-shadow);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.2s;
-}
-
-.nav-dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.dropdown-item {
-  display: block;
-  padding: 12px 20px;
-  color: var(--vp-c-text-2);
-  text-decoration: none;
-  transition: background-color 0.2s;
-}
-
-.dropdown-item:hover {
-  background: var(--vp-c-bg-soft);
-  color: var(--vp-c-text-1);
-}
+/* Navigation styles live in SiteNav.vue */
 
 /* Hero Section */
 .hero-section {

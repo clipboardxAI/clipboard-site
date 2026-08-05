@@ -2,11 +2,7 @@
 
 This repository hosts the official website for **Clipboard x AI** — a macOS clipboard manager with AI actions. The site uses the custom domain `clipboard.w3cub.com`.
 
-## Project Source
 
-The local project used as the source for this site is located at:
-
-/Users/terry/nuecms-workspace/clipboard
 
 ## Documentation
 
