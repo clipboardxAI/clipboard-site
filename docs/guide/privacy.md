@@ -1,51 +1,60 @@
 # Privacy Policy
 
-NueZip is designed as a fully offline-first application. Your privacy is our priority.
+Clipboard x AI is a smart clipboard manager for macOS. Your privacy is our priority.
 
-## Local-Only Design
+## Local-First Design
 
-- All archive operations — compression, extraction, conversion, encryption — run entirely on your Mac.
-- NueZip does not upload your files or data to any external servers.
-- No account or registration is required to use the app.
-- No internet connection is required for normal operation.
+- Your clipboard history is stored entirely on your Mac.
+- Built-in local actions (extract links, count stats, collapse blank lines, and on-device ML suggestions) run fully offline.
+- No account or registration is required to use the core app.
+- No internet connection is required for local clipboard management and on-device features.
+
+## Cloud AI (Optional)
+
+Clipboard x AI can optionally use cloud AI providers (such as DeepSeek, MiniMax, GLM, Kimi, Mistral, or a local Ollama server) to power advanced actions like summarize, translate, and custom prompts.
+
+- When enabled, the selected text or clipboard content is sent **directly to the provider you configure**, using **your own API key**.
+- Your API key is stored only in your Mac's Keychain and is never uploaded to us.
+- You can disable cloud AI at any time and continue using local features.
+- Clipboard history is **not** sent to the cloud automatically; cloud requests are triggered only when you run a cloud action.
 
 ## What We Do Not Collect
 
-- We do not collect your files, documents, or archive contents.
+- We do not collect your clipboard contents, documents, or files.
 - We do not track your activity, browsing behavior, or usage patterns.
-- We do not send any file metadata or personal information to external servers.
+- We do not operate any server that receives your clipboard data.
 - We do not include third-party analytics, advertising, or tracking SDKs.
 - We do not have any telemetry system.
 
 ## What Data Is Stored Locally
 
 The following data is stored only on your device:
-- **App settings**: Theme, language preference, compression preferences
-- **License key**: If purchased (stored securely in the local keychain)
-- **Recent files list**: Recently opened archives for quick access
-- **Password records**: Stored in your local keychain if you choose to save them
-- **Logs**: Debug logs for troubleshooting (can be deleted at any time)
+
+- **Clipboard history**: Recent items for quick access (kept on your Mac).
+- **App settings**: Theme, language preference, enabled actions, provider configuration.
+- **API keys**: Stored securely in the local Keychain (only if you configure a cloud provider).
+- **Custom actions**: Prompts and configuration you create.
+- **Logs**: Debug logs for troubleshooting (can be deleted at any time).
 
 ## Permissions Used by the App
 
-- **Files and Folders**: Required to read archive files and extract contents.
-- **Finder Extension**: Optional, adds right-click context menu items in Finder.
-- **Notifications**: Optional, for completion alerts on long-running tasks.
+- **Accessibility / Full Disk Access**: Required to read the system clipboard and provide global shortcuts.
+- **Notifications**: Optional, for completion alerts on long-running cloud requests.
 
 You can manage these permissions in **System Settings → Privacy & Security** at any time.
 
 ## In-App Purchases / License
 
-License purchases are processed by Apple via the Mac App Store. NueZip does not receive or store your payment information. License receipts are stored locally to verify ownership.
+License purchases (if any) are processed by Apple via the Mac App Store. Clipboard x AI does not receive or store your payment information. License receipts are stored locally to verify ownership.
 
 ## Third-Party Services
 
-NueZip does not include any third-party analytics, advertising, or tracking services. The app is fully self-contained.
+Clipboard x AI itself does not include any third-party analytics, advertising, or tracking services. When you enable a cloud AI provider, your requests are handled by that provider under its own privacy policy.
 
 ## Privacy Requests
 
-Since NueZip stores all data locally on your device, we do not hold any personal data on our servers. If you have questions about privacy, please contact us.
+Since Clipboard x AI stores all data locally on your device, we do not hold any personal data on our servers. If you have questions about privacy, please contact us.
 
 ## Contact
 
-For privacy questions, open an issue at [GitHub Issues](https://github.com/nuezip/nuezip/issues) or email us.
+For privacy questions, open an issue at [GitHub Issues](https://github.com/clipboardxAI/clipboard-site/issues) or email us at clipboardxai@w3cub.com.

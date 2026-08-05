@@ -286,7 +286,7 @@ onMounted(async () => {
   position: absolute; inset: 0; pointer-events: none;
   background-image:
     radial-gradient(circle at 20% 80%, color-mix(in srgb, var(--vp-c-brand-1) 12%, transparent) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, color-mix(in srgb, #7c3aed 12%, transparent) 0%, transparent 50%);
+    radial-gradient(circle at 80% 20%, color-mix(in srgb, #ef6400 12%, transparent) 0%, transparent 50%);
 }
 
 /* Body */

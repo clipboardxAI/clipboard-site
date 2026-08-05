@@ -533,7 +533,7 @@ const faqs = [
 
 .card-icon {
   font-size: 18px;
-  color: #2563eb;
+  color: #ef6400;
   display: flex;
   align-items: center;
 }
@@ -775,7 +775,7 @@ const faqs = [
 .step-number {
   font-size: 3rem;
   font-weight: 800;
-  color: #2563eb;
+  color: #ef6400;
   margin-bottom: 16px;
   line-height: 1;
 }
