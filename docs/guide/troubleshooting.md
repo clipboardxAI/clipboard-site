@@ -1,116 +1,77 @@
 # Troubleshooting
 
-This page collects common problems for NueZip on macOS and how to resolve them.
+This page collects common problems with Clipboard x AI on macOS and how to resolve them.
 
-## Application won't start or crashes on launch
+## The app won't start or crashes on launch
 
-Symptoms: NueZip does not open, crashes immediately, or shows an unexpected error.
-
-Steps to try:
-
-1. Ensure your macOS version meets the minimum requirements (macOS 14 Sonoma+).
+1. Make sure your macOS version meets the minimum (macOS 14 Sonoma+).
 2. Quit and relaunch the app.
 3. Reboot your Mac.
-4. If the app was downloaded from GitHub Releases, try downloading the latest build or the notarized version.
-5. If problems persist, collect logs (see below) and open an issue.
+4. If downloaded from GitHub Releases, try the latest or notarized build.
+5. If problems persist, collect logs (below) and open an issue.
 
-## Cannot open a RAR archive
+## Clipboard history isn't capturing copies
 
-Symptoms: NueZip fails to open a `.rar` file, or shows an error.
-
-Checklist:
-
-1. Ensure the RAR file is not corrupted. Try opening it with another tool like The Unarchiver.
-2. Multi-volume RAR archives must have all parts present (`.part1.rar`, `.part2.rar`, etc.).
-3. Password-protected RAR archives require the correct password.
-4. RAR5 format is supported. If you have an older RAR format, please report it.
-
-## Extraction fails with password error
-
-Symptoms: Extraction fails with "Wrong password" or decryption error.
+Symptoms: new copies don't appear in the history panel.
 
 Checklist:
 
-1. Verify the password is correct — passwords are case-sensitive.
-2. Ensure the correct encryption type is supported (AES-256 for ZIP).
-3. Try re-entering the password from the password manager.
+1. Make sure the app is running and its menu bar icon is visible.
+2. Confirm **Clipboard monitoring** is enabled in **Settings → Privacy / General**.
+3. The app needs the relevant macOS permission to read the pasteboard in the background — see [Permissions](/guide/permissions).
+4. Some apps (password managers, secure-input fields) intentionally block clipboard access; this is expected.
 
-## Finder Extension not showing
+## Cloud AI actions don't return a result
 
-Symptoms: Right-clicking an archive in Finder shows no NueZip options.
-
-Checklist:
-
-1. Enable the extension: System Settings → Privacy & Security → Extensions → Finder Extensions → Enable **NueZip**.
-2. Restart Finder: Right-click Finder in Activity Monitor → Relaunch, or run `killall Finder` in Terminal.
-3. Reinstall the app if the extension still doesn't appear.
-
-## License / purchase not showing
-
-Symptoms: You purchased NueZip but it still shows as trial.
+Symptoms: an AI action fails, hangs, or shows a config error.
 
 Checklist:
 
-1. Ensure you are signed in to the same Apple ID used for the purchase.
-2. Restore purchases: NueZip → Settings → License → Restore Purchases.
-3. Contact support if the issue persists.
+1. Open **Settings → AI** and confirm a provider is selected and a key is entered.
+2. Verify the key is valid for that provider and has quota/credits.
+3. Check your network connection — cloud AI needs internet access.
+4. Confirm the selected model name is correct for the provider.
+5. If the config banner still appears in the AI Tool window, the key isn't saved to the Keychain; re-enter it.
 
-## How to collect debug logs
+## Marketplace install doesn't add the action
 
-To help diagnose issues, collect debug logs from NueZip:
+Symptoms: clicking **Install** does nothing, or the app doesn't open.
 
-```bash
-# Copy logs to Desktop for sharing
-cp ~/Library/Containers/com.w3cub.nuezip/Data/Library/Logs/NueZip/nuezip.log ~/Desktop/NueZip-Logs
-```
+Checklist:
 
-Then open an issue on [GitHub Issues](https://github.com/nuezip/nuezip/issues) and attach the logs.
-
-## Permission-related issues
-
-If a feature prompts for permission but doesn't work after granting it:
-
-1. Quit the app and reopen it after granting the permission.
-2. If needed, reset the permission prompt with `tccutil` (see the [Permissions guide](./permissions.md)).
-
-## Performance issues
-
-If the app is slow or unresponsive:
-
-1. Close other heavy applications.
-2. Try extracting a smaller archive to isolate the issue.
-3. Restart the app if performance degrades over time.
-
-## View logs
-
-To troubleshoot crashes or issues, application logs are the most useful artifact. In sandboxed (App Store) builds, check:
-
-```
-~/Library/Containers/com.w3cub.nuezip/Data/Library/Logs/NueZip/nuezip.log
-```
-
-
+1. The deep link `clipboardxai://install?action=<id>` must be handled by the installed app — make sure Clipboard x AI is installed and running.
+2. If your browser blocks the deep link, copy it and open it manually, or install from inside the app's **Marketplace** tab.
+3. Check that the action ID is still published in the marketplace.
 
 ## Resetting the app
 
 To reset settings and clear local data:
 
-1. Quit NueZip
-2. Remove the container (be careful—this deletes all settings):
+1. Quit Clipboard x AI.
+2. Remove the container (this deletes history and settings):
 
 ```bash
-rm -rf ~/Library/Containers/com.w3cub.nuezip
+rm -rf ~/Library/Containers/com.w3cub.clipboard
 ```
 
-3. Reopen NueZip and reconfigure.
+3. Reopen the app and reconfigure. API keys in the Keychain must be removed separately in **Keychain Access** if desired.
+
+## How to collect debug logs
+
+```bash
+# Copy logs to Desktop for sharing
+cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/Clipboard\ x\ AI/*.log ~/Desktop/ 2>/dev/null
+```
+
+Then open an issue on [GitHub](https://github.com/clipboardxAI) and attach the logs.
 
 ## Report an issue
 
 When opening an issue, include:
 
 - macOS version (Apple menu → About This Mac)
-- NueZip version (NueZip → About)
+- Clipboard x AI version (app menu → About)
 - Steps to reproduce
-- Logs (see [View logs](#view-logs) section for how to collect them)
+- Logs (see above)
 
 This helps maintainers identify and fix the problem faster.

@@ -21,19 +21,19 @@
                 <div class="card-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
                 </div>
-                <div class="card-text">Multi-Format</div>
+                <div class="card-text">Smart Summarize</div>
               </div>
               <div class="floating-card card-2">
                 <div class="card-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
                 </div>
-                <div class="card-text">Fast Extraction</div>
+                <div class="card-text">Instant Translate</div>
               </div>
               <div class="floating-card card-3">
                 <div class="card-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                 </div>
-                <div class="card-text">Password Secure</div>
+                <div class="card-text">Local &amp; Private</div>
               </div>
             </div>
             <div class="hero-image">
@@ -50,7 +50,7 @@
       <div class="features-container">
         <div class="section-header">
           <h2 class="section-title">Key Features</h2>
-          <p class="section-subtitle">Everything you need to manage archives efficiently on macOS</p>
+          <p class="section-subtitle">Everything you need to make your clipboard work harder on macOS</p>
         </div>
         <div class="features-grid">
           <div v-for="(feature, index) in data.features" :key="feature.title"
@@ -68,26 +68,26 @@
       </div>
     </section>
 
-    <!-- Formats Preview Section -->
+    <!-- Action Categories Section -->
     <section class="formats-section">
       <div class="formats-container">
         <div class="section-header">
-          <h2 class="section-title">Supported Archive Formats</h2>
-          <p class="section-subtitle">Compress and extract all major archive formats</p>
+          <h2 class="section-title">Action Categories</h2>
+          <p class="section-subtitle">Browse ready-made AI actions in the marketplace</p>
         </div>
         <div class="formats-grid">
-          <div class="format-card" v-for="fmt in formats" :key="fmt.name">
-            <div class="format-icon" :style="{ backgroundColor: fmt.color }">
-              <span class="format-ext">{{ fmt.ext }}</span>
+          <a class="format-card" v-for="cat in categories" :key="cat.name" :href="cat.link">
+            <div class="format-icon" :style="{ backgroundColor: cat.color }">
+              <span class="format-ext">{{ cat.badge }}</span>
             </div>
             <div class="format-info">
-              <h3 class="format-name">{{ fmt.name }}</h3>
-              <p class="format-desc">{{ fmt.desc }}</p>
+              <h3 class="format-name">{{ cat.name }}</h3>
+              <p class="format-desc">{{ cat.desc }}</p>
             </div>
-          </div>
+          </a>
         </div>
         <div class="formats-cta">
-          <a href="/guide/formats" class="btn btn-primary">View Full Format Details</a>
+          <a href="/marketplace" class="btn btn-primary">Open the Marketplace</a>
         </div>
       </div>
     </section>
@@ -131,8 +131,8 @@
     <section class="cta-section">
       <div class="cta-container">
         <div class="cta-content">
-          <h2 class="cta-title">Ready to Simplify Archive Management?</h2>
-          <p class="cta-description">Download NueZip and experience fast, native archive management on macOS.</p>
+          <h2 class="cta-title">Ready to Make Your Clipboard Smarter?</h2>
+          <p class="cta-description">Download Clipboard x AI and turn every copy into an action — private on your Mac, powered by AI when you want it.</p>
           <div class="cta-actions">
             <a href="/guide/installation" class="btn btn-primary">Get Started</a>
             <a href="/guide/usage" class="btn btn-secondary">How to Use</a>
@@ -146,32 +146,34 @@
       <div class="footer-container">
         <div class="footer-content">
           <div class="footer-brand">
-            <div class="footer-logo">NueZip</div>
-            <p class="footer-tagline">Simple, fast, and reliable archive management.</p>
+            <div class="footer-logo">Clipboard&nbsp;x&nbsp;AI</div>
+            <p class="footer-tagline">Smart clipboard actions for macOS, powered by AI.</p>
           </div>
           <div class="footer-links">
             <div class="footer-column">
               <h4 class="footer-heading">Product</h4>
+              <a href="/guide/introduction" class="footer-link">About</a>
+              <a href="/#features" class="footer-link">Features</a>
+              <a href="/marketplace" class="footer-link">Marketplace</a>
               <a href="/guide/installation" class="footer-link">Download</a>
-              <a href="/guide/usage" class="footer-link">Features</a>
-              <a href="/guide/formats" class="footer-link">Formats</a>
             </div>
             <div class="footer-column">
               <h4 class="footer-heading">Support</h4>
               <a href="/guide/introduction" class="footer-link">Guide</a>
               <a href="/guide/faq" class="footer-link">FAQ</a>
               <a href="/guide/troubleshooting" class="footer-link">Troubleshooting</a>
+              <a href="mailto:clipboardxai@w3cub.com" class="footer-link">Contact</a>
             </div>
             <div class="footer-column">
-              <h4 class="footer-heading">Community</h4>
-              <a href="https://github.com/nuezip/nuezip" class="footer-link">GitHub</a>
-              <a href="https://github.com/nuezip/nuezip/releases" class="footer-link">Releases</a>
-              <a href="https://www.producthunt.com/products/nuezip-the-modern-mac-archive-utility?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nuezip-the-modern-mac-archive-utility" class="footer-link" target="_blank" rel="noopener noreferrer">Product Hunt</a>
+              <h4 class="footer-heading">Company</h4>
+              <a href="/guide/privacy" class="footer-link">Privacy</a>
+              <a href="/guide/terms" class="footer-link">Terms</a>
+              <a href="https://github.com/clipboardxAI" class="footer-link">GitHub</a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 NueZip Project. Built for macOS.</p>
+          <p class="footer-copyright">© 2026 Clipboard x AI Project. Built for macOS.</p>
         </div>
       </div>
     </footer>
@@ -198,41 +200,41 @@ const featureColors = [
   '#0891b2'  // cyan
 ]
 
-const formats = [
-  { name: 'ZIP', ext: '.zip', desc: 'Universal ZIP format with AES-256 encryption', color: '#7c3aed' },
-  { name: 'RAR', ext: '.rar', desc: 'Read-only with multi-volume support', color: '#2563eb' },
-  { name: '7-Zip', ext: '.7z', desc: 'High-compression 7Z format with LZMA2', color: '#059669' },
-  { name: 'TAR', ext: '.tar', desc: 'TAR bundling with optional GZIP/BZIP2 compression', color: '#d97706' },
-  { name: 'GZIP', ext: '.gz', desc: 'Standalone GZIP compression support', color: '#dc2626' },
-  { name: 'BZIP2', ext: '.bz2', desc: 'Standalone BZIP2 compression support', color: '#0891b2' },
+const categories = [
+  { name: 'Writing', badge: 'WR', desc: 'Polish, expand and rewrite copy', color: '#ef6400', link: '/marketplace' },
+  { name: 'Developer', badge: 'DV', desc: 'Explain code and generate snippets', color: '#2563eb', link: '/marketplace' },
+  { name: 'Productivity', badge: 'PD', desc: 'Summarize and structure notes', color: '#059669', link: '/marketplace' },
+  { name: 'Translate', badge: 'TR', desc: 'Translate between languages', color: '#7c3aed', link: '/marketplace' },
+  { name: 'Social', badge: 'SO', desc: 'Draft replies and posts', color: '#d97706', link: '/marketplace' },
+  { name: 'Analytics', badge: 'AN', desc: 'Extract insight from text', color: '#0891b2', link: '/marketplace' },
 ]
 
 const steps = [
-  { num: '01', title: 'Install NueZip', desc: 'Download from the Mac App Store or GitHub. Launch and grant necessary permissions.' },
-  { num: '02', title: 'Open Any Archive', desc: 'Double-click any archive file, or use the Finder context menu to extract directly.' },
-  { num: '03', title: 'Compress & Manage', desc: 'Create new archives, batch process files, encrypt with passwords, and more.' },
+  { num: '01', title: 'Install & Launch', desc: 'Download from the Mac App Store or GitHub, then launch from the menu bar. Grant the permissions it needs.' },
+  { num: '02', title: 'Copy Anything', desc: 'Your clipboard history is captured automatically. Open the menu bar to browse and search past clips.' },
+  { num: '03', title: 'Run an Action', desc: 'Pick a built-in tool or AI action — or flip on auto-run to transform every copy the instant you make it.' },
 ]
 
 const faqs = [
   {
-    question: "Is NueZip free?",
-    answer: "NueZip is a paid app available on the Mac App Store. A trial version may be available for testing."
-  },
-  {
-    question: "What formats does NueZip support?",
-    answer: "NueZip supports RAR, ZIP, 7-Zip, TAR, GZIP, and BZIP2 formats for both compression and extraction."
+    question: "Is Clipboard x AI free?",
+    answer: "The app is free to download. Built-in local tools work with no account. Cloud AI actions use your own provider API key, so you only pay the AI provider directly."
   },
   {
     question: "Which macOS versions are supported?",
-    answer: "NueZip supports macOS 14 Sonoma and later, optimized for Apple Silicon (M-series)."
+    answer: "Clipboard x AI requires macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel support."
   },
   {
-    question: "Does NueZip work offline?",
-    answer: "Yes. All archive operations work fully offline. No internet connection is required for compression or extraction."
+    question: "Does it work offline?",
+    answer: "Yes. Clipboard history and the built-in local tools — extract links, count stats, collapse blank lines, and more — run entirely on your Mac with no internet connection."
   },
   {
-    question: "Is my data secure?",
-    answer: "Yes. NueZip runs entirely locally on your Mac with no data uploads. Password-protected archives use industry-standard encryption."
+    question: "Is my clipboard data private?",
+    answer: "Your clipboard history stays on your device. Cloud AI is opt-in and sends content only to the provider you configure, using a key stored in your Keychain. We never receive or store your clips."
+  },
+  {
+    question: "Which AI providers are supported?",
+    answer: "Any OpenAI-compatible provider: DeepSeek, MiniMax, Zhipu GLM, Kimi (Moonshot), Mistral, and local Ollama — plus OpenAI, Anthropic and Gemini."
   }
 ]
 </script>

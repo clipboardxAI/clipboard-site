@@ -5,10 +5,10 @@ import { defineConfig } from 'vitepress'
 // only the chrome labels are localized here.
 const STR = {
   en: {
-    home: 'Home', marketplace: 'Marketplace', guide: 'Guide', formats: 'Formats', faq: 'FAQ',
+    home: 'Home', marketplace: 'Marketplace', guide: 'Guide', faq: 'FAQ',
     github: 'GitHub',
     guideGroup: 'Guide',
-    intro: 'Introduction', install: 'Installation', usage: 'Usage', supportedFormats: 'Supported Formats',
+    intro: 'Introduction', install: 'Installation', usage: 'Usage',
     permissions: 'Permissions', troubleshooting: 'Troubleshooting',
     legalGroup: 'Legal',
     privacy: 'Privacy Policy', privacyChoices: 'Privacy Choices', terms: 'Terms of Service',
@@ -19,10 +19,10 @@ const STR = {
     company: 'Company',
   },
   'zh-CN': {
-    home: '首页', marketplace: '动作市场', guide: '指南', formats: '格式', faq: '常见问题',
+    home: '首页', marketplace: '动作市场', guide: '指南', faq: '常见问题',
     github: 'GitHub',
     guideGroup: '指南',
-    intro: '简介', install: '安装', usage: '使用', supportedFormats: '支持的格式',
+    intro: '简介', install: '安装', usage: '使用',
     permissions: '权限', troubleshooting: '故障排除',
     legalGroup: '法律',
     privacy: '隐私政策', privacyChoices: '隐私选项', terms: '服务条款',
@@ -33,10 +33,10 @@ const STR = {
     company: '公司',
   },
   'zh-TW': {
-    home: '首頁', marketplace: '動作市場', guide: '指南', formats: '格式', faq: '常見問題',
+    home: '首頁', marketplace: '動作市場', guide: '指南', faq: '常見問題',
     github: 'GitHub',
     guideGroup: '指南',
-    intro: '簡介', install: '安裝', usage: '使用', supportedFormats: '支援的格式',
+    intro: '簡介', install: '安裝', usage: '使用',
     permissions: '權限', troubleshooting: '故障排除',
     legalGroup: '法律',
     privacy: '隱私政策', privacyChoices: '隱私選項', terms: '服務條款',
@@ -47,10 +47,10 @@ const STR = {
     company: '公司',
   },
   ja: {
-    home: 'ホーム', marketplace: 'アクション市場', guide: 'ガイド', formats: 'フォーマット', faq: 'よくある質問',
+    home: 'ホーム', marketplace: 'アクション市場', guide: 'ガイド', faq: 'よくある質問',
     github: 'GitHub',
     guideGroup: 'ガイド',
-    intro: 'はじめに', install: 'インストール', usage: '使い方', supportedFormats: '対応フォーマット',
+    intro: 'はじめに', install: 'インストール', usage: '使い方',
     permissions: '権限', troubleshooting: 'トラブルシューティング',
     legalGroup: '法務',
     privacy: 'プライバシーポリシー', privacyChoices: 'プライバシーの選択', terms: '利用規約',
@@ -69,7 +69,6 @@ function tc(S: typeof STR.en, marketplaceLink: string) {
       { text: S.home, link: '/' },
       { text: S.marketplace, link: marketplaceLink },
       { text: S.guide, link: '/guide/introduction' },
-      { text: S.formats, link: '/guide/formats' },
       { text: S.faq, link: '/guide/faq' },
       { text: S.github, link: 'https://github.com/clipboardxAI' },
     ],
@@ -80,7 +79,6 @@ function tc(S: typeof STR.en, marketplaceLink: string) {
           { text: S.intro, link: '/guide/introduction' },
           { text: S.install, link: '/guide/installation' },
           { text: S.usage, link: '/guide/usage' },
-          { text: S.supportedFormats, link: '/guide/formats' },
           { text: S.permissions, link: '/guide/permissions' },
           { text: S.troubleshooting, link: '/guide/troubleshooting' },
           { text: S.faq, link: '/guide/faq' },
@@ -104,8 +102,8 @@ function tc(S: typeof STR.en, marketplaceLink: string) {
           items: [
             { text: S.about, link: '/guide/introduction' },
             { text: S.features, link: '/#features' },
+            { text: S.marketplace, link: marketplaceLink },
             { text: S.install, link: '/guide/installation' },
-            { text: S.supportedFormats, link: '/guide/formats' },
           ],
         },
         {
@@ -205,7 +203,7 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en',
-      themeConfig: tc(STR.en, '/marketplace'),
+      themeConfig: tc(STR.en, '/marketplace/'),
     },
     'zh-CN': {
       label: '简体中文',

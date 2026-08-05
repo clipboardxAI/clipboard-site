@@ -1,55 +1,51 @@
 # FAQ
 
-Q: What is NueZip?
+**Q: What is Clipboard x AI?**
 
-A: NueZip is a professional archive manager for macOS, supporting compression and extraction of multiple archive formats including RAR, ZIP, 7-Zip, TAR, GZIP, and BZIP2.
+A: Clipboard x AI is a smart clipboard manager for macOS. It keeps a searchable history of everything you copy and lets you run actions on it — summarize, translate, tidy text, or send it to a cloud AI model.
 
-Q: Which macOS versions are supported?
+**Q: Which macOS versions are supported?**
 
-A: NueZip requires macOS 14 Sonoma or later, and is optimized for Apple Silicon (M-series) chips.
+A: macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel support.
 
-Q: How do I download and install NueZip?
+**Q: How do I install it?**
 
-A: Download from the [Mac App Store](https://apps.apple.com/app/id6785846417) (recommended) or grab the latest release from [GitHub Releases](https://github.com/nuezip/nuezip/releases).
+A: Download from the [Mac App Store](/) (recommended) or grab the latest build from [GitHub Releases](https://github.com/clipboardxAI). See the [Installation Guide](/guide/installation).
 
-Q: Is NueZip free?
+**Q: Is Clipboard x AI free?**
 
-A: NueZip offers a free trial with core features. A one-time purchase unlocks the full feature set including batch operations, archive repair, and advanced encryption.
+A: The app is free to download. Built-in local tools need no account. Cloud AI actions use *your own* provider API key, so you only pay the AI provider directly — there is no paid tier in the app.
 
-Q: What formats are supported?
+**Q: Which AI providers are supported?**
 
-A: **Read**: RAR, ZIP, 7-Zip, TAR, GZIP, BZIP2, XZ, Zstandard\
-**Write (compress)**: ZIP, 7-Zip, TAR, GZIP, BZIP2, XZ, Zstandard\
-See [Introduction](/guide/introduction) for the full format matrix.
+A: Any OpenAI-compatible provider: DeepSeek, MiniMax, Zhipu GLM, Kimi (Moonshot), Mistral, and local Ollama — plus OpenAI, Anthropic, and Gemini. Your key is stored in the Keychain.
 
-Q: Can NueZip create RAR archives?
+**Q: Does it work offline?**
 
-A: No. NueZip can **read** RAR archives (including multi-volume and repaired archives), but RAR compression is not supported due to licensing restrictions.
+A: Yes. Clipboard history and the built-in local tools (extract links, count stats, collapse blank lines, and more) run entirely on your Mac with no internet connection.
 
-Q: Is NueZip safe for confidential files?
+**Q: Is my clipboard data private?**
 
-A: Yes. NueZip operates entirely offline. All operations run locally on your Mac. AES-256 encryption is available for password-protected ZIP archives.
+A: Your history stays on your device. Cloud AI is opt-in and sends content only to the provider you configure, using a key from your Keychain. We never receive or store your clips, and there is no telemetry. See the [Privacy Policy](/guide/privacy).
 
-Q: Does NueZip upload my files to the cloud?
+**Q: How do I add more actions?**
 
-A: No. NueZip is a fully offline application. Your files are never uploaded anywhere. No internet connection is required for compression or extraction.
+A: Browse the [Marketplace](/marketplace) and click **Install** on any action. It opens the app via a deep link and appears in your **Installed** list.
 
-Q: How do I update the app?
+**Q: How do I update the app?**
 
-A: Update through the Mac App Store (automatic) or download the latest release from GitHub Releases.
+A: The Mac App Store version updates automatically. For GitHub builds, download the latest release and replace the app in `Applications`.
 
-Q: How do I report bugs or request features?
+**Q: How do I report bugs or request features?**
 
-A: Open an issue on the [GitHub repository](https://github.com/nuezip/nuezip/issues). Please include your macOS version, NueZip version, and steps to reproduce.
+A: Open an issue on the [GitHub repository](https://github.com/clipboardxAI). Include your macOS version, app version, and steps to reproduce.
 
-Q: Where are logs and data stored?
+**Q: Where is my data stored?**
 
-A: For sandboxed (App Store) builds:
+A: In the sandboxed container:
 
 ```
-~/Library/Containers/com.w3cub.nuezip/Data/Library/Application Support/com.w3cub.nuezip/
+~/Library/Containers/com.w3cub.clipboard/Data/Library/Application Support/com.w3cub.clipboard/
 ```
 
-Development builds may log to the console or `src-tauri` directory.
-
-If you need more answers, please open an issue in the repository or consult the full documentation.
+API keys live in the system Keychain, not in that folder.

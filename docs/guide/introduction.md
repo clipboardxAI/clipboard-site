@@ -1,60 +1,57 @@
 # Introduction
 
-## About NueZip
+## About Clipboard x AI
 
-NueZip is a professional archive manager for macOS, designed for speed, reliability, and ease of use. Whether you need to compress files, extract archives, convert formats, or manage password-protected archives, NueZip handles it all with a native macOS experience.
+**Clipboard x AI** is a smart clipboard manager for macOS. Every time you copy text, code, or a link, it's saved to a searchable history in your menu bar. With one click — or completely automatically — you can run an action on that clip: summarize it, translate it, tidy it up, or hand it to a cloud AI model.
 
-Built with Swift 6 and SwiftUI, NueZip takes full advantage of Apple Silicon and macOS technologies to deliver a fast, lightweight, and secure archive management tool.
+It is built around two kinds of tools:
+
+- **Built-in local tools** that run entirely on your Mac, with no network connection.
+- **AI actions** that call a cloud model you configure yourself (your own API key, stored in the system Keychain).
 
 ## Key Features
 
-### 📦 **Multi-Format Support**
-NueZip supports all major archive formats:
-- **RAR** — Read-only with multi-volume support
-- **ZIP** — Universal compression with AES encryption
-- **7-Zip** — High-compression ratio with LZMA2
-- **TAR** — Archive bundling with optional GZIP/BZIP2
-- **GZIP / BZIP2** — Standalone compression formats
+### 📋 Clipboard History
+Everything you copy is captured automatically and kept in a searchable history. Jump back to any previous clip from the menu bar — no more lost snippets.
 
-### ⚡ **Fast Extraction**
-Dual-engine architecture selects the optimal backend for each format, ensuring the fastest possible extraction speeds.
+### ⚡ Smart Suggestions
+Clipboard x AI suggests the most relevant actions for the current clip. Accept a suggestion, or browse the full list of tools.
 
-### 🔐 **Password Protection & Encryption**
-Create password-protected archives with industry-standard encryption. Built-in password manager stores credentials securely in your local keychain.
+### 🛠️ Built-in Local Tools
+Offline, private, instant:
 
-### 📋 **Batch Operations**
-Process multiple files at once:
-- **Batch Compress** — Compress multiple items into individual archives
-- **Batch Extract** — Extract multiple archives simultaneously
-- **Batch Convert** — Convert archives between formats in bulk
-- **Batch Encrypt** — Apply password protection to multiple archives
+- **Extract Links** — pull every URL out of a block of text.
+- **Count Stats** — word, character, line and sentence counts.
+- **Collapse Blank Lines** — tidy up pasted text in one step.
 
-### 🛠️ **Advanced Tools**
-- **Archive Repair** — Fix corrupted RAR and ZIP archives
-- **Format Conversion** — Convert between any supported formats
-- **Performance Benchmark** — Test compression speed and rating
-- **Archive Search** — Find files within archives by name
-- **File Info Viewer** — View detailed metadata for archive entries
-- **Volume/Split Support** — Create multi-volume archives
+More local tools can be added over time — they never leave your device.
 
-### 🖥️ **Native macOS Experience**
-- **Swift 6 + SwiftUI** — Modern, responsive interface
-- **Apple Silicon Native** — Optimized for M-series chips
-- **Finder Integration** — Right-click context menu extension
-- **Drag & Drop** — Quick access via menu bar drop panel
-- **Minimal Resource Usage** — Lightweight background operation
+### ✨ AI Actions
+Send the current clip to a cloud model to:
+
+- **Summarize** long articles and threads.
+- **Translate** between languages.
+- **Rewrite / polish** tone and clarity.
+- Run any action from the **Marketplace**.
+
+### 🛒 Action Marketplace
+Browse community-made AI actions and install them in one click via a deep link (`clipboardxai://install?action=<id>`). Categories include Writing, Developer, Productivity, Translate, Social, and Analytics.
+
+### 🔒 Private by Design
+Your clipboard history stays on your device. Cloud AI is **opt-in**: when enabled, content is sent only to the provider *you* choose, using an API key stored in your Keychain. We never receive or store your clips, and there is no analytics or telemetry.
 
 ## System Requirements
 
 - **Operating System**: macOS 14 Sonoma or later
 - **CPU**: Apple Silicon (M-series) or Intel (64-bit)
-- **Memory**: 4GB RAM minimum, 8GB recommended
+- **Memory**: 4 GB RAM minimum, 8 GB recommended
 - **Storage**: ~50 MB for installation
+- **For cloud AI**: an API key from a supported provider (DeepSeek, MiniMax, Zhipu GLM, Kimi, Mistral, Ollama, OpenAI, Anthropic, or Gemini)
 
 ## Supported Languages
 
-NueZip supports English, Chinese (Simplified), Chinese (Traditional), Japanese, Korean, and many other languages.
+The app and this site support English, 简体中文 (Simplified Chinese), 繁體中文 (Traditional Chinese), and 日本語 (Japanese).
 
 ## Getting Started
 
-If you're new to NueZip, start with the [Installation Guide](/guide/installation) to get the application running on your Mac.
+If you're new to Clipboard x AI, start with the [Installation Guide](/guide/installation) to get the app running on your Mac, then read [Usage](/guide/usage) to learn how actions work.

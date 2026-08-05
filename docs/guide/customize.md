@@ -1,90 +1,61 @@
 # Customization
 
-Make NueZip truly yours by customizing your archive management experience. This guide covers everything you can personalize.
+Make Clipboard x AI work the way you do. This guide covers the settings you can adjust.
 
-## General Preferences
+## General
 
-Open **NueZip → Settings** (or press `Cmd+,`) to access all customization options.
+Open **Clipboard x AI → Settings** (or press `Cmd+,`).
 
-### Appearance
-- **Theme**: Choose between Light, Dark, or System (follows macOS appearance)
-- **Icon Style**: Set monochrome or full-color menu bar icon
-- **Language**: Select from supported languages (English, 中文, 日本語, 한국어, and more)
+- **Language**: English, 简体中文, 繁體中文, 日本語.
+- **Launch at Login**: start the app automatically when you log in.
+- **Appearance**: Light, Dark, or System (follows macOS).
 
-## Compression Defaults
+## AI Configuration
 
-Set your preferred compression defaults:
+Set up cloud AI in **Settings → AI**:
 
 | Setting | Options | Description |
 |---------|---------|-------------|
-| **Default Format** | ZIP, 7z, TAR, GZIP, BZIP2, XZ | Archive format for quick compression |
-| **Compression Level** | Store, Fast, Normal, Maximum, Ultra | Trade-off between speed and ratio |
-| **Encryption** | None, AES-128, AES-256 | Default encryption for ZIP/7z archives |
-| **Volume Size** | Custom (MB) | Default split size for multi-volume archives |
+| **Provider** | DeepSeek, MiniMax, GLM, Kimi, Mistral, Ollama, OpenAI, Anthropic, Gemini | The OpenAI-compatible service to call |
+| **API Key** | your key | Stored in the **Keychain**, never written to disk in plain text |
+| **Model** | per provider | The model used for AI actions |
+| **Cloud AI enabled** | On / Off | Master switch for sending clips to the cloud |
 
-### Example Configuration
+Cloud AI is **off by default**. When enabled, your clip is sent only to the provider you configured.
 
-For everyday use:
-- **Format**: ZIP
-- **Level**: Normal
-- **Encryption**: AES-256 (for sensitive files)
-- **Volume**: Off
+## Actions
 
-For archiving:
-- **Format**: 7-Zip
-- **Level**: Ultra
-- **Encryption**: AES-256
-- **Volume**: 4.7 GB (to fit on DVD)
+Customize how tools behave:
 
-## Extraction Preferences
+- **Auto-run on output**: when on, the selected tool runs automatically the moment you copy.
+- **Excluded apps**: apps listed here are skipped by clipboard monitoring and auto-run (e.g. password managers).
+- **Tool order**: in the AI Tool window, drag installed tools to reorder them; your order is remembered.
 
-Customize extraction behavior:
+## Privacy
 
-- **Extract to subfolder by default**: Auto-create a named folder when extracting
-- **Open folder after extraction**: Reveal extracted contents in Finder
-- **Overwrite behavior**: Ask, Always overwrite, or Skip existing files
-- **Preserve file dates**: Keep original timestamps from the archive
+Open **Settings → Privacy**:
 
-## Finder Extension
+- **Cloud AI opt-in**: the master switch for sending data to a provider.
+- **Excluded apps**: stop specific apps from being captured.
+- **History controls**: manage how long clips are kept on your device.
 
-Manage the Finder context menu integration:
+All history stays local. We do not upload clips or run analytics.
 
-- **Enable/Disable**: Turn right-click menu items on or off
-- **Quick actions**: Choose which actions appear in the context menu
-  - Extract Here
-  - Extract to Folder
-  - Compress to ZIP
-  - Compress with Options
+## Marketplace
 
-Manage these in: **System Settings → Privacy & Security → Extensions → Finder Extensions**
+Manage installed actions:
 
-## Menu Bar (Tray) Icon
+- **Browse**: open **Marketplace** from the AI Tool window or the site.
+- **Install**: click **Install** on an action to add it via deep link.
+- **Remove**: uninstall an action from your **Installed** list.
 
-Customize the menu bar drop panel:
+## Menu Bar
 
-- **Show in menu bar**: Enable/disable the tray icon
-- **Auto-close panel**: Close drop panel after extraction
-- **Recent archives**: Number of recent items to show
-- **Quit on close**: Whether the app stays in the background
-
-## Notifications
-
-- **Show completion alerts**: Notify when long operations finish
-- **Show error alerts**: Display notifications for failed operations
-- **Sound**: Play a sound when operations complete
-
-## General Settings
-
-Access these in **Settings → General**:
-
-- **Language**: Switch between English and Chinese (Simplified)
-- **Launch at Login**: PetReminder starts automatically when you log in
-- **Theme**: Light or dark mode (follows system by default)
-- **Menu bar icon**: Show or hide the menu bar icon
+- **Show in menu bar**: enable/disable the tray icon.
+- **Quit on close**: choose whether the app stays running in the background.
 
 ## Tips
 
-- Assign different pets to different types of reminders for variety
-- Reduce animation speed if the pet is too distracting
-- Try pairing a calm pet (Ragdoll) for work reminders and an energetic one (Shiba) for breaks
-- Enable "Launch at Login" so you never miss important reminders
+- Keep cloud AI off until you need it — local tools cover most day-to-day cleanup.
+- Add password managers and secure-input apps to **Excluded apps** so secrets are never captured.
+- Pair auto-run with a local tool for hands-free text cleanup on every copy.
