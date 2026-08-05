@@ -146,7 +146,7 @@
       <div class="footer-container">
         <div class="footer-content">
           <div class="footer-brand">
-            <div class="footer-logo">Clipboard&nbsp;x&nbsp;AI</div>
+            <div class="footer-logo">ClipboardxAI</div>
             <p class="footer-tagline">Smart clipboard actions for macOS, powered by AI.</p>
           </div>
           <div class="footer-links">

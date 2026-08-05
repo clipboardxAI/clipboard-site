@@ -8,7 +8,7 @@
       <div class="hero-container">
         <div class="hero-text">
           <div class="hero-eyebrow">Action Marketplace</div>
-          <h1 class="hero-title">Clipboard&nbsp;x&nbsp;AI · Action Marketplace</h1>
+          <h1 class="hero-title">ClipboardxAI · Action Marketplace</h1>
           <p class="hero-description">
             Community-curated AI actions for your clipboard. Browse, then click
             <strong>Install</strong> to open the app and add the action in one tap.
@@ -71,7 +71,7 @@
       <div class="footer-container">
         <div class="footer-content">
           <div class="footer-brand">
-            <div class="footer-logo">Clipboard&nbsp;x&nbsp;AI</div>
+            <div class="footer-logo">ClipboardxAI</div>
             <p class="footer-tagline">Community-curated AI actions for your clipboard.</p>
           </div>
           <div class="footer-links">

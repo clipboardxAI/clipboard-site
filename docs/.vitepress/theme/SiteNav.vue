@@ -4,7 +4,7 @@
       <div class="nav-brand">
         <VPLink href="/" class="brand-link">
           <img src="/logo.png" alt="ClipboardxAI" class="brand-logo" />
-          <span class="brand-text">Clipboard&nbsp;x&nbsp;AI</span>
+          <span class="brand-text">ClipboardxAI</span>
         </VPLink>
       </div>
       <div class="nav-right">
