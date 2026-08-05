@@ -44,3 +44,8 @@ Thumbs.db
 *.temp
 wiki
 wiki-en
+# VitePress config temp files
+docs/.vitepress/*.mjs
+
+# VitePress config temp files
+docs/.vitepress/*.mjs

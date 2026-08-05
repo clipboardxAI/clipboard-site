@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  // base: '/',
-  title: 'NueZip',
+  base: '/clipboard-site/',
+  title: 'Clipboard x AI',
   titleTemplate: 'NueZip — :title',
   description: 'NueZip — Professional archive manager for macOS. Compress, extract, and manage ZIP, RAR, 7Z, TAR and more.',
   lastUpdated: true,
@@ -46,11 +46,11 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Marketplace', link: '/marketplace' },
       { text: 'Guide', link: '/guide/introduction' },
       { text: 'Formats', link: '/guide/formats' },
       { text: 'FAQ', link: '/guide/faq' },
-      { text: 'GitHub', link: 'https://github.com/nuezip/nuezip' },
-      { text: 'Product Hunt', link: 'https://www.producthunt.com/products/nuezip-the-modern-mac-archive-utility?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nuezip-the-modern-mac-archive-utility' },
+      { text: 'GitHub', link: 'https://github.com/w3cub/clipboardxai' },
     ],
     sidebar: [
       {
@@ -75,11 +75,11 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/nuezip/nuezip' }
+      { icon: 'github', link: 'https://github.com/w3cub/clipboardxai' }
     ],
     footer: {
-      message: 'Built for macOS — simple, fast, and reliable.',
-      copyright: 'Copyright © 2026 NueZip Project. All rights reserved.',
+      message: 'Built for macOS — smart clipboard actions, powered by AI.',
+      copyright: 'Copyright © 2026 Clipboard x AI Project. All rights reserved.',
       items: [
         {
           text: 'Product',
@@ -100,14 +100,14 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Company',
-          items: [
-            { text: 'About', link: '/guide/introduction' },
-            { text: 'Privacy Policy', link: '/guide/privacy' },
-            { text: 'Terms of Service', link: '/guide/terms' },
-            { text: 'GitHub', link: 'https://github.com/nuezip/nuezip' }
-          ]
-        }
+        text: 'Company',
+        items: [
+          { text: 'About', link: '/guide/introduction' },
+          { text: 'Privacy Policy', link: '/guide/privacy' },
+          { text: 'Terms of Service', link: '/guide/terms' },
+          { text: 'GitHub', link: 'https://github.com/w3cub/clipboardxai' }
+        ]
+      }
       ]
     }
   }

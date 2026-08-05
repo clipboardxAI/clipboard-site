@@ -57,7 +57,7 @@ fi
 
 # Add CNAME file for custom domain
 echo "🌐 Adding CNAME file..."
-echo "nuezip.w3cub.com" > CNAME
+echo "clipboard.w3cub.com" > CNAME
 
 # Add and commit
 echo "📝 Committing changes..."
@@ -84,4 +84,4 @@ cd ../..
 rm -rf temp_deploy
 
 echo "🎉 Deployment completed successfully!"
-echo "📖 Documentation available at: https://nuezip.w3cub.com/"
+echo "📖 Documentation available at: https://clipboard.w3cub.com/"

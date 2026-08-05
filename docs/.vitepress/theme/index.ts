@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import AdvancedHome from './AdvancedHome.vue'
+import MarketplaceView from './MarketplaceView.vue'
 import HomeActions from './HomeActions.vue'
 import './custom.css'
 
@@ -10,9 +11,14 @@ export default {
   Layout() {
     const route = useRoute()
     const isHomePage = route.path === '/'
+    const isMarketplace = route.path.startsWith('/marketplace')
 
     if (isHomePage) {
       return h(AdvancedHome, { data: useData().frontmatter.value })
+    }
+
+    if (isMarketplace) {
+      return h(MarketplaceView)
     }
 
     return h(DefaultTheme.Layout, {
