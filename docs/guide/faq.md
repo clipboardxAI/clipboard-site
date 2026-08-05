@@ -1,8 +1,8 @@
 # FAQ
 
-**Q: What is Clipboard x AI?**
+**Q: What is ClipboardxAI?**
 
-A: Clipboard x AI is a smart clipboard manager for macOS. It keeps a searchable history of everything you copy and lets you run actions on it — summarize, translate, tidy text, or send it to a cloud AI model.
+A: ClipboardxAI is a smart clipboard manager for macOS. It keeps a searchable history of everything you copy and lets you run actions on it — summarize, translate, tidy text, or send it to a cloud AI model.
 
 **Q: Which macOS versions are supported?**
 
@@ -12,7 +12,7 @@ A: macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel s
 
 A: Download from the [Mac App Store](/) (recommended) or grab the latest build from [GitHub Releases](https://github.com/clipboardxAI). See the [Installation Guide](/guide/installation).
 
-**Q: Is Clipboard x AI free?**
+**Q: Is ClipboardxAI free?**
 
 A: The app is free to download. Built-in local tools need no account. Cloud AI actions use *your own* provider API key, so you only pay the AI provider directly — there is no paid tier in the app.
 

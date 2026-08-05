@@ -2,7 +2,7 @@
 
 ## Clipboard History
 
-Clipboard x AI runs from your **menu bar**. Every time you copy something, it's added to your history.
+ClipboardxAI runs from your **menu bar**. Every time you copy something, it's added to your history.
 
 - Click the menu bar icon to open the history panel.
 - Hover an item and press the action shortcut, or click to copy it back to the pasteboard.
@@ -67,7 +67,7 @@ If no key is set, the config banner reminds you inside the AI Tool window.
 
 ## Settings
 
-Open **Clipboard x AI → Settings** (or `Cmd+,`):
+Open **ClipboardxAI → Settings** (or `Cmd+,`):
 
 - **General**: Language, launch at login, appearance theme.
 - **AI**: Cloud provider, model, and API key (Keychain).

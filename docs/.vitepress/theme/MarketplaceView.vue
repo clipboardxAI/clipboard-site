@@ -94,7 +94,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 Clipboard x AI Project. Built for macOS.</p>
+          <p class="footer-copyright">© 2026 ClipboardxAI Project. Built for macOS.</p>
         </div>
       </div>
     </footer>

@@ -1,8 +1,8 @@
 # Introduction
 
-## About Clipboard x AI
+## About ClipboardxAI
 
-**Clipboard x AI** is a smart clipboard manager for macOS. Every time you copy text, code, or a link, it's saved to a searchable history in your menu bar. With one click — or completely automatically — you can run an action on that clip: summarize it, translate it, tidy it up, or hand it to a cloud AI model.
+**ClipboardxAI** is a smart clipboard manager for macOS. Every time you copy text, code, or a link, it's saved to a searchable history in your menu bar. With one click — or completely automatically — you can run an action on that clip: summarize it, translate it, tidy it up, or hand it to a cloud AI model.
 
 It is built around two kinds of tools:
 
@@ -15,7 +15,7 @@ It is built around two kinds of tools:
 Everything you copy is captured automatically and kept in a searchable history. Jump back to any previous clip from the menu bar — no more lost snippets.
 
 ### ⚡ Smart Suggestions
-Clipboard x AI suggests the most relevant actions for the current clip. Accept a suggestion, or browse the full list of tools.
+ClipboardxAI suggests the most relevant actions for the current clip. Accept a suggestion, or browse the full list of tools.
 
 ### 🛠️ Built-in Local Tools
 Offline, private, instant:
@@ -54,4 +54,4 @@ The app and this site support English, 简体中文 (Simplified Chinese), 繁體
 
 ## Getting Started
 
-If you're new to Clipboard x AI, start with the [Installation Guide](/guide/installation) to get the app running on your Mac, then read [Usage](/guide/usage) to learn how actions work.
+If you're new to ClipboardxAI, start with the [Installation Guide](/guide/installation) to get the app running on your Mac, then read [Usage](/guide/usage) to learn how actions work.

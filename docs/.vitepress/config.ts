@@ -13,7 +13,7 @@ const STR = {
     legalGroup: 'Legal',
     privacy: 'Privacy Policy', privacyChoices: 'Privacy Choices', terms: 'Terms of Service',
     footerMessage: 'Built for macOS — smart clipboard actions, powered by AI.',
-    footerCopyright: 'Copyright © 2026 Clipboard x AI Project. All rights reserved.',
+    footerCopyright: 'Copyright © 2026 ClipboardxAI Project. All rights reserved.',
     product: 'Product', about: 'About', features: 'Features',
     support: 'Support', documentation: 'Documentation', contact: 'Contact',
     company: 'Company',
@@ -27,7 +27,7 @@ const STR = {
     legalGroup: '法律',
     privacy: '隐私政策', privacyChoices: '隐私选项', terms: '服务条款',
     footerMessage: '为 macOS 打造 — 智能剪贴板操作，由 AI 驱动。',
-    footerCopyright: '© 2026 Clipboard x AI 项目。保留所有权利。',
+    footerCopyright: '© 2026 ClipboardxAI 项目。保留所有权利。',
     product: '产品', about: '关于', features: '功能',
     support: '支持', documentation: '文档', contact: '联系我们',
     company: '公司',
@@ -41,7 +41,7 @@ const STR = {
     legalGroup: '法律',
     privacy: '隱私政策', privacyChoices: '隱私選項', terms: '服務條款',
     footerMessage: '為 macOS 打造 — 智慧剪貼板操作，由 AI 驅動。',
-    footerCopyright: '© 2026 Clipboard x AI 專案。保留所有權利。',
+    footerCopyright: '© 2026 ClipboardxAI 專案。保留所有權利。',
     product: '產品', about: '關於', features: '功能',
     support: '支援', documentation: '文件', contact: '聯絡我們',
     company: '公司',
@@ -55,7 +55,7 @@ const STR = {
     legalGroup: '法務',
     privacy: 'プライバシーポリシー', privacyChoices: 'プライバシーの選択', terms: '利用規約',
     footerMessage: 'macOS のために — AI で動くスマートなクリップボード操作。',
-    footerCopyright: '© 2026 Clipboard x AI プロジェクト. All rights reserved.',
+    footerCopyright: '© 2026 ClipboardxAI プロジェクト. All rights reserved.',
     product: '製品', about: '概要', features: '機能',
     support: 'サポート', documentation: 'ドキュメント', contact: 'お問い合わせ',
     company: '企業',
@@ -153,9 +153,9 @@ const MD = {
 
 export default defineConfig({
   base: '/',
-  title: 'Clipboard x AI',
-  titleTemplate: 'Clipboard x AI — :title',
-  description: 'Clipboard x AI — Smart clipboard actions for macOS, powered by AI. Transform, summarize, translate and automate your clipboard with built-in and cloud AI tools.',
+  title: 'ClipboardxAI',
+  titleTemplate: 'ClipboardxAI — :title',
+  description: 'ClipboardxAI — Smart clipboard actions for macOS, powered by AI. Transform, summarize, translate and automate your clipboard with built-in and cloud AI tools.',
   lastUpdated: true,
   head: [
     // Favicons
@@ -168,29 +168,29 @@ export default defineConfig({
 
     // SEO
     ['meta', { name: 'keywords', content: 'clipboard, ai, macos, clipboard manager, smart actions, summarize, translate, automate, clipboardxai' }],
-    ['meta', { name: 'author', content: 'Clipboard x AI Project' }],
+    ['meta', { name: 'author', content: 'ClipboardxAI Project' }],
 
     // Open Graph / Facebook
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'Clipboard x AI' }],
+    ['meta', { property: 'og:site_name', content: 'ClipboardxAI' }],
     ['meta', { property: 'og:url', content: 'https://clipboard.w3cub.com/' }],
-    ['meta', { property: 'og:title', content: 'Clipboard x AI — Smart Clipboard Actions Powered by AI' }],
+    ['meta', { property: 'og:title', content: 'ClipboardxAI — Smart Clipboard Actions Powered by AI' }],
     ['meta', { property: 'og:description', content: 'Transform, summarize, translate and automate your clipboard with built-in and cloud AI tools on macOS. Native, fast, and private.' }],
     ['meta', { property: 'og:image', content: 'https://clipboard.w3cub.com/preview.png' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
-    ['meta', { property: 'og:image:alt', content: 'Clipboard x AI Preview' }],
+    ['meta', { property: 'og:image:alt', content: 'ClipboardxAI Preview' }],
 
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:url', content: 'https://clipboard.w3cub.com/' }],
-    ['meta', { name: 'twitter:title', content: 'Clipboard x AI — Smart Clipboard Actions Powered by AI' }],
+    ['meta', { name: 'twitter:title', content: 'ClipboardxAI — Smart Clipboard Actions Powered by AI' }],
     ['meta', { name: 'twitter:description', content: 'Transform, summarize, translate and automate your clipboard with built-in and cloud AI tools on macOS. Native, fast, and private.' }],
     ['meta', { name: 'twitter:image', content: 'https://clipboard.w3cub.com/preview.png' }],
-    ['meta', { name: 'twitter:image:alt', content: 'Clipboard x AI Preview' }],
+    ['meta', { name: 'twitter:image:alt', content: 'ClipboardxAI Preview' }],
   ],
   themeConfig: {
-    siteTitle: 'Clipboard x AI',
+    siteTitle: 'ClipboardxAI',
     logo: '/logo.png',
     search: {
       provider: 'local',

@@ -1,10 +1,10 @@
 # Customization
 
-Make Clipboard x AI work the way you do. This guide covers the settings you can adjust.
+Make ClipboardxAI work the way you do. This guide covers the settings you can adjust.
 
 ## General
 
-Open **Clipboard x AI → Settings** (or press `Cmd+,`).
+Open **ClipboardxAI → Settings** (or press `Cmd+,`).
 
 - **Language**: English, 简体中文, 繁體中文, 日本語.
 - **Launch at Login**: start the app automatically when you log in.

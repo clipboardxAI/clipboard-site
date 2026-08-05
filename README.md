@@ -1,12 +1,12 @@
-# Clipboard x AI Website
+# ClipboardxAI Website
 
-This repository hosts the official website for **Clipboard x AI** — a macOS clipboard manager with AI actions. The site uses the custom domain `clipboard.w3cub.com`.
+This repository hosts the official website for **ClipboardxAI** — a macOS clipboard manager with AI actions. The site uses the custom domain `clipboard.w3cub.com`.
 
 
 
 ## Documentation
 
-This site is built with [VitePress](https://vitepress.dev/) and contains guides, FAQs, and the **Action Marketplace** (`/marketplace`) for Clipboard x AI.
+This site is built with [VitePress](https://vitepress.dev/) and contains guides, FAQs, and the **Action Marketplace** (`/marketplace`) for ClipboardxAI.
 
 ### Getting Help
 

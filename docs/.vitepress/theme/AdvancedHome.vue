@@ -132,7 +132,7 @@
       <div class="cta-container">
         <div class="cta-content">
           <h2 class="cta-title">Ready to Make Your Clipboard Smarter?</h2>
-          <p class="cta-description">Download Clipboard x AI and turn every copy into an action — private on your Mac, powered by AI when you want it.</p>
+          <p class="cta-description">Download ClipboardxAI and turn every copy into an action — private on your Mac, powered by AI when you want it.</p>
           <div class="cta-actions">
             <a href="/guide/installation" class="btn btn-primary">Get Started</a>
             <a href="/guide/usage" class="btn btn-secondary">How to Use</a>
@@ -173,7 +173,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 Clipboard x AI Project. Built for macOS.</p>
+          <p class="footer-copyright">© 2026 ClipboardxAI Project. Built for macOS.</p>
         </div>
       </div>
     </footer>
@@ -217,12 +217,12 @@ const steps = [
 
 const faqs = [
   {
-    question: "Is Clipboard x AI free?",
+    question: "Is ClipboardxAI free?",
     answer: "The app is free to download. Built-in local tools work with no account. Cloud AI actions use your own provider API key, so you only pay the AI provider directly."
   },
   {
     question: "Which macOS versions are supported?",
-    answer: "Clipboard x AI requires macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel support."
+    answer: "ClipboardxAI requires macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel support."
   },
   {
     question: "Does it work offline?",

@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Clipboard x AI is a smart clipboard manager for macOS. Your privacy is our priority.
+ClipboardxAI is a smart clipboard manager for macOS. Your privacy is our priority.
 
 ## Local-First Design
 
@@ -11,7 +11,7 @@ Clipboard x AI is a smart clipboard manager for macOS. Your privacy is our prior
 
 ## Cloud AI (Optional)
 
-Clipboard x AI can optionally use cloud AI providers (such as DeepSeek, MiniMax, GLM, Kimi, Mistral, or a local Ollama server) to power advanced actions like summarize, translate, and custom prompts.
+ClipboardxAI can optionally use cloud AI providers (such as DeepSeek, MiniMax, GLM, Kimi, Mistral, or a local Ollama server) to power advanced actions like summarize, translate, and custom prompts.
 
 - When enabled, the selected text or clipboard content is sent **directly to the provider you configure**, using **your own API key**.
 - Your API key is stored only in your Mac's Keychain and is never uploaded to us.
@@ -45,15 +45,15 @@ You can manage these permissions in **System Settings → Privacy & Security** a
 
 ## In-App Purchases / License
 
-License purchases (if any) are processed by Apple via the Mac App Store. Clipboard x AI does not receive or store your payment information. License receipts are stored locally to verify ownership.
+License purchases (if any) are processed by Apple via the Mac App Store. ClipboardxAI does not receive or store your payment information. License receipts are stored locally to verify ownership.
 
 ## Third-Party Services
 
-Clipboard x AI itself does not include any third-party analytics, advertising, or tracking services. When you enable a cloud AI provider, your requests are handled by that provider under its own privacy policy.
+ClipboardxAI itself does not include any third-party analytics, advertising, or tracking services. When you enable a cloud AI provider, your requests are handled by that provider under its own privacy policy.
 
 ## Privacy Requests
 
-Since Clipboard x AI stores all data locally on your device, we do not hold any personal data on our servers. If you have questions about privacy, please contact us.
+Since ClipboardxAI stores all data locally on your device, we do not hold any personal data on our servers. If you have questions about privacy, please contact us.
 
 ## Contact
 

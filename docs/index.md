@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "Clipboard x AI"
+  name: "ClipboardxAI"
   text: "Your clipboard, upgraded with AI"
   tagline: "A smart clipboard manager for macOS. Summarize, translate, transform, and automate anything you copy — with built-in local tools and optional cloud AI."
   image:
     src: /hero-illustration.png
-    alt: Clipboard x AI
+    alt: ClipboardxAI
   actions:
     - theme: brand
       text: Get Started

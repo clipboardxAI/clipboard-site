@@ -3,7 +3,7 @@
     <div class="nav-container">
       <div class="nav-brand">
         <VPLink href="/" class="brand-link">
-          <img src="/logo.png" alt="Clipboard x AI" class="brand-logo" />
+          <img src="/logo.png" alt="ClipboardxAI" class="brand-logo" />
           <span class="brand-text">Clipboard&nbsp;x&nbsp;AI</span>
         </VPLink>
       </div>

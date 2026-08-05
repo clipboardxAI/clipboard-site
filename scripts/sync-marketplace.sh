@@ -1,5 +1,5 @@
 #!/bin/bash
-# Sync the Clipboard x AI Action Marketplace build products into the site.
+# Sync the ClipboardxAI Action Marketplace build products into the site.
 #
 # Usage:
 #   ./scripts/sync-marketplace.sh [PATH_TO_MARKETPLACE_REPO]
