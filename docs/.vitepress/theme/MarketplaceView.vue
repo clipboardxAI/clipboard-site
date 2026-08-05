@@ -25,7 +25,7 @@
     <section class="body-section">
       <div class="body-container">
         <!-- Category filter -->
-        <div class="cats">
+        <div class="cats" v-if="!loading">
           <button class="cat" :class="{ active: active === null }" @click="active = null">All</button>
           <button
             v-for="c in categories"
@@ -35,9 +35,33 @@
             @click="active = c.id"
           >{{ locCat(c) }}</button>
         </div>
+        <!-- Category filter skeleton -->
+        <div class="cats" v-else>
+          <span class="sk sk-cat" v-for="n in 7" :key="n"></span>
+        </div>
 
         <!-- Grid -->
-        <div v-if="loading" class="mk-state">Loading catalog…</div>
+        <div v-if="loading" class="grid">
+          <article v-for="n in 8" :key="n" class="card skeleton-card">
+            <div class="top">
+              <div class="sk sk-ic"></div>
+              <div class="head sk-head">
+                <div class="sk sk-line sk-line-title"></div>
+                <div class="sk sk-line sk-line-by"></div>
+              </div>
+            </div>
+            <div class="sk sk-line sk-line-desc"></div>
+            <div class="sk sk-line sk-line-desc"></div>
+            <div class="tags">
+              <span class="sk sk-tag" v-for="t in 3" :key="t"></span>
+            </div>
+            <div class="sk sk-line sk-line-prompt"></div>
+            <div class="row">
+              <div class="sk sk-ver"></div>
+              <div class="sk sk-install"></div>
+            </div>
+          </article>
+        </div>
         <div v-else-if="error" class="mk-state mk-error">{{ error }}</div>
         <div v-else class="grid">
           <article v-for="a in filtered" :key="a.id" class="card">
@@ -290,6 +314,46 @@ onMounted(async () => {
 .mk-state { text-align: center; color: var(--vp-c-text-2); padding: 60px 0; font-size: 15px; }
 .mk-error { color: #dc2626; }
 .mk-empty { grid-column: 1 / -1; text-align: center; color: var(--vp-c-text-2); padding: 40px 0; }
+
+/* ── Skeleton screen ───────────────────────────────────────── */
+.skeleton-card { gap: 12px; }
+.sk {
+  position: relative;
+  overflow: hidden;
+  background: var(--ah-skeleton-base);
+  border-radius: 8px;
+}
+.sk::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent 0%, var(--ah-skeleton-hi) 50%, transparent 100%);
+  animation: sk-shimmer 1.4s ease-in-out infinite;
+}
+@keyframes sk-shimmer { 100% { transform: translateX(100%); } }
+.sk-ic { width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; }
+.sk-head { gap: 8px; display: flex; flex-direction: column; }
+.sk-line { width: 100%; height: 12px; }
+.sk-line-title { height: 15px; width: 70%; }
+.sk-line-by { height: 11px; width: 45%; }
+.sk-line-desc { height: 11px; margin: 0; }
+.sk-line-prompt { height: 11px; width: 60%; }
+.sk-tag { width: 52px; height: 20px; border-radius: 999px; }
+.sk-ver { width: 90px; height: 12px; }
+.sk-install { width: 78px; height: 34px; border-radius: 8px; }
+.sk-cat { width: 78px; height: 32px; border-radius: 999px; }
+/* Stagger the shimmer so cards don't pulse in perfect unison */
+.skeleton-card:nth-child(2) .sk::after { animation-delay: .1s; }
+.skeleton-card:nth-child(3) .sk::after { animation-delay: .2s; }
+.skeleton-card:nth-child(4) .sk::after { animation-delay: .3s; }
+.skeleton-card:nth-child(5) .sk::after { animation-delay: .15s; }
+.skeleton-card:nth-child(6) .sk::after { animation-delay: .25s; }
+.skeleton-card:nth-child(7) .sk::after { animation-delay: .35s; }
+.skeleton-card:nth-child(8) .sk::after { animation-delay: .05s; }
+@media (prefers-reduced-motion: reduce) {
+  .sk::after { animation: none; }
+}
 
 /* Footer */
 .footer { background: #1a1a1a; color: #ffffff; padding: 80px 0 40px; }
