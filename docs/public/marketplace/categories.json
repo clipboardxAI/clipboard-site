@@ -33,12 +33,7 @@
     {
       "id": "ecosystem",
       "name": "Ecosystem",
-      "icon": "shippingbox",
-      "locales": {
-        "zh-CN": {
-          "name": "生态合作"
-        }
-      }
+      "icon": "shippingbox"
     }
   ]
 }

@@ -85,7 +85,16 @@
             </details>
             <div class="row">
               <span class="ver">v{{ a.version }} · {{ categoryName(a.category) }}</span>
-              <button class="install" @click="install(a)">Install</button>
+              <div class="row-actions">
+                <a
+                  v-if="a.execution && a.appStoreURL"
+                  class="getapp"
+                  :href="a.appStoreURL"
+                  target="_blank"
+                  rel="noopener"
+                >Get {{ a.author }}</a>
+                <button class="install" @click="install(a)">Install</button>
+              </div>
             </div>
           </article>
           <p v-if="!filtered.length" class="mk-empty">No actions in this category yet.</p>
@@ -144,6 +153,8 @@ interface Action {
   tags: string[]
   prompt: string
   appIcon?: string
+  appStoreURL?: string
+  execution?: { kind?: string; scheme?: string; urlTemplate?: string }
   locales?: Locales
 }
 interface Category { id: string; name: string; icon: string; locales?: Locales }
@@ -312,6 +323,13 @@ onMounted(async () => {
 }
 .row { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
 .ver { font-size: 11px; color: var(--vp-c-text-3); }
+.row-actions { display: flex; align-items: center; gap: 10px; }
+.getapp {
+  font-size: 13px; font-weight: 600; color: var(--vp-c-brand-1);
+  text-decoration: none; padding: 8px 12px; border: 1px solid var(--vp-c-divider);
+  border-radius: 8px; transition: .15s; white-space: nowrap;
+}
+.getapp:hover { border-color: var(--vp-c-brand-1); background: var(--vp-c-brand-soft); }
 .install {
   background: var(--vp-c-brand-1); color: #fff; border: 0; border-radius: 8px;
   padding: 8px 16px; font-size: 13px; font-weight: 600; cursor: pointer; transition: .15s;

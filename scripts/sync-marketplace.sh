@@ -29,8 +29,14 @@ mkdir -p "$DEST"
 cp "$SRC/marketplace.json" "$DEST/marketplace.json"
 cp "$SRC/categories.json"  "$DEST/categories.json"
 cp "$SRC/index.html"      "$DEST/raw.html"
+# 伙伴 App 品牌图标（生态动作在网站端按 appIcon="icons/<scheme>.png" 渲染）。
+if [ -d "$SRC/icons" ]; then
+  mkdir -p "$DEST/icons"
+  cp "$SRC/icons/"*.png "$DEST/icons/" 2>/dev/null || true
+fi
 
 echo "✅ Synced to $DEST"
 echo "   - marketplace.json"
 echo "   - categories.json"
 echo "   - raw.html (standalone viewer fallback)"
+echo "   - icons/ (partner brand PNGs)"
