@@ -7,12 +7,9 @@
     <section class="hero-section">
       <div class="hero-container">
         <div class="hero-text">
-          <div class="hero-eyebrow">Action Marketplace</div>
-          <h1 class="hero-title">ClipboardxAI · Action Marketplace</h1>
-          <p class="hero-description">
-            Community-curated AI actions for your clipboard. Browse, then click
-            <strong>Install</strong> to open the app and add the action in one tap.
-          </p>
+          <div class="hero-eyebrow">{{ hero.eyebrow }}</div>
+          <h1 class="hero-title">{{ hero.title }}</h1>
+          <p class="hero-description">{{ hero.desc }}</p>
           <div class="hero-langbar" v-if="!loading && !error">
             <span class="hero-count">{{ actions.length }} actions · {{ categories.length }} categories</span>
           </div>
@@ -138,7 +135,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { withBase, useData } from 'vitepress'
 import SiteNav from './SiteNav.vue'
 
@@ -194,6 +191,46 @@ function categoryName(id: string): string {
   return c ? locCat(c) : ''
 }
 
+// ── Hero copy (localized so the whole page follows the selected language) ─
+const HERO: Record<string, { eyebrow: string; title: string; desc: string }> = {
+  en: {
+    eyebrow: 'Action Marketplace',
+    title: 'ClipboardxAI · Action Marketplace',
+    desc: 'Community-curated AI actions for your clipboard. Browse, then click Install to open the app and add the action in one tap.',
+  },
+  'zh-CN': {
+    eyebrow: '动作市场',
+    title: 'ClipboardxAI · 动作市场',
+    desc: '社区精选的剪贴板 AI 动作。浏览后点击「安装」，即可在 App 中一键添加。',
+  },
+  'zh-TW': {
+    eyebrow: '動作市場',
+    title: 'ClipboardxAI · 動作市場',
+    desc: '社群精選的剪貼簿 AI 動作。瀏覽後點擊「安裝」，即可在 App 中一鍵加入。',
+  },
+  ja: {
+    eyebrow: 'アクションマーケット',
+    title: 'ClipboardxAI · アクションマーケット',
+    desc: 'コミュニティが厳選したクリップボード用 AI アクション。閲覧後「インストール」をタップするとアプリが開き、ワンタップで追加できます。',
+  },
+  de: {
+    eyebrow: 'Aktionsmarkt',
+    title: 'ClipboardxAI · Aktionsmarkt',
+    desc: 'Community-kuratierte KI-Aktionen für deine Zwischenablage. Durchsuchen und auf Installieren tippen, um die Aktion in der App hinzuzufügen.',
+  },
+  es: {
+    eyebrow: 'Mercado de acciones',
+    title: 'ClipboardxAI · Mercado de acciones',
+    desc: 'Acciones de IA seleccionadas por la comunidad para tu portapapeles. Explora y pulsa Instalar para añadir la acción en la app.',
+  },
+  fr: {
+    eyebrow: 'Marché d’actions',
+    title: 'ClipboardxAI · Marché d’actions',
+    desc: 'Actions IA sélectionnées par la communauté pour votre presse-papiers. Parcourez et cliquez sur Installer pour ajouter l’action dans l’app.',
+  },
+}
+const hero = computed(() => HERO[currentLang.value] ?? HERO.en)
+
 // ── Deterministic tint (mirrors the macOS TintedIcon FNV-1a hash) ─
 const SUNNY = [0.05, 0.10, 0.15, 0.33, 0.40, 0.48, 0.55, 0.62, 0.70, 0.83, 0.92]
 function fnv1a(str: string): number {
@@ -221,10 +258,10 @@ function install(a: Action) {
 }
 
 // ── Load catalog ──────────────────────────────────────────────
-// Merge the active-language pack (published separately as
-// marketplace.<lang>.json) on top of the base catalog so only the current
-// language's overrides are attached. If the pack is missing, the English base
-// is shown.
+// The base catalog is fetched once and kept unmutated. Each language pack
+// (published separately as marketplace.<lang>.json) is merged on demand and
+// cached, so switching languages only fetches a pack the first time it's
+// needed. If a pack is missing, the English base text is shown for that field.
 function mergePack(base: any, pack: any, l: string) {
   const pa = pack.actions || {}
   for (const a of base.actions || []) {
@@ -243,28 +280,55 @@ function mergePack(base: any, pack: any, l: string) {
   }
 }
 
+// Unmutated base catalog; all visited language packs are merged into it.
+const baseCatalog = ref<any>(null)
+// Languages whose pack has already been merged into baseCatalog.
+const loadedLangs = ref<Set<string>>(new Set())
+
+// Fetch + merge the pack for language `l` into baseCatalog (idempotent).
+async function ensureLang(l: string) {
+  if (l === 'en' || loadedLangs.value.has(l) || !baseCatalog.value) return
+  try {
+    const pres = await fetch(withBase(`/marketplace/marketplace.${l}.json`))
+    if (pres.ok) {
+      const pdata = await pres.json()
+      mergePack(baseCatalog.value, pdata, l)
+    }
+  } catch (_) { /* language pack optional; fall back to English base */ }
+  // Mark as attempted so we don't refetch a missing pack on every switch.
+  const next = new Set(loadedLangs.value)
+  next.add(l)
+  loadedLangs.value = next
+}
+
+// Re-point the reactive refs at the (now merged) base catalog so the view
+// re-renders. Shallow-copy the arrays to guarantee reactivity.
+function applyMerged() {
+  if (!baseCatalog.value) return
+  categories.value = (baseCatalog.value.categories || []).slice()
+  actions.value = (baseCatalog.value.actions || []).slice()
+}
+
 onMounted(async () => {
   try {
     const res = await fetch(withBase('/marketplace/marketplace.json'))
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
-    const data = await res.json()
-    // Merge the active-language pack (if published) on top of the base catalog.
-    if (currentLang.value !== 'en') {
-      try {
-        const pres = await fetch(withBase(`/marketplace/marketplace.${currentLang.value}.json`))
-        if (pres.ok) {
-          const pdata = await pres.json()
-          mergePack(data, pdata, currentLang.value)
-        }
-      } catch (_) { /* language pack optional; fall back to English base */ }
-    }
-    categories.value = data.categories || []
-    actions.value = data.actions || []
+    baseCatalog.value = await res.json()
+    await ensureLang(currentLang.value)
+    applyMerged()
     loading.value = false
   } catch (e: any) {
     error.value = 'Failed to load the catalog. Make sure the site is deployed with the marketplace data.'
     loading.value = false
   }
+})
+
+// VitePress reuses this component instance across locale marketplace routes
+// (e.g. /zh-CN/marketplace → /ja/marketplace), so onMounted does NOT re-run on
+// a language switch. Re-merge the active pack when the language changes.
+watch(currentLang, async (l) => {
+  await ensureLang(l)
+  applyMerged()
 })
 </script>
 
