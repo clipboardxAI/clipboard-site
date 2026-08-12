@@ -11,8 +11,8 @@ export default {
   Layout() {
     const route = useRoute()
     const isHomePage = route.path === '/'
-    // Matches /marketplace, /zh-CN/marketplace, /zh-TW/marketplace, /ja/marketplace
-    const isMarketplace = /^\/(zh-CN|zh-TW|ja)?\/?(marketplace)(\/.*)?$/.test(route.path)
+    // Matches /marketplace and every locale: /zh-CN|zh-TW|ja|de|es|fr/marketplace
+    const isMarketplace = /^\/(zh-CN|zh-TW|ja|de|es|fr)?\/?(marketplace)(\/.*)?$/.test(route.path)
 
     if (isHomePage) {
       return h(AdvancedHome, { data: useData().frontmatter.value })

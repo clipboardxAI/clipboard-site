@@ -60,6 +60,48 @@ const STR = {
     support: 'サポート', documentation: 'ドキュメント', contact: 'お問い合わせ',
     company: '企業',
   },
+  de: {
+    home: 'Start', marketplace: 'Aktionsmarkt', ecosystem: 'Ökosystem', guide: 'Anleitung', faq: 'FAQ',
+    github: 'GitHub',
+    guideGroup: 'Anleitung',
+    intro: 'Einführung', install: 'Installation', usage: 'Nutzung',
+    permissions: 'Berechtigungen', troubleshooting: 'Fehlerbehebung',
+    legalGroup: 'Rechtliches',
+    privacy: 'Datenschutz', privacyChoices: 'Datenschutz-Einstellungen', terms: 'Nutzungsbedingungen',
+    footerMessage: 'Für macOS entwickelt — smarte Zwischenablagen-Aktionen, unterstützt von KI.',
+    footerCopyright: '© 2026 ClipboardxAI-Projekt. Alle Rechte vorbehalten.',
+    product: 'Produkt', about: 'Über', features: 'Funktionen',
+    support: 'Support', documentation: 'Dokumentation', contact: 'Kontakt',
+    company: 'Unternehmen',
+  },
+  es: {
+    home: 'Inicio', marketplace: 'Mercado de acciones', ecosystem: 'Ecosistema', guide: 'Guía', faq: 'Preguntas frecuentes',
+    github: 'GitHub',
+    guideGroup: 'Guía',
+    intro: 'Introducción', install: 'Instalación', usage: 'Uso',
+    permissions: 'Permisos', troubleshooting: 'Solución de problemas',
+    legalGroup: 'Legal',
+    privacy: 'Política de privacidad', privacyChoices: 'Opciones de privacidad', terms: 'Términos del servicio',
+    footerMessage: 'Creado para macOS — acciones inteligentes para el portapapeles, impulsadas por IA.',
+    footerCopyright: '© 2026 Proyecto ClipboardxAI. Todos los derechos reservados.',
+    product: 'Producto', about: 'Acerca de', features: 'Funciones',
+    support: 'Soporte', documentation: 'Documentación', contact: 'Contacto',
+    company: 'Empresa',
+  },
+  fr: {
+    home: 'Accueil', marketplace: 'Marketplace d’actions', ecosystem: 'Écosystème', guide: 'Guide', faq: 'FAQ',
+    github: 'GitHub',
+    guideGroup: 'Guide',
+    intro: 'Introduction', install: 'Installation', usage: 'Utilisation',
+    permissions: 'Autorisations', troubleshooting: 'Dépannage',
+    legalGroup: 'Légal',
+    privacy: 'Politique de confidentialité', privacyChoices: 'Choix de confidentialité', terms: 'Conditions d’utilisation',
+    footerMessage: 'Conçu pour macOS — des actions intelligentes pour le presse-papiers, propulsées par l’IA.',
+    footerCopyright: '© 2026 Projet ClipboardxAI. Tous droits réservés.',
+    product: 'Produit', about: 'À propos', features: 'Fonctionnalités',
+    support: 'Assistance', documentation: 'Documentation', contact: 'Contact',
+    company: 'Société',
+  },
 }
 
 // ── Build a themeConfig for a given locale ────────────────────────
@@ -157,6 +199,24 @@ const MD = {
     },
     codeCopyButton: { tooltipText: 'コードをコピー', copiedText: 'コピーしました' },
   },
+  de: {
+    container: {
+      tipLabel: 'Tipp', warningLabel: 'Warnung', dangerLabel: 'Gefahr', infoLabel: 'Info', detailsLabel: 'Details',
+    },
+    codeCopyButton: { tooltipText: 'Code kopieren', copiedText: 'Kopiert' },
+  },
+  es: {
+    container: {
+      tipLabel: 'Consejo', warningLabel: 'Advertencia', dangerLabel: 'Peligro', infoLabel: 'Info', detailsLabel: 'Detalles',
+    },
+    codeCopyButton: { tooltipText: 'Copiar código', copiedText: 'Copiado' },
+  },
+  fr: {
+    container: {
+      tipLabel: 'Astuce', warningLabel: 'Avertissement', dangerLabel: 'Danger', infoLabel: 'Info', detailsLabel: 'Détails',
+    },
+    codeCopyButton: { tooltipText: 'Copier le code', copiedText: 'Copié' },
+  },
 }
 
 export default defineConfig({
@@ -233,6 +293,27 @@ export default defineConfig({
       link: '/ja/',
       themeConfig: tc(STR.ja, '/ja/marketplace/'),
       markdown: MD.ja,
+    },
+    de: {
+      label: 'Deutsch',
+      lang: 'de',
+      link: '/de/',
+      themeConfig: tc(STR.de, '/de/marketplace/'),
+      markdown: MD.de,
+    },
+    es: {
+      label: 'Español',
+      lang: 'es',
+      link: '/es/',
+      themeConfig: tc(STR.es, '/es/marketplace/'),
+      markdown: MD.es,
+    },
+    fr: {
+      label: 'Français',
+      lang: 'fr',
+      link: '/fr/',
+      themeConfig: tc(STR.fr, '/fr/marketplace/'),
+      markdown: MD.fr,
     },
   },
 })
