@@ -167,7 +167,7 @@ const error = ref<string | null>(null)
 
 // ── Language is driven by VitePress i18n (no in-component switcher) ──
 const { lang } = useData()
-const SUPPORTED = ['en', 'zh-CN', 'zh-TW', 'ja']
+const SUPPORTED = ['en', 'zh-CN', 'zh-TW', 'es', 'ja', 'de', 'fr']
 const currentLang = computed(() => (SUPPORTED.includes(lang.value) ? lang.value : 'en'))
 // Icons in the catalog are stored relative to the marketplace data root.
 const marketplaceBase = withBase('/marketplace/')
@@ -221,11 +221,43 @@ function install(a: Action) {
 }
 
 // ── Load catalog ──────────────────────────────────────────────
+// Merge the active-language pack (published separately as
+// marketplace.<lang>.json) on top of the base catalog so only the current
+// language's overrides are attached. If the pack is missing, the English base
+// is shown.
+function mergePack(base: any, pack: any, l: string) {
+  const pa = pack.actions || {}
+  for (const a of base.actions || []) {
+    const key = `${a.category}/${a.id}`
+    if (pa[key]) {
+      a.locales = a.locales || {}
+      a.locales[l] = pa[key]
+    }
+  }
+  const pc = pack.categories || {}
+  for (const c of base.categories || []) {
+    if (pc[c.id]) {
+      c.locales = c.locales || {}
+      c.locales[l] = pc[c.id]
+    }
+  }
+}
+
 onMounted(async () => {
   try {
     const res = await fetch(withBase('/marketplace/marketplace.json'))
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const data = await res.json()
+    // Merge the active-language pack (if published) on top of the base catalog.
+    if (currentLang.value !== 'en') {
+      try {
+        const pres = await fetch(withBase(`/marketplace/marketplace.${currentLang.value}.json`))
+        if (pres.ok) {
+          const pdata = await pres.json()
+          mergePack(data, pdata, currentLang.value)
+        }
+      } catch (_) { /* language pack optional; fall back to English base */ }
+    }
     categories.value = data.categories || []
     actions.value = data.actions || []
     loading.value = false

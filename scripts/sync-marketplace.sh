@@ -29,6 +29,12 @@ mkdir -p "$DEST"
 cp "$SRC/marketplace.json" "$DEST/marketplace.json"
 cp "$SRC/categories.json"  "$DEST/categories.json"
 cp "$SRC/index.html"      "$DEST/raw.html"
+# Per-language packs (marketplace.<lang>.json) — one file per supported language.
+for lang in zh-CN zh-TW es ja de fr; do
+  if [ -f "$SRC/marketplace.$lang.json" ]; then
+    cp "$SRC/marketplace.$lang.json" "$DEST/marketplace.$lang.json"
+  fi
+done
 # 伙伴 App 品牌图标（生态动作在网站端按 appIcon="icons/<scheme>.png" 渲染）。
 if [ -d "$SRC/icons" ]; then
   mkdir -p "$DEST/icons"
@@ -36,7 +42,8 @@ if [ -d "$SRC/icons" ]; then
 fi
 
 echo "✅ Synced to $DEST"
-echo "   - marketplace.json"
+echo "   - marketplace.json (base, English)"
+echo "   - marketplace.<lang>.json (language packs: zh-CN zh-TW es ja de fr)"
 echo "   - categories.json"
 echo "   - raw.html (standalone viewer fallback)"
 echo "   - icons/ (partner brand PNGs)"
