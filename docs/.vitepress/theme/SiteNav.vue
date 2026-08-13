@@ -32,6 +32,7 @@ import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/V
   top: 0; left: 0; right: 0;
   background: var(--ah-navbar-bg);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--ah-navbar-border);
   z-index: 1000;
 }
@@ -47,14 +48,15 @@ import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/V
 .nav-brand .brand-link { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand-logo { height: 32px; width: auto; }
 .brand-text { font-size: 20px; font-weight: 700; color: var(--vp-c-text-1); }
+
+/* Desktop: show nav menu + language switcher + theme toggle */
 .nav-links { display: none; align-items: center; gap: 24px; }
 @media (min-width: 768px) { .nav-links { display: flex; } }
 .nav-right { display: flex; align-items: center; gap: 20px; }
 .nav-appearance { display: flex; align-items: center; }
 
-/* VPNavBarTranslations is hidden below 1280px by its own scoped style.
-   Reveal it at >=768px (matching the rest of the nav) so the language
-   switch is always reachable outside the default VitePress navbar. */
+/* VPNavBarTranslations is hidden below 768px.
+   On mobile only logo + theme toggle are visible. */
 .nav-lang :deep(.VPNavBarTranslations) {
   display: none !important;
 }
@@ -69,5 +71,23 @@ import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/V
 }
 .nav-lang :deep(.VPNavBarTranslations:hover .text) {
   color: var(--vp-c-text-1);
+}
+
+/* ── Mobile optimizations ─────────────────────────────────── */
+/* Hide brand text on very small screens — only show the logo image */
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0 12px;
+    height: 56px;
+  }
+  .brand-text {
+    display: none;
+  }
+  .brand-logo {
+    height: 28px;
+  }
+  .nav-right {
+    gap: 0;
+  }
 }
 </style>

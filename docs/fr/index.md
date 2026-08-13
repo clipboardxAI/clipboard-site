@@ -3,17 +3,17 @@ layout: home
 
 hero:
   name: "ClipboardxAI"
-  text: "Your clipboard, upgraded with AI"
-  tagline: "A smart clipboard manager for macOS. Summarize, translate, transform, and automate anything you copy — with built-in local tools and optional cloud AI."
+  text: "Votre presse-papiers, amélioré par l'IA"
+  tagline: "Un gestionnaire intelligent de presse-papiers pour macOS. Résumez, traduisez, transformez et automatisez tout ce que vous copiez — avec des outils locaux intégrés et une IA cloud en option."
   image:
     src: /hero-illustration.png
     alt: ClipboardxAI
   actions:
     - theme: brand
-      text: Get Started
+      text: Commencer
       link: /guide/introduction
     - theme: alt
-      text: Open Marketplace
+      text: Ouvrir le marketplace
       link: /fr/marketplace
 
 features:
@@ -23,58 +23,58 @@ features:
       alt: Layers
       width: "24"
       height: "24"
-    title: Clipboard History
-    details: Everything you copy is captured and searchable. Jump back to any item in your history from the menu bar.
+    title: Historique du presse-papiens
+    details: Tout ce que vous copiez est capturé et recherchable. Accédez à n'importe quel élément de votre historique depuis la barre de menus.
     link: /guide/usage
-    linkText: Learn more
+    linkText: En savoir plus
   - icon:
       light: /icons/zap.svg
       dark: /icons/zap-dark.svg
       alt: Zap
       width: "24"
       height: "24"
-    title: Instant Actions
-    details: Run a tool on the current clip with one click — or let it run automatically the moment you copy.
+    title: Actions instantanées
+    details: Exécutez un outil sur le clip actuel en un clic — ou laissez-le s'exécuter automatiquement lors de la copie.
     link: /guide/usage
-    linkText: Learn more
+    linkText: En savoir plus
   - icon:
       light: /icons/frame.svg
       dark: /icons/frame-dark.svg
       alt: Frame
       width: "24"
       height: "24"
-    title: Built-in Local Tools
-    details: Extract links, count words, collapse blank lines and more — all run offline on your Mac, no network needed.
+    title: Outils locaux intégrés
+    details: Extraire des liens, compter des mots, supprimer les lignes vides et plus — le tout hors ligne sur votre Mac, sans réseau.
     link: /guide/usage
-    linkText: Explore tools
+    linkText: Explorer les outils
   - icon:
       light: /icons/sparkles.svg
       dark: /icons/sparkles-dark.svg
       alt: Sparkles
       width: "24"
       height: "24"
-    title: AI Actions
-    details: Summarize, translate, and rewrite with cloud AI. Bring your own key for DeepSeek, MiniMax, GLM, Kimi, Mistral or Ollama.
+    title: Actions IA
+    details: Résumez, traduisez et réécrivez avec l'IA cloud. Apportez votre propre clé pour DeepSeek, MiniMax, GLM, Kimi, Mistral ou Ollama.
     link: /guide/installation
-    linkText: Set up AI
+    linkText: Configurer l'IA
   - icon:
       light: /icons/eye.svg
       dark: /icons/eye-dark.svg
       alt: Eye
       width: "24"
       height: "24"
-    title: Private by Design
-    details: Your history stays on your device. Cloud AI is opt-in and uses your own API key from the Keychain — nothing is uploaded to us.
+    title: Privé par conception
+    details: Votre historique reste sur votre appareil. L'IA cloud est optionnelle et utilise votre propre clé API du Keychain — rien n'est envoyé vers nos serveurs.
     link: /guide/privacy
-    linkText: Read privacy
+    linkText: Lire la confidentialité
   - icon:
       light: /icons/camera.svg
       dark: /icons/camera-dark.svg
       alt: Camera
       width: "24"
       height: "24"
-    title: Action Marketplace
-    details: Install community-made AI actions in one click. Browse Writing, Developer, Productivity, Translate, Social and Analytics packs.
+    title: Marché d'actions
+    details: Installez en un clic des actions IA créées par la communauté. Parcourez les packs Écriture, Développeur, Productivité, Traduction, Social et Analyse.
     link: /fr/marketplace
-    linkText: Browse marketplace
+    linkText: Parcourir le marketplace
 ---

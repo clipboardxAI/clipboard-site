@@ -10,12 +10,14 @@ export default {
   extends: DefaultTheme,
   Layout() {
     const route = useRoute()
-    const isHomePage = route.path === '/'
+    const { frontmatter } = useData()
+    // Matches root home (/) and every locale home: /zh-CN/, /ja/, etc.
+    const isHomePage = route.path === '/' || /^\/(zh-CN|zh-TW|ja|de|es|fr)\/?$/.test(route.path)
     // Matches /marketplace and every locale: /zh-CN|zh-TW|ja|de|es|fr/marketplace
     const isMarketplace = /^\/(zh-CN|zh-TW|ja|de|es|fr)?\/?(marketplace)(\/.*)?$/.test(route.path)
 
     if (isHomePage) {
-      return h(AdvancedHome, { data: useData().frontmatter.value })
+      return h(AdvancedHome, { data: frontmatter.value })
     }
 
     if (isMarketplace) {

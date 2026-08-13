@@ -1,6 +1,6 @@
 ---
-title: Action Marketplace
-description: Browse and install community-curated AI actions for ClipboardxAI.
+title: 动作市场
+description: 浏览并安装社区精选的 ClipboardxAI AI 动作。
 ---
 
 <script setup>

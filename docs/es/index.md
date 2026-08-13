@@ -3,17 +3,17 @@ layout: home
 
 hero:
   name: "ClipboardxAI"
-  text: "Your clipboard, upgraded with AI"
-  tagline: "A smart clipboard manager for macOS. Summarize, translate, transform, and automate anything you copy — with built-in local tools and optional cloud AI."
+  text: "Tu portapapeles, mejorado con IA"
+  tagline: "Un gestor inteligente de portapapeles para macOS. Resume, traduce, transforma y automatiza todo lo que copias — con herramientas locales integradas e IA en la nube opcional."
   image:
     src: /hero-illustration.png
     alt: ClipboardxAI
   actions:
     - theme: brand
-      text: Get Started
+      text: Empezar
       link: /guide/introduction
     - theme: alt
-      text: Open Marketplace
+      text: Abrir mercado
       link: /es/marketplace
 
 features:
@@ -23,58 +23,58 @@ features:
       alt: Layers
       width: "24"
       height: "24"
-    title: Clipboard History
-    details: Everything you copy is captured and searchable. Jump back to any item in your history from the menu bar.
+    title: Historial del portapapeles
+    details: Todo lo que copias se captura y es buscable. Salta a cualquier elemento de tu historial desde la barra de menú.
     link: /guide/usage
-    linkText: Learn more
+    linkText: Más información
   - icon:
       light: /icons/zap.svg
       dark: /icons/zap-dark.svg
       alt: Zap
       width: "24"
       height: "24"
-    title: Instant Actions
-    details: Run a tool on the current clip with one click — or let it run automatically the moment you copy.
+    title: Acciones instantáneas
+    details: Ejecuta una herramienta en el clip actual con un clic — o déjalo ejecutarse automáticamente al copiar.
     link: /guide/usage
-    linkText: Learn more
+    linkText: Más información
   - icon:
       light: /icons/frame.svg
       dark: /icons/frame-dark.svg
       alt: Frame
       width: "24"
       height: "24"
-    title: Built-in Local Tools
-    details: Extract links, count words, collapse blank lines and more — all run offline on your Mac, no network needed.
+    title: Herramientas locales integradas
+    details: Extraer enlaces, contar palabras, colapsar líneas en blanco y más — todo sin conexión en tu Mac, sin red.
     link: /guide/usage
-    linkText: Explore tools
+    linkText: Explorar herramientas
   - icon:
       light: /icons/sparkles.svg
       dark: /icons/sparkles-dark.svg
       alt: Sparkles
       width: "24"
       height: "24"
-    title: AI Actions
-    details: Summarize, translate, and rewrite with cloud AI. Bring your own key for DeepSeek, MiniMax, GLM, Kimi, Mistral or Ollama.
+    title: Acciones de IA
+    details: Resume, traduce y reescribe con IA en la nube. Trae tu propia clave para DeepSeek, MiniMax, GLM, Kimi, Mistral u Ollama.
     link: /guide/installation
-    linkText: Set up AI
+    linkText: Configurar IA
   - icon:
       light: /icons/eye.svg
       dark: /icons/eye-dark.svg
       alt: Eye
       width: "24"
       height: "24"
-    title: Private by Design
-    details: Your history stays on your device. Cloud AI is opt-in and uses your own API key from the Keychain — nothing is uploaded to us.
+    title: Privado por diseño
+    details: Tu historial permanece en tu dispositivo. La IA en la nube es opcional y usa tu propia clave API del Keychain — nada se sube a nosotros.
     link: /guide/privacy
-    linkText: Read privacy
+    linkText: Leer privacidad
   - icon:
       light: /icons/camera.svg
       dark: /icons/camera-dark.svg
       alt: Camera
       width: "24"
       height: "24"
-    title: Action Marketplace
-    details: Install community-made AI actions in one click. Browse Writing, Developer, Productivity, Translate, Social and Analytics packs.
+    title: Mercado de acciones
+    details: Instala acciones de IA creadas por la comunidad con un clic. Explora paquetes de Escritura, Desarrollador, Productividad, Traducir, Social y Análisis.
     link: /es/marketplace
-    linkText: Browse marketplace
+    linkText: Explorar mercado
 ---

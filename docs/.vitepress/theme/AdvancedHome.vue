@@ -17,23 +17,14 @@
           </div>
           <div class="hero-visual">
             <div class="floating-elements">
-              <div class="floating-card card-1">
+              <div v-for="(card, i) in content.floatingCards" :key="i"
+                   class="floating-card" :class="`card-${i + 1}`">
                 <div class="card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <component :is="floatingIcons[i]" />
+                  </svg>
                 </div>
-                <div class="card-text">Smart Summarize</div>
-              </div>
-              <div class="floating-card card-2">
-                <div class="card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-                </div>
-                <div class="card-text">Instant Translate</div>
-              </div>
-              <div class="floating-card card-3">
-                <div class="card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                </div>
-                <div class="card-text">Local &amp; Private</div>
+                <div class="card-text">{{ card }}</div>
               </div>
             </div>
             <div class="hero-image">
@@ -46,17 +37,17 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features-section">
+    <section class="features-section" id="features">
       <div class="features-container">
         <div class="section-header">
-          <h2 class="section-title">Key Features</h2>
-          <p class="section-subtitle">Everything you need to make your clipboard work harder on macOS</p>
+          <h2 class="section-title">{{ content.sections.featuresTitle }}</h2>
+          <p class="section-subtitle">{{ content.sections.featuresSubtitle }}</p>
         </div>
         <div class="features-grid">
           <div v-for="(feature, index) in data.features" :key="feature.title"
                class="feature-card"
-               :style="{ animationDelay: `${(index as number) * 0.1}s` }">
-            <div class="feature-icon" :style="{ backgroundColor: featureColors[(index as number) % featureColors.length] }">
+               :style="{ animationDelay: `${index * 0.1}s` }">
+            <div class="feature-icon" :style="{ backgroundColor: featureColors[index % featureColors.length] }">
               <img :src="withBase(feature.icon.light)" :alt="feature.icon.alt"
                    :width="feature.icon.width" :height="feature.icon.height" />
             </div>
@@ -72,8 +63,8 @@
     <section class="formats-section">
       <div class="formats-container">
         <div class="section-header">
-          <h2 class="section-title">Action Categories</h2>
-          <p class="section-subtitle">Browse ready-made AI actions in the marketplace</p>
+          <h2 class="section-title">{{ content.sections.categoriesTitle }}</h2>
+          <p class="section-subtitle">{{ content.sections.categoriesSubtitle }}</p>
         </div>
         <div class="formats-grid">
           <a class="format-card" v-for="cat in categories" :key="cat.name" :href="cat.link">
@@ -87,7 +78,7 @@
           </a>
         </div>
         <div class="formats-cta">
-          <a href="/marketplace/" class="btn btn-primary">Open the Marketplace</a>
+          <a :href="localeLink('/marketplace/', lang)" class="btn btn-primary">{{ content.openMarketplace }}</a>
         </div>
       </div>
     </section>
@@ -96,11 +87,11 @@
     <section class="how-section">
       <div class="how-container">
         <div class="section-header">
-          <h2 class="section-title">How It Works</h2>
-          <p class="section-subtitle">Simple and intuitive, just like macOS should be</p>
+          <h2 class="section-title">{{ content.sections.howTitle }}</h2>
+          <p class="section-subtitle">{{ content.sections.howSubtitle }}</p>
         </div>
         <div class="steps-grid">
-          <div class="step-card" v-for="(step, index) in steps" :key="index">
+          <div class="step-card" v-for="(step, index) in content.steps" :key="index">
             <div class="step-number">{{ step.num }}</div>
             <h3 class="step-title">{{ step.title }}</h3>
             <p class="step-desc">{{ step.desc }}</p>
@@ -113,11 +104,11 @@
     <section class="faq-section">
       <div class="faq-container">
         <div class="section-header">
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">Quick answers for macOS users</p>
+          <h2 class="section-title">{{ content.sections.faqTitle }}</h2>
+          <p class="section-subtitle">{{ content.sections.faqSubtitle }}</p>
         </div>
         <div class="faq-grid">
-          <div v-for="faq in faqs" :key="faq.question" class="faq-item">
+          <div v-for="faq in content.faqs" :key="faq.question" class="faq-item">
             <details class="faq-details">
               <summary class="faq-question">{{ faq.question }}</summary>
               <div class="faq-answer">{{ faq.answer }}</div>
@@ -131,59 +122,28 @@
     <section class="cta-section">
       <div class="cta-container">
         <div class="cta-content">
-          <h2 class="cta-title">Ready to Make Your Clipboard Smarter?</h2>
-          <p class="cta-description">Download ClipboardxAI and turn every copy into an action — private on your Mac, powered by AI when you want it.</p>
+          <h2 class="cta-title">{{ content.cta.title }}</h2>
+          <p class="cta-description">{{ content.cta.description }}</p>
           <div class="cta-actions">
-            <a href="/guide/installation" class="btn btn-primary">Get Started</a>
-            <a href="/guide/usage" class="btn btn-secondary">How to Use</a>
+            <a :href="localeLink(content.cta.primaryLink, lang)" class="btn btn-primary">{{ content.cta.primary }}</a>
+            <a :href="localeLink(content.cta.secondaryLink, lang)" class="btn btn-secondary">{{ content.cta.secondary }}</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <div class="footer-logo">ClipboardxAI</div>
-            <p class="footer-tagline">Smart clipboard actions for macOS, powered by AI.</p>
-          </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h4 class="footer-heading">Product</h4>
-              <a href="/guide/introduction" class="footer-link">About</a>
-              <a href="/#features" class="footer-link">Features</a>
-              <a href="/marketplace/" class="footer-link">Marketplace</a>
-              <a href="/guide/installation" class="footer-link">Download</a>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Support</h4>
-              <a href="/guide/introduction" class="footer-link">Guide</a>
-              <a href="/guide/faq" class="footer-link">FAQ</a>
-              <a href="/guide/troubleshooting" class="footer-link">Troubleshooting</a>
-              <a href="mailto:clipboardxai@w3cub.com" class="footer-link">Contact</a>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Company</h4>
-              <a href="/guide/privacy" class="footer-link">Privacy</a>
-              <a href="/guide/terms" class="footer-link">Terms</a>
-              <a href="https://github.com/clipboardxAI" class="footer-link">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 ClipboardxAI Project. Built for macOS.</p>
-        </div>
-      </div>
-    </footer>
+    <SiteFooter />
   </div>
 </template>
 
 <script setup lang="ts">
-import { withBase } from 'vitepress'
+import { computed, h } from 'vue'
+import { withBase, useData } from 'vitepress'
 import HomeActions from './HomeActions.vue'
 import SiteNav from './SiteNav.vue'
+import SiteFooter from './SiteFooter.vue'
+import { homeContent, localeLink, SUPPORTED_LANGS, type Lang } from './i18n'
 
 interface Props {
   data: any
@@ -191,52 +151,40 @@ interface Props {
 
 defineProps<Props>()
 
+const { lang } = useData()
+const currentLang = computed<Lang>(() =>
+  SUPPORTED_LANGS.includes(lang.value as Lang) ? (lang.value as Lang) : 'en'
+)
+const content = computed(() => homeContent[currentLang.value])
+
+// SVG icon render functions for floating cards
+const floatingIcons = [
+  () => h('path', { d: 'M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z' }),
+  () => h('g', {}, [
+    h('polyline', { points: '23 6 13.5 15.5 8.5 10.5 1 18' }),
+    h('polyline', { points: '17 6 23 6 23 12' }),
+  ]),
+  () => h('g', {}, [
+    h('rect', { x: '3', y: '11', width: '18', height: '11', rx: '2', ry: '2' }),
+    h('path', { d: 'M7 11V7a5 5 0 0 1 10 0v4' }),
+  ]),
+]
+
 const featureColors = [
   '#2563eb', // blue
   '#7c3aed', // violet
   '#059669', // emerald
   '#d97706', // amber
   '#dc2626', // red
-  '#0891b2'  // cyan
+  '#0891b2', // cyan
 ]
 
-const categories = [
-  { name: 'Writing', badge: 'WR', desc: 'Polish, expand and rewrite copy', color: '#ef6400', link: '/marketplace' },
-  { name: 'Developer', badge: 'DV', desc: 'Explain code and generate snippets', color: '#2563eb', link: '/marketplace' },
-  { name: 'Productivity', badge: 'PD', desc: 'Summarize and structure notes', color: '#059669', link: '/marketplace' },
-  { name: 'Translate', badge: 'TR', desc: 'Translate between languages', color: '#7c3aed', link: '/marketplace' },
-  { name: 'Social', badge: 'SO', desc: 'Draft replies and posts', color: '#d97706', link: '/marketplace' },
-  { name: 'Analytics', badge: 'AN', desc: 'Extract insight from text', color: '#0891b2', link: '/marketplace' },
-]
-
-const steps = [
-  { num: '01', title: 'Install & Launch', desc: 'Download from the Mac App Store or GitHub, then launch from the menu bar. Grant the permissions it needs.' },
-  { num: '02', title: 'Copy Anything', desc: 'Your clipboard history is captured automatically. Open the menu bar to browse and search past clips.' },
-  { num: '03', title: 'Run an Action', desc: 'Pick a built-in tool or AI action — or flip on auto-run to transform every copy the instant you make it.' },
-]
-
-const faqs = [
-  {
-    question: "Is ClipboardxAI free?",
-    answer: "The app is free to download. Built-in local tools work with no account. Cloud AI actions use your own provider API key, so you only pay the AI provider directly."
-  },
-  {
-    question: "Which macOS versions are supported?",
-    answer: "ClipboardxAI requires macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel support."
-  },
-  {
-    question: "Does it work offline?",
-    answer: "Yes. Clipboard history and the built-in local tools — extract links, count stats, collapse blank lines, and more — run entirely on your Mac with no internet connection."
-  },
-  {
-    question: "Is my clipboard data private?",
-    answer: "Your clipboard history stays on your device. Cloud AI is opt-in and sends content only to the provider you configure, using a key stored in your Keychain. We never receive or store your clips."
-  },
-  {
-    question: "Which AI providers are supported?",
-    answer: "Any OpenAI-compatible provider: DeepSeek, MiniMax, Zhipu GLM, Kimi (Moonshot), Mistral, and local Ollama — plus OpenAI, Anthropic and Gemini."
-  }
-]
+const categories = computed(() =>
+  content.value.categories.map(c => ({
+    ...c,
+    link: localeLink('/marketplace/', lang.value),
+  }))
+)
 </script>
 
 <style scoped>
@@ -343,28 +291,6 @@ const faqs = [
   transform: translateY(-1px);
 }
 
-/* HomeActions 组件样式 */
-.home-badge-row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 36px;
-  justify-content: left;
-}
-
-.store-badge-link {
-  display: inline-flex;
-  border-radius: 10px;
-  transition: opacity 0.18s ease, transform 0.18s ease;
-  outline-offset: 3px;
-}
-
-.store-badge-link:hover {
-  opacity: 0.82;
-  transform: translateY(-1px);
-}
-
 .hero-visual {
   position: relative;
   display: flex;
@@ -392,23 +318,9 @@ const faqs = [
   animation: float 6s ease-in-out infinite;
 }
 
-.card-1 {
-  top: 20%;
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.card-2 {
-  top: 60%;
-  right: 15%;
-  animation-delay: 2s;
-}
-
-.card-3 {
-  bottom: 20%;
-  left: 20%;
-  animation-delay: 4s;
-}
+.card-1 { top: 20%; left: 10%; animation-delay: 0s; }
+.card-2 { top: 60%; right: 15%; animation-delay: 2s; }
+.card-3 { bottom: 20%; left: 20%; animation-delay: 4s; }
 
 .card-icon {
   font-size: 18px;
@@ -430,10 +342,7 @@ const faqs = [
 
 .hero-bg-pattern {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-image:
     radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
@@ -467,9 +376,8 @@ const faqs = [
 .section-subtitle {
   font-size: 1.25rem;
   color: var(--vp-c-text-2);
-  margin: 0;
-  max-width: 600px;
   margin: 0 auto;
+  max-width: 600px;
 }
 
 .features-grid {
@@ -597,9 +505,7 @@ const faqs = [
   color: white;
 }
 
-.format-info {
-  flex: 1;
-}
+.format-info { flex: 1; }
 
 .format-name {
   font-size: 1.2rem;
@@ -615,9 +521,7 @@ const faqs = [
   line-height: 1.5;
 }
 
-.formats-cta {
-  text-align: center;
-}
+.formats-cta { text-align: center; }
 
 /* How It Works Section */
 .how-section {
@@ -669,16 +573,9 @@ const faqs = [
 .step-desc {
   font-size: 1rem;
   color: var(--vp-c-text-2);
-  margin: 0;
+  margin: 0 auto;
   line-height: 1.6;
   max-width: 280px;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .steps-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* FAQ Section */
@@ -710,9 +607,7 @@ const faqs = [
   box-shadow: var(--ah-card-shadow);
 }
 
-.faq-details {
-  width: 100%;
-}
+.faq-details { width: 100%; }
 
 .faq-question {
   padding: 24px 30px;
@@ -731,9 +626,7 @@ const faqs = [
   justify-content: space-between;
 }
 
-.faq-question:hover {
-  background: var(--ah-faq-hover-bg);
-}
+.faq-question:hover { background: var(--ah-faq-hover-bg); }
 
 .faq-question::after {
   content: '+';
@@ -742,9 +635,7 @@ const faqs = [
   transition: transform 0.2s;
 }
 
-.faq-details[open] .faq-question::after {
-  transform: rotate(45deg);
-}
+.faq-details[open] .faq-question::after { transform: rotate(45deg); }
 
 .faq-answer {
   padding: 0 30px 24px;
@@ -787,76 +678,6 @@ const faqs = [
   flex-wrap: wrap;
 }
 
-/* Footer */
-.footer {
-  background: #1a1a1a;
-  color: #ffffff;
-  padding: 80px 0 40px;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 80px;
-  margin-bottom: 40px;
-}
-
-.footer-brand .footer-logo {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #ffffff;
-}
-
-.footer-tagline {
-  color: #cccccc;
-  margin: 0;
-  font-size: 1rem;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
-}
-
-.footer-heading {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 0 20px;
-  color: #ffffff;
-}
-
-.footer-link {
-  display: block;
-  color: #cccccc;
-  text-decoration: none;
-  margin-bottom: 12px;
-  transition: color 0.2s;
-}
-
-.footer-link:hover {
-  color: #ffffff;
-}
-
-.footer-bottom {
-  border-top: 1px solid #333333;
-  padding-top: 40px;
-  text-align: center;
-}
-
-.footer-copyright {
-  margin: 0;
-  color: #999999;
-  font-size: 0.9rem;
-}
-
 /* Animations */
 @keyframes float {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
@@ -865,13 +686,10 @@ const faqs = [
 }
 
 @keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
+/* Responsive — tablet */
 @media (max-width: 1024px) {
   .hero-content {
     grid-template-columns: 1fr;
@@ -879,56 +697,36 @@ const faqs = [
     text-align: center;
   }
 
-  .hero-title {
-    font-size: 3rem;
-  }
-
-  .hero-subtitle {
-    font-size: 2rem;
-  }
-
-  .features-grid,
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
+  .hero-title { font-size: 3rem; }
+  .hero-subtitle { font-size: 2rem; }
+  .features-grid { grid-template-columns: 1fr; }
 }
 
+/* Responsive — mobile */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
+  .hero-section { padding: 90px 0 60px; }
+  .hero-title { font-size: 2.2rem; }
+  .hero-subtitle { font-size: 1.6rem; }
+  .hero-description { font-size: 1.05rem; }
 
-  .hero-section {
-    padding: 100px 0 60px;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.75rem;
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
+  .section-title { font-size: 2rem; }
+  .section-subtitle { font-size: 1.05rem; }
+  .section-header { margin-bottom: 48px; }
 
   .features-section,
-  .testimonials-section,
+  .formats-section,
+  .how-section,
   .faq-section,
   .cta-section {
-    padding: 80px 0;
+    padding: 64px 0;
   }
 
-  .cta-title {
-    font-size: 2.5rem;
-  }
+  .feature-card { padding: 32px 20px; }
+
+  .steps-grid { grid-template-columns: 1fr; }
+
+  .cta-title { font-size: 2rem; }
+  .cta-description { font-size: 1.05rem; }
 
   .hero-actions,
   .cta-actions {
@@ -941,5 +739,17 @@ const faqs = [
     max-width: 300px;
     justify-content: center;
   }
+
+  .floating-elements { display: none; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.8rem; }
+  .hero-subtitle { font-size: 1.3rem; }
+  .section-title { font-size: 1.6rem; }
+  .cta-title { font-size: 1.6rem; }
+  .format-card { padding: 24px 16px; }
+  .faq-question { padding: 18px 20px; font-size: 1rem; }
+  .faq-answer { padding: 0 20px 20px; }
 }
 </style>

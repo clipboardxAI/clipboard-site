@@ -7,11 +7,11 @@
     <section class="hero-section">
       <div class="hero-container">
         <div class="hero-text">
-          <div class="hero-eyebrow">{{ hero.eyebrow }}</div>
-          <h1 class="hero-title">{{ hero.title }}</h1>
-          <p class="hero-description">{{ hero.desc }}</p>
+          <div class="hero-eyebrow">{{ content.hero.eyebrow }}</div>
+          <h1 class="hero-title">{{ content.hero.title }}</h1>
+          <p class="hero-description">{{ content.hero.desc }}</p>
           <div class="hero-langbar" v-if="!loading && !error">
-            <span class="hero-count">{{ actions.length }} actions · {{ categories.length }} categories</span>
+            <span class="hero-count">{{ content.countLabel(actions.length, categories.length) }}</span>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
       <div class="body-container">
         <!-- Category filter -->
         <div class="cats" v-if="!loading">
-          <button class="cat" :class="{ active: active === null }" @click="active = null">All</button>
+          <button class="cat" :class="{ active: active === null }" @click="active = null">{{ content.all }}</button>
           <button
             v-for="c in categories"
             :key="c.id"
@@ -77,7 +77,7 @@
               <span v-for="t in (Array.isArray(loc(a,'tags')) ? loc(a,'tags') : [])" :key="t" class="tag">#{{ t }}</span>
             </div>
             <details class="prompt">
-              <summary>Prompt</summary>
+              <summary>{{ content.prompt }}</summary>
               <pre>{{ loc(a, 'prompt') }}</pre>
             </details>
             <div class="row">
@@ -89,48 +89,18 @@
                   :href="a.appStoreURL"
                   target="_blank"
                   rel="noopener"
-                >Get {{ a.author }}</a>
-                <button class="install" @click="install(a)">Install</button>
+                >{{ content.getBy(a.author) }}</a>
+                <button class="install" @click="install(a)">{{ content.install }}</button>
               </div>
             </div>
           </article>
-          <p v-if="!filtered.length" class="mk-empty">No actions in this category yet.</p>
+          <p v-if="!filtered.length" class="mk-empty">{{ content.empty }}</p>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <div class="footer-logo">ClipboardxAI</div>
-            <p class="footer-tagline">Community-curated AI actions for your clipboard.</p>
-          </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h4 class="footer-heading">Product</h4>
-              <a href="/guide/introduction" class="footer-link">Guide</a>
-              <a href="/guide/installation" class="footer-link">Installation</a>
-              <a href="/guide/usage" class="footer-link">Usage</a>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Marketplace</h4>
-              <a href="/marketplace" class="footer-link">Browse Actions</a>
-              <a href="https://github.com/clipboardxAI/marketplace" class="footer-link" target="_blank" rel="noopener">Submit an Action</a>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Community</h4>
-              <a href="https://github.com/w3cub/clipboardxai" class="footer-link" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://github.com/clipboardxAI/marketplace" class="footer-link" target="_blank" rel="noopener">Marketplace Repo</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 ClipboardxAI Project. Built for macOS.</p>
-        </div>
-      </div>
-    </footer>
+    <SiteFooter />
   </div>
 </template>
 
@@ -138,6 +108,8 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { withBase, useData } from 'vitepress'
 import SiteNav from './SiteNav.vue'
+import SiteFooter from './SiteFooter.vue'
+import { marketplaceContent, SUPPORTED_LANGS, type Lang } from './i18n'
 
 interface Locales { [lang: string]: Record<string, any> }
 interface Action {
@@ -162,11 +134,13 @@ const active = ref<string | null>(null)
 const loading = ref(true)
 const error = ref<string | null>(null)
 
-// ── Language is driven by VitePress i18n (no in-component switcher) ──
+// ── Language is driven by VitePress i18n ──
 const { lang } = useData()
-const SUPPORTED = ['en', 'zh-CN', 'zh-TW', 'es', 'ja', 'de', 'fr']
-const currentLang = computed(() => (SUPPORTED.includes(lang.value) ? lang.value : 'en'))
-// Icons in the catalog are stored relative to the marketplace data root.
+const currentLang = computed<Lang>(() =>
+  SUPPORTED_LANGS.includes(lang.value as Lang) ? (lang.value as Lang) : 'en'
+)
+const content = computed(() => marketplaceContent[currentLang.value])
+
 const marketplaceBase = withBase('/marketplace/')
 
 const filtered = computed(() =>
@@ -191,46 +165,6 @@ function categoryName(id: string): string {
   return c ? locCat(c) : ''
 }
 
-// ── Hero copy (localized so the whole page follows the selected language) ─
-const HERO: Record<string, { eyebrow: string; title: string; desc: string }> = {
-  en: {
-    eyebrow: 'Action Marketplace',
-    title: 'ClipboardxAI · Action Marketplace',
-    desc: 'Community-curated AI actions for your clipboard. Browse, then click Install to open the app and add the action in one tap.',
-  },
-  'zh-CN': {
-    eyebrow: '动作市场',
-    title: 'ClipboardxAI · 动作市场',
-    desc: '社区精选的剪贴板 AI 动作。浏览后点击「安装」，即可在 App 中一键添加。',
-  },
-  'zh-TW': {
-    eyebrow: '動作市場',
-    title: 'ClipboardxAI · 動作市場',
-    desc: '社群精選的剪貼簿 AI 動作。瀏覽後點擊「安裝」，即可在 App 中一鍵加入。',
-  },
-  ja: {
-    eyebrow: 'アクションマーケット',
-    title: 'ClipboardxAI · アクションマーケット',
-    desc: 'コミュニティが厳選したクリップボード用 AI アクション。閲覧後「インストール」をタップするとアプリが開き、ワンタップで追加できます。',
-  },
-  de: {
-    eyebrow: 'Aktionsmarkt',
-    title: 'ClipboardxAI · Aktionsmarkt',
-    desc: 'Community-kuratierte KI-Aktionen für deine Zwischenablage. Durchsuchen und auf Installieren tippen, um die Aktion in der App hinzuzufügen.',
-  },
-  es: {
-    eyebrow: 'Mercado de acciones',
-    title: 'ClipboardxAI · Mercado de acciones',
-    desc: 'Acciones de IA seleccionadas por la comunidad para tu portapapeles. Explora y pulsa Instalar para añadir la acción en la app.',
-  },
-  fr: {
-    eyebrow: 'Marché d’actions',
-    title: 'ClipboardxAI · Marché d’actions',
-    desc: 'Actions IA sélectionnées par la communauté pour votre presse-papiers. Parcourez et cliquez sur Installer pour ajouter l’action dans l’app.',
-  },
-}
-const hero = computed(() => HERO[currentLang.value] ?? HERO.en)
-
 // ── Deterministic tint (mirrors the macOS TintedIcon FNV-1a hash) ─
 const SUNNY = [0.05, 0.10, 0.15, 0.33, 0.40, 0.48, 0.55, 0.62, 0.70, 0.83, 0.92]
 function fnv1a(str: string): number {
@@ -245,8 +179,6 @@ function tint(key: string): string {
   const idx = fnv1a(key) % SUNNY.length
   return `hsl(${Math.round(SUNNY[idx] * 360)} 80% 95%)`
 }
-// SF Symbol names (e.g. "text.append") don't render on the web — show a tinted
-// initial instead, keeping visual parity with the app's tinted icon squares.
 function glyph(a: Action): string {
   const name = loc(a, 'name') as string
   return (name || '?').trim().charAt(0).toUpperCase() || '?'
@@ -258,10 +190,9 @@ function install(a: Action) {
 }
 
 // ── Load catalog ──────────────────────────────────────────────
-// The base catalog is fetched once and kept unmutated. Each language pack
-// (published separately as marketplace.<lang>.json) is merged on demand and
-// cached, so switching languages only fetches a pack the first time it's
-// needed. If a pack is missing, the English base text is shown for that field.
+const baseCatalog = ref<any>(null)
+const loadedLangs = ref<Set<string>>(new Set())
+
 function mergePack(base: any, pack: any, l: string) {
   const pa = pack.actions || {}
   for (const a of base.actions || []) {
@@ -280,12 +211,6 @@ function mergePack(base: any, pack: any, l: string) {
   }
 }
 
-// Unmutated base catalog; all visited language packs are merged into it.
-const baseCatalog = ref<any>(null)
-// Languages whose pack has already been merged into baseCatalog.
-const loadedLangs = ref<Set<string>>(new Set())
-
-// Fetch + merge the pack for language `l` into baseCatalog (idempotent).
 async function ensureLang(l: string) {
   if (l === 'en' || loadedLangs.value.has(l) || !baseCatalog.value) return
   try {
@@ -295,14 +220,11 @@ async function ensureLang(l: string) {
       mergePack(baseCatalog.value, pdata, l)
     }
   } catch (_) { /* language pack optional; fall back to English base */ }
-  // Mark as attempted so we don't refetch a missing pack on every switch.
   const next = new Set(loadedLangs.value)
   next.add(l)
   loadedLangs.value = next
 }
 
-// Re-point the reactive refs at the (now merged) base catalog so the view
-// re-renders. Shallow-copy the arrays to guarantee reactivity.
 function applyMerged() {
   if (!baseCatalog.value) return
   categories.value = (baseCatalog.value.categories || []).slice()
@@ -318,14 +240,11 @@ onMounted(async () => {
     applyMerged()
     loading.value = false
   } catch (e: any) {
-    error.value = 'Failed to load the catalog. Make sure the site is deployed with the marketplace data.'
+    error.value = content.value.error
     loading.value = false
   }
 })
 
-// VitePress reuses this component instance across locale marketplace routes
-// (e.g. /zh-CN/marketplace → /ja/marketplace), so onMounted does NOT re-run on
-// a language switch. Re-merge the active pack when the language changes.
 watch(currentLang, async (l) => {
   await ensureLang(l)
   applyMerged()
@@ -366,10 +285,6 @@ watch(currentLang, async (l) => {
 }
 .hero-description { font-size: 1.15rem; color: var(--vp-c-text-2); max-width: 640px; margin: 0 0 24px; }
 .hero-langbar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 14px; color: var(--vp-c-text-2); }
-.mk-select {
-  background: var(--ah-card-bg); color: var(--vp-c-text-1);
-  border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 6px 10px; font-size: 13px;
-}
 .hero-count { font-size: 13px; color: var(--vp-c-text-3); }
 .hero-bg-pattern {
   position: absolute; inset: 0; pointer-events: none;
@@ -464,7 +379,6 @@ watch(currentLang, async (l) => {
 .sk-ver { width: 90px; height: 12px; }
 .sk-install { width: 78px; height: 34px; border-radius: 8px; }
 .sk-cat { width: 78px; height: 32px; border-radius: 999px; }
-/* Stagger the shimmer so cards don't pulse in perfect unison */
 .skeleton-card:nth-child(2) .sk::after { animation-delay: .1s; }
 .skeleton-card:nth-child(3) .sk::after { animation-delay: .2s; }
 .skeleton-card:nth-child(4) .sk::after { animation-delay: .3s; }
@@ -476,21 +390,20 @@ watch(currentLang, async (l) => {
   .sk::after { animation: none; }
 }
 
-/* Footer */
-.footer { background: #1a1a1a; color: #ffffff; padding: 80px 0 40px; }
-.footer-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.footer-content { display: grid; grid-template-columns: 1fr 3fr; gap: 80px; margin-bottom: 40px; }
-.footer-brand .footer-logo { font-size: 24px; font-weight: 700; margin-bottom: 12px; color: #ffffff; }
-.footer-tagline { color: #cccccc; margin: 0; font-size: 1rem; }
-.footer-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
-.footer-heading { font-size: 1.1rem; font-weight: 600; margin: 0 0 20px; color: #ffffff; }
-.footer-link { display: block; color: #cccccc; text-decoration: none; margin-bottom: 12px; transition: color .2s; }
-.footer-link:hover { color: #ffffff; }
-.footer-bottom { border-top: 1px solid #333333; padding-top: 40px; text-align: center; }
-.footer-copyright { margin: 0; color: #999999; font-size: 0.9rem; }
+/* Footer styles live in SiteFooter.vue */
 
+/* Responsive */
 @media (max-width: 768px) {
+  .hero-section { padding: 100px 0 40px; }
   .hero-title { font-size: 2.2rem; }
-  .footer-content { grid-template-columns: 1fr; gap: 40px; }
+  .hero-description { font-size: 1rem; }
+  .body-section { padding: 24px 0 80px; }
+  .grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.8rem; }
+  .cats { justify-content: flex-start; }
+  .card { padding: 16px; }
 }
 </style>

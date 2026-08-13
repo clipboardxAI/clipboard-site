@@ -1,6 +1,6 @@
 ---
-title: Action Marketplace
-description: Browse and install community-curated AI actions for ClipboardxAI.
+title: アクションマーケット
+description: コミュニティが厳選した ClipboardxAI の AI アクションを閲覧・インストール。
 ---
 
 <script setup>
