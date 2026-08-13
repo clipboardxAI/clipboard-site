@@ -10,7 +10,7 @@ A: macOS 14 Sonoma oder neuer, optimiert für Apple Silicon (M-Serie) mit Intel-
 
 **F: Wie installiere ich es?**
 
-A: Laden Sie es aus dem [Mac App Store](/de/) (empfohlen) herunter oder holen Sie sich den neuesten Build von [GitHub Releases](https://github.com/clipboardxAI). Siehe die [Installationsanleitung](/de/guide/installation).
+A: Laden Sie es aus dem [Mac App Store](/de/) (empfohlen) herunter oder holen Sie sich den neuesten Build von ~~[GitHub Releases](https://github.com/clipboardxAI)~~. Siehe die [Installationsanleitung](/de/guide/installation).
 
 **F: Ist ClipboardxAI kostenlos?**
 
@@ -34,7 +34,7 @@ A: Durchsuchen Sie den [Marketplace](/de/marketplace/) und klicken Sie bei einer
 
 **F: Wie aktualisiere ich die App?**
 
-A: Die Mac-App-Store-Version wird automatisch aktualisiert. Für GitHub-Builds laden Sie das neueste Release herunter und ersetzen die App in `Applications`.
+A: Die Mac-App-Store-Version wird automatisch aktualisiert. ~~Für GitHub-Builds laden Sie das neueste Release herunter und ersetzen die App in `Applications`.~~
 
 **F: Wie melde ich Fehler oder schlage Funktionen vor?**
 

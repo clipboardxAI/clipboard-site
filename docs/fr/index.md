@@ -127,7 +127,7 @@ categories:
 steps:
   - num: "01"
     title: Installer et lancer
-    desc: Téléchargez depuis le Mac App Store ou GitHub, puis lancez depuis la barre de menus. Accordez les autorisations nécessaires.
+    desc: Téléchargez depuis le Mac App Store, puis lancez depuis la barre de menus. Accordez les autorisations nécessaires.
   - num: "02"
     title: Copier n'importe quoi
     desc: Votre historique de presse-papiers est capturé automatiquement. Ouvrez la barre de menus pour parcourir vos clips.

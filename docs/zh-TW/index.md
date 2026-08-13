@@ -127,7 +127,7 @@ categories:
 steps:
   - num: "01"
     title: 安裝並啟動
-    desc: 從 Mac App Store 或 GitHub 下載，然後從選單列啟動。授予所需權限即可。
+    desc: 從 Mac App Store 下載，然後從選單列啟動。授予所需權限即可。
   - num: "02"
     title: 複製任意內容
     desc: 剪貼板歷史會自動記錄。開啟選單列即可瀏覽和搜尋歷史記錄。

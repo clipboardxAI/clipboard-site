@@ -10,7 +10,7 @@ A: macOS 14 Sonoma 或以上版本，針對 Apple Silicon（M 系列）最佳化
 
 **Q: 如何安裝？**
 
-A: 請從 [Mac App Store](/zh-TW/)（推薦）下載，或從 [GitHub Releases](https://github.com/clipboardxAI) 取得最新的建置版本。請參見[安裝指南](/zh-TW/guide/installation)。
+A: 請從 [Mac App Store](/zh-TW/)（推薦）下載，或從 ~~[GitHub Releases](https://github.com/clipboardxAI) 取得最新的建置版本~~。請參見[安裝指南](/zh-TW/guide/installation)。
 
 **Q: ClipboardxAI 是免費的嗎？**
 
@@ -34,7 +34,7 @@ A: 瀏覽 [Marketplace](/zh-TW/marketplace/)，並點擊任何動作上的 **Ins
 
 **Q: 如何更新應用程式？**
 
-A: Mac App Store 版本會自動更新。若是 GitHub 版本，請下載最新的 release 並替換 `Applications` 中的應用程式。
+A: Mac App Store 版本會自動更新。~~若是 GitHub 版本，請下載最新的 release 並替換 `Applications` 中的應用程式。~~
 
 **Q: 如何回報錯誤或提出功能建議？**
 

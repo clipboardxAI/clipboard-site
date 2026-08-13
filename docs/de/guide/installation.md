@@ -9,11 +9,11 @@ ClipboardxAI ist für macOS verfügbar.
 - **Download**: Suchen Sie im Mac App Store nach **ClipboardxAI** oder öffnen Sie den Link von der [Startseite](/de/).
 - Die Mac-App-Store-Version bietet automatische Updates und nahtlose macOS-Integration.
 
-> Falls noch kein Mac-App-Store-Link verfügbar ist, verwenden Sie den unten stehenden GitHub-Releases-Build.
+> ~~Falls noch kein Mac-App-Store-Link verfügbar ist, verwenden Sie den unten stehenden GitHub-Releases-Build.~~
 
-### GitHub Releases (Alternative)
+### ~~GitHub Releases (Alternative)~~ (derzeit nicht verfügbar)
 
-Sie können den neuesten Build direkt von [GitHub Releases](https://github.com/clipboardxAI) herunterladen. Beachten Sie, dass diese Version keine automatischen Updates erhält.
+~~Sie können den neuesten Build direkt von [GitHub Releases](https://github.com/clipboardxAI) herunterladen. Beachten Sie, dass diese Version keine automatischen Updates erhält.~~
 
 ## Installationsschritte
 
@@ -23,12 +23,12 @@ Sie können den neuesten Build direkt von [GitHub Releases](https://github.com/c
 2. Klicken Sie auf **Get**, um die App herunterzuladen.
 3. Die App wird automatisch installiert — starten Sie sie über **Programme** oder **Launchpad**.
 
-### GitHub Releases
+### ~~GitHub Releases~~
 
-1. Laden Sie die neueste `.dmg` von der Releases-Seite herunter.
-2. Doppelklicken Sie auf die heruntergeladene `.dmg`, um sie zu öffnen.
-3. Ziehen Sie das Symbol `ClipboardxAI.app` in Ihren Ordner **Programme**.
-4. Werfen Sie das eingehängte Image aus und öffnen Sie die App aus **Programme**.
+1. ~~Laden Sie die neueste `.dmg` von der Releases-Seite herunter.~~
+2. ~~Doppelklicken Sie auf die heruntergeladene `.dmg`, um sie zu öffnen.~~
+3. ~~Ziehen Sie das Symbol `ClipboardxAI.app` in Ihren Ordner **Programme**.~~
+4. ~~Werfen Sie das eingehängte Image aus und öffnen Sie die App aus **Programme**.~~
 
 Falls macOS das Öffnen der App verhindert (Gatekeeper), öffnen Sie **Systemeinstellungen → Datenschutz & Sicherheit** und klicken Sie auf **Trotzdem öffnen**, oder klicken Sie mit der rechten Maustaste auf die App und wählen Sie **Öffnen**.
 
@@ -45,7 +45,7 @@ Erteilen Sie die Berechtigungen, wenn Sie dazu aufgefordert werden. Sie können 
 ## Updates
 
 - **Mac-App-Store-Version**: automatisch vom App Store aktualisiert.
-- **GitHub-Releases-Version**: Laden Sie das neuere Release herunter und ersetzen Sie die App in `Applications`.
+- ~~**GitHub-Releases-Version**: Laden Sie das neuere Release herunter und ersetzen Sie die App in `Applications`.~~
 
 ## Deinstallation
 

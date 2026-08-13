@@ -127,7 +127,7 @@ categories:
 steps:
   - num: "01"
     title: Instalar y abrir
-    desc: Descarga desde el Mac App Store o GitHub y ábrelo desde la barra de menú. Concede los permisos necesarios.
+    desc: Descarga desde el Mac App Store y ábrelo desde la barra de menú. Concede los permisos necesarios.
   - num: "02"
     title: Copiar cualquier cosa
     desc: Tu historial del portapapeles se captura automáticamente. Abre la barra de menú para buscar clips anteriores.

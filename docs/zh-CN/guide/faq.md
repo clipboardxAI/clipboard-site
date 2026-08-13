@@ -10,7 +10,7 @@
 
 **问：如何安装？**
 
-答：从 [Mac App Store](/zh-CN/)（推荐）下载，或从 [GitHub Releases](https://github.com/clipboardxAI) 获取最新版本。详见[安装指南](/zh-CN/guide/installation)。
+答：从 [Mac App Store](/zh-CN/)（推荐）下载，或从 ~~[GitHub Releases](https://github.com/clipboardxAI) 获取最新版本~~。详见[安装指南](/zh-CN/guide/installation)。
 
 **问：ClipboardxAI 免费吗？**
 
@@ -34,7 +34,7 @@
 
 **问：如何更新应用？**
 
-答：Mac App Store 版本会自动更新。对于 GitHub 版本，请下载最新版本并替换 `Applications` 中的旧应用。
+答：Mac App Store 版本会自动更新。~~对于 GitHub 版本，请下载最新版本并替换 `Applications` 中的旧应用。~~
 
 **问：如何报告错误或请求功能？**
 

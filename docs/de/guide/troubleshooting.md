@@ -7,7 +7,7 @@ Diese Seite sammelt häufige Probleme mit ClipboardxAI unter macOS und deren Lö
 1. Stellen Sie sicher, dass Ihre macOS-Version die Mindestanforderung erfüllt (macOS 14 Sonoma+).
 2. Beenden Sie die App und starten Sie sie neu.
 3. Starten Sie Ihren Mac neu.
-4. Falls von GitHub Releases heruntergeladen, versuchen Sie den neuesten oder notariellen Build.
+4. ~~Falls von GitHub Releases heruntergeladen, versuchen Sie den neuesten oder notariellen Build.~~
 5. Falls die Probleme bestehen bleiben, sammeln Sie Protokolle (unten) und öffnen Sie ein Issue.
 
 ## Der Zwischenablagen-Verlauf erfasst keine Kopien

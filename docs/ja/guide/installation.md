@@ -9,11 +9,11 @@ ClipboardxAI は macOS 向けに提供されています。
 - **ダウンロード**: Mac App Store で **ClipboardxAI** を検索するか、[ホームページ](/ja/)のリンクから開いてください。
 - Mac App Store 版は自動更新とシームレスな macOS 統合を提供します。
 
-> Mac App Store のリンクがまだ利用できない場合は、以下の GitHub Releases ビルドをお使いください。
+> ~~Mac App Store のリンクがまだ利用できない場合は、以下の GitHub Releases ビルドをお使いください。~~
 
-### GitHub Releases（代替）
+### ~~GitHub Releases（代替）~~（現在は提供されていません）
 
-最新のビルドは [GitHub Releases](https://github.com/clipboardxAI) から直接ダウンロードできます。このバージョンは自動更新に対応していません。
+~~最新のビルドは [GitHub Releases](https://github.com/clipboardxAI) から直接ダウンロードできます。このバージョンは自動更新に対応していません。~~
 
 ## インストール手順
 
@@ -23,12 +23,12 @@ ClipboardxAI は macOS 向けに提供されています。
 2. **Get** をクリックしてアプリをダウンロードします。
 3. アプリは自動的にインストールされます。**Applications** または **Launchpad** から起動してください。
 
-### GitHub Releases
+### ~~GitHub Releases~~
 
-1. Releases ページから最新の `.dmg` をダウンロードします。
-2. ダウンロードした `.dmg` をダブルクリックして開きます。
-3. `ClipboardxAI.app` アイコンを **Applications** フォルダーにドラッグします。
-4. マウントされたイメージを取り出し、**Applications** からアプリを開きます。
+1. ~~Releases ページから最新の `.dmg` をダウンロードします。~~
+2. ~~ダウンロードした `.dmg` をダブルクリックして開きます。~~
+3. ~~`ClipboardxAI.app` アイコンを **Applications** フォルダーにドラッグします。~~
+4. ~~マウントされたイメージを取り出し、**Applications** からアプリを開きます。~~
 
 macOS がアプリの起動をブロックする場合（Gatekeeper）、**システム設定 → プライバシーとセキュリティ** を開き **このまま開く** をクリックするか、アプリを右クリックして **開く** を選択してください。
 
@@ -45,7 +45,7 @@ macOS がアプリの起動をブロックする場合（Gatekeeper）、**シ�
 ## アップデート
 
 - **Mac App Store 版**: App Store によって自動的に更新されます。
-- **GitHub Releases 版**: 新しいリリースをダウンロードし、`Applications` 内のアプリを置き換えてください。
+- ~~**GitHub Releases 版**: 新しいリリースをダウンロードし、`Applications` 内のアプリを置き換えてください。~~
 
 ## アンインストール
 

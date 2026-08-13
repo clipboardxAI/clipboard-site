@@ -7,7 +7,7 @@ This page collects common problems with ClipboardxAI on macOS and how to resolve
 1. Make sure your macOS version meets the minimum (macOS 14 Sonoma+).
 2. Quit and relaunch the app.
 3. Reboot your Mac.
-4. If downloaded from GitHub Releases, try the latest or notarized build.
+4. ~~If downloaded from GitHub Releases, try the latest or notarized build.~~
 5. If problems persist, collect logs (below) and open an issue.
 
 ## Clipboard history isn't capturing copies

@@ -9,11 +9,11 @@ ClipboardxAI is available for macOS.
 - **Download**: Search for **ClipboardxAI** on the Mac App Store, or open the link from the [home page](/).
 - The Mac App Store version provides automatic updates and seamless macOS integration.
 
-> If a Mac App Store link is not yet available, use the GitHub Releases build below.
+> ~~If a Mac App Store link is not yet available, use the GitHub Releases build below.~~
 
-### GitHub Releases (Alternative)
+### ~~GitHub Releases (Alternative)~~ (not available yet)
 
-You can download the latest build directly from [GitHub Releases](https://github.com/clipboardxAI). Note that this version does not receive automatic updates.
+~~You can download the latest build directly from [GitHub Releases](https://github.com/clipboardxAI). Note that this version does not receive automatic updates.~~
 
 ## Installation Steps
 
@@ -23,12 +23,12 @@ You can download the latest build directly from [GitHub Releases](https://github
 2. Click **Get** to download the app.
 3. The app installs automatically — launch it from **Applications** or **Launchpad**.
 
-### GitHub Releases
+### ~~GitHub Releases~~
 
-1. Download the latest `.dmg` from the Releases page.
-2. Double-click the downloaded `.dmg` to open it.
-3. Drag the `ClipboardxAI.app` icon into your **Applications** folder.
-4. Eject the mounted image and open the app from **Applications**.
+1. ~~Download the latest `.dmg` from the Releases page.~~
+2. ~~Double-click the downloaded `.dmg` to open it.~~
+3. ~~Drag the `ClipboardxAI.app` icon into your **Applications** folder.~~
+4. ~~Eject the mounted image and open the app from **Applications**.~~
 
 If macOS prevents opening the app (Gatekeeper), open **System Settings → Privacy & Security** and click **Open Anyway**, or right-click the app and choose **Open**.
 
@@ -45,7 +45,7 @@ Grant permissions when prompted. You can change them any time in **System Settin
 ## Updates
 
 - **Mac App Store version**: updated automatically by the App Store.
-- **GitHub Releases version**: download the newer release and replace the app in `Applications`.
+- ~~**GitHub Releases version**: download the newer release and replace the app in `Applications`.~~
 
 ## Uninstall
 

@@ -127,7 +127,7 @@ categories:
 steps:
   - num: "01"
     title: Installieren & Starten
-    desc: Lade die App aus dem Mac App Store oder von GitHub herunter und starte sie aus der Menüleiste. Erteile die benötigten Berechtigungen.
+    desc: Lade die App aus dem Mac App Store herunter und starte sie aus der Menüleiste. Erteile die benötigten Berechtigungen.
   - num: "02"
     title: Etwas kopieren
     desc: Deine Zwischenablagen-Historie wird automatisch erfasst. Öffne die Menüleiste, um vergangene Clips zu durchsuchen.

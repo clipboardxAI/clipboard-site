@@ -10,7 +10,7 @@ R : macOS 14 Sonoma ou version ultérieure, optimisé pour Apple Silicon (série
 
 **Q : Comment l'installer ?**
 
-R : Téléchargez depuis le [Mac App Store](/fr/) (recommandé) ou récupérez la dernière version depuis [GitHub Releases](https://github.com/clipboardxAI). Voir le [Guide d'installation](/fr/guide/installation).
+R : Téléchargez depuis le [Mac App Store](/fr/) (recommandé) ou récupérez la dernière version depuis ~~[GitHub Releases](https://github.com/clipboardxAI)~~. Voir le [Guide d'installation](/fr/guide/installation).
 
 **Q : ClipboardxAI est-il gratuit ?**
 
@@ -34,7 +34,7 @@ R : Parcourez le [Marketplace](/fr/marketplace/) et cliquez sur **Installer** su
 
 **Q : Comment mettre à jour l'application ?**
 
-R : La version du Mac App Store se met à jour automatiquement. Pour les versions GitHub, téléchargez la dernière version et remplacez l'application dans `Applications`.
+R : La version du Mac App Store se met à jour automatiquement. ~~Pour les versions GitHub, téléchargez la dernière version et remplacez l'application dans `Applications`.~~
 
 **Q : Comment signaler des bugs ou demander des fonctionnalités ?**
 

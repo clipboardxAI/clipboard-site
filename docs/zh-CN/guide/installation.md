@@ -9,11 +9,11 @@ ClipboardxAI 提供 macOS 版本。
 - **下载**：在 Mac App Store 中搜索 **ClipboardxAI**，或从[首页](/zh-CN/)打开链接。
 - Mac App Store 版本提供自动更新，并与 macOS 无缝集成。
 
-> 如果 Mac App Store 链接暂不可用，请使用下方 GitHub Releases 版本。
+> ~~如果 Mac App Store 链接暂不可用，请使用下方 GitHub Releases 版本。~~
 
-### GitHub Releases（备选）
+### ~~GitHub Releases（备选）~~（暂未提供）
 
-你可以直接从 [GitHub Releases](https://github.com/clipboardxAI) 下载最新版本。请注意，该版本不会收到自动更新。
+~~你可以直接从 [GitHub Releases](https://github.com/clipboardxAI) 下载最新版本。请注意，该版本不会收到自动更新。~~
 
 ## 安装步骤
 
@@ -23,12 +23,12 @@ ClipboardxAI 提供 macOS 版本。
 2. 点击 **获取（Get）** 下载该应用。
 3. 应用会自动安装——从 **应用程序（Applications）** 或 **启动台（Launchpad）** 中启动它。
 
-### GitHub Releases
+### ~~GitHub Releases~~
 
-1. 从 Releases 页面下载最新的 `.dmg` 文件。
-2. 双击下载的 `.dmg` 将其打开。
-3. 将 `ClipboardxAI.app` 图标拖入你的 **应用程序（Applications）** 文件夹。
-4. 推出挂载的镜像，并从 **应用程序（Applications）** 中打开该应用。
+1. ~~从 Releases 页面下载最新的 `.dmg` 文件。~~
+2. ~~双击下载的 `.dmg` 将其打开。~~
+3. ~~将 `ClipboardxAI.app` 图标拖入你的 **应用程序（Applications）** 文件夹。~~
+4. ~~推出挂载的镜像，并从 **应用程序（Applications）** 中打开该应用。~~
 
 如果 macOS 阻止打开该应用（Gatekeeper），请打开 **系统设置 → 隐私与安全性（System Settings → Privacy & Security）**，点击 **仍要打开（Open Anyway）**，或右键点击应用并选择 **打开（Open）**。
 
@@ -45,7 +45,7 @@ ClipboardxAI 提供 macOS 版本。
 ## 更新
 
 - **Mac App Store 版本**：由 App Store 自动更新。
-- **GitHub Releases 版本**：下载更新的版本，并替换 `Applications` 中的旧应用。
+- ~~**GitHub Releases 版本**：下载更新的版本，并替换 `Applications` 中的旧应用。~~
 
 ## 卸载
 

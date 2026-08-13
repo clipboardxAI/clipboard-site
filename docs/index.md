@@ -127,7 +127,7 @@ categories:
 steps:
   - num: "01"
     title: Install & Launch
-    desc: Download from the Mac App Store or GitHub, then launch from the menu bar. Grant the permissions it needs.
+    desc: Download from the Mac App Store, then launch from the menu bar. Grant the permissions it needs.
   - num: "02"
     title: Copy Anything
     desc: Your clipboard history is captured automatically. Open the menu bar to browse and search past clips.
