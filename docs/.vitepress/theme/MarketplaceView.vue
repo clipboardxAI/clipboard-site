@@ -1,17 +1,17 @@
 <template>
   <div class="marketplace">
     <!-- Shared navigation (brand + menu + i18n switcher + appearance) -->
-    <SiteNav />
+    <SiteNav  :id="lang"/>
 
     <!-- Hero -->
     <section class="hero-section">
       <div class="hero-container">
         <div class="hero-text">
-          <div class="hero-eyebrow">{{ content.hero.eyebrow }}</div>
-          <h1 class="hero-title">{{ content.hero.title }}</h1>
-          <p class="hero-description">{{ content.hero.desc }}</p>
+          <div class="hero-eyebrow">{{ content.eyebrow }}</div>
+          <h1 class="hero-title">{{ content.title }}</h1>
+          <p class="hero-description">{{ content.desc }}</p>
           <div class="hero-langbar" v-if="!loading && !error">
-            <span class="hero-count">{{ content.countLabel(actions.length, categories.length) }}</span>
+            <span class="hero-count">{{ countLabel(actions.length, categories.length) }}</span>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
                   :href="a.appStoreURL"
                   target="_blank"
                   rel="noopener"
-                >{{ content.getBy(a.author) }}</a>
+                >{{ getBy(a.author) }}</a>
                 <button class="install" @click="install(a)">{{ content.install }}</button>
               </div>
             </div>
@@ -109,7 +109,7 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { withBase, useData } from 'vitepress'
 import SiteNav from './SiteNav.vue'
 import SiteFooter from './SiteFooter.vue'
-import { marketplaceContent, SUPPORTED_LANGS, type Lang } from './i18n'
+import { resolveLang } from './locale'
 
 interface Locales { [lang: string]: Record<string, any> }
 interface Action {
@@ -134,12 +134,19 @@ const active = ref<string | null>(null)
 const loading = ref(true)
 const error = ref<string | null>(null)
 
-// ── Language is driven by VitePress i18n ──
-const { lang } = useData()
-const currentLang = computed<Lang>(() =>
-  SUPPORTED_LANGS.includes(lang.value as Lang) ? (lang.value as Lang) : 'en'
-)
-const content = computed(() => marketplaceContent[currentLang.value])
+// ── Language is driven by VitePress i18n; UI strings come from frontmatter ──
+const { lang, frontmatter } = useData()
+const currentLang = computed(() => resolveLang(lang.value))
+const content = computed(() => (frontmatter.value as any).marketplace || {})
+
+function countLabel(a: number, c: number): string {
+  const tpl = content.value.countLabel || '{actions} actions · {categories} categories'
+  return tpl.replace('{actions}', String(a)).replace('{categories}', String(c))
+}
+function getBy(author: string): string {
+  const tpl = content.value.getBy || 'Get {author}'
+  return tpl.replace('{author}', author)
+}
 
 const marketplaceBase = withBase('/marketplace/')
 

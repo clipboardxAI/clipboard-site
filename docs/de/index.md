@@ -77,4 +77,72 @@ features:
     details: Installiere von der Community erstellte KI-Aktionen mit einem Klick. Durchsuche Schreiben, Entwickler, Produktivität, Übersetzen, Sozial und Analyse-Pakete.
     link: /de/marketplace
     linkText: Markt durchsuchen
+
+floatingCards:
+  - Intelligent Zusammenfassen
+  - Sofort Übersetzen
+  - Lokal & Privat
+sections:
+  featuresTitle: Hauptfunktionen
+  featuresSubtitle: Alles, was du brauchst, um deine Zwischenablage auf macOS zu optimieren
+  categoriesTitle: Aktionskategorien
+  categoriesSubtitle: Durchsuche vorgefertigte KI-Aktionen im Markt
+  howTitle: So funktioniert's
+  howSubtitle: Einfach und intuitiv, wie es sich für macOS gehört
+  faqTitle: Häufig gestellte Fragen
+  faqSubtitle: Schnelle Antworten für macOS-Nutzer
+openMarketplace: Markt öffnen
+cta:
+  title: Bereit, deine Zwischenablage schlau zu machen?
+  description: Lade ClipboardxAI herunter und verwandle jedes Kopieren in eine Aktion — privat auf deinem Mac, mit AI wenn du willst.
+  primary: Loslegen
+  primaryLink: /guide/installation
+  secondary: Anwendung
+  secondaryLink: /guide/usage
+categories:
+  - name: Schreiben
+    badge: WR
+    desc: Texte überarbeiten, erweitern und umschreiben
+    color: "#ef6400"
+  - name: Entwickler
+    badge: DV
+    desc: Code erklären und Snippets generieren
+    color: "#2563eb"
+  - name: Produktivität
+    badge: PD
+    desc: Notizen zusammenfassen und strukturieren
+    color: "#059669"
+  - name: Übersetzen
+    badge: TR
+    desc: Zwischen Sprachen übersetzen
+    color: "#7c3aed"
+  - name: Sozial
+    badge: SO
+    desc: Antworten und Beiträge verfassen
+    color: "#d97706"
+  - name: Analyse
+    badge: AN
+    desc: Erkenntnisse aus Text extrahieren
+    color: "#0891b2"
+steps:
+  - num: "01"
+    title: Installieren & Starten
+    desc: Lade die App aus dem Mac App Store oder von GitHub herunter und starte sie aus der Menüleiste. Erteile die benötigten Berechtigungen.
+  - num: "02"
+    title: Etwas kopieren
+    desc: Deine Zwischenablagen-Historie wird automatisch erfasst. Öffne die Menüleiste, um vergangene Clips zu durchsuchen.
+  - num: "03"
+    title: Aktion ausführen
+    desc: Wähle ein integriertes Werkzeug oder eine KI-Aktion — oder aktiviere Auto-Run, um jede Kopie sofort zu transformieren.
+faqs:
+  - question: Ist ClipboardxAI kostenlos?
+    answer: Die App ist kostenlos herunterladbar. Integrierte lokale Werkzeuge funktionieren ohne Konto. Cloud-KI-Aktionen verwenden deinen eigenen API-Schlüssel, du zahlst also direkt an den KI-Anbieter.
+  - question: Welche macOS-Versionen werden unterstützt?
+    answer: ClipboardxAI benötigt macOS 14 Sonoma oder neuer, optimiert für Apple Silicon (M-Serie) mit Intel-Unterstützung.
+  - question: Funktioniert es offline?
+    answer: Ja. Zwischenablagen-Historie und integrierte lokale Werkzeuge — Links extrahieren, Statistiken zählen, Leerzeilen entfernen und mehr — laufen vollständig auf deinem Mac ohne Internetverbindung.
+  - question: Sind meine Zwischenablagedaten privat?
+    answer: Deine Historie bleibt auf deinem Gerät. Cloud-KI ist optional und sendet Inhalte nur an den von dir konfigurierten Anbieter, mit einem im Keychain gespeicherten Schlüssel. Wir empfangen oder speichern deine Clips nie.
+  - question: Welche KI-Anbieter werden unterstützt?
+    answer: Jeder OpenAI-kompatible Anbieter — DeepSeek, MiniMax, Zhipu GLM, Kimi (Moonshot), Mistral und lokales Ollama — sowie OpenAI, Anthropic und Gemini.
 ---

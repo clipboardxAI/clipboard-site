@@ -77,4 +77,72 @@ features:
     details: Installez en un clic des actions IA créées par la communauté. Parcourez les packs Écriture, Développeur, Productivité, Traduction, Social et Analyse.
     link: /fr/marketplace
     linkText: Parcourir le marketplace
+
+floatingCards:
+  - Résumé Intelligent
+  - Traduction Instantanée
+  - Local & Privé
+sections:
+  featuresTitle: Fonctionnalités clés
+  featuresSubtitle: Tout ce qu'il faut pour exploiter au mieux votre presse-papiers sur macOS
+  categoriesTitle: Catégories d'actions
+  categoriesSubtitle: Parcourez les actions IA prêtes à l'emploi dans le marketplace
+  howTitle: Comment ça marche
+  howSubtitle: Simple et intuitif, comme macOS devrait l'être
+  faqTitle: Questions fréquentes
+  faqSubtitle: Réponses rapides pour les utilisateurs macOS
+openMarketplace: Ouvrir le marketplace
+cta:
+  title: Prêt à rendre votre presse-papiers plus intelligent ?
+  description: Téléchargez ClipboardxAI et transformez chaque copie en action — privée sur votre Mac, propulsée par IA à la demande.
+  primary: Commencer
+  primaryLink: /guide/installation
+  secondary: Mode d'emploi
+  secondaryLink: /guide/usage
+categories:
+  - name: Écriture
+    badge: WR
+    desc: Polir, développer et réécrire du texte
+    color: "#ef6400"
+  - name: Développeur
+    badge: DV
+    desc: Expliquer le code et générer des extraits
+    color: "#2563eb"
+  - name: Productivité
+    badge: PD
+    desc: Résumer et structurer des notes
+    color: "#059669"
+  - name: Traduction
+    badge: TR
+    desc: Traduire entre les langues
+    color: "#7c3aed"
+  - name: Social
+    badge: SO
+    desc: Rédiger des réponses et des publications
+    color: "#d97706"
+  - name: Analyse
+    badge: AN
+    desc: Extraire des informations du texte
+    color: "#0891b2"
+steps:
+  - num: "01"
+    title: Installer et lancer
+    desc: Téléchargez depuis le Mac App Store ou GitHub, puis lancez depuis la barre de menus. Accordez les autorisations nécessaires.
+  - num: "02"
+    title: Copier n'importe quoi
+    desc: Votre historique de presse-papiers est capturé automatiquement. Ouvrez la barre de menus pour parcourir vos clips.
+  - num: "03"
+    title: Lancer une action
+    desc: Choisissez un outil intégré ou une action IA — ou activez l'exécution automatique pour transformer chaque copie à l'instant.
+faqs:
+  - question: ClipboardxAI est-il gratuit ?
+    answer: L'application est gratuite. Les outils locaux intégrés fonctionnent sans compte. Les actions IA dans le cloud utilisent votre propre clé API, vous payez donc directement le fournisseur d'IA.
+  - question: Quelles versions de macOS sont prises en charge ?
+    answer: ClipboardxAI nécessite macOS 14 Sonoma ou version ultérieure, optimisé pour Apple Silicon (série M) avec prise en charge d'Intel.
+  - question: Fonctionne-t-il hors ligne ?
+    answer: Oui. L'historique du presse-papiers et les outils locaux intégrés — extraire des liens, compter des mots, supprimer les lignes vides, etc. — fonctionnent entièrement sur votre Mac sans connexion internet.
+  - question: Mes données de presse-papiers sont-elles privées ?
+    answer: Votre historique reste sur votre appareil. L'IA cloud est optionnelle et envoie le contenu uniquement au fournisseur que vous configurez, avec une clé stockée dans votre Keychain. Nous ne recevons ni ne stockons jamais vos clips.
+  - question: Quels fournisseurs d'IA sont pris en charge ?
+    answer: Tout fournisseur compatible OpenAI — DeepSeek, MiniMax, Zhipu GLM, Kimi (Moonshot), Mistral et Ollama local — ainsi qu'OpenAI, Anthropic et Gemini.
 ---

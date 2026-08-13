@@ -77,4 +77,72 @@ features:
     details: 一鍵安裝社群製作的 AI 動作。瀏覽寫作、開發者、效率、翻譯、社交和分析包。
     link: /zh-TW/marketplace
     linkText: 瀏覽市場
+
+floatingCards:
+  - 智慧摘要
+  - 即時翻譯
+  - 本地隱私
+sections:
+  featuresTitle: 核心功能
+  featuresSubtitle: 讓 macOS 剪貼板更強大的一切工具
+  categoriesTitle: 動作分類
+  categoriesSubtitle: 瀏覽市集中的精選 AI 動作
+  howTitle: 工作原理
+  howSubtitle: 簡潔直覺，正如 macOS 該有的樣子
+  faqTitle: 常見問題
+  faqSubtitle: macOS 使用者的快速解答
+openMarketplace: 開啟動作市場
+cta:
+  title: 準備好讓剪貼板更智慧了嗎？
+  description: 下載 ClipboardxAI，將每一次複製變成一次操作 — 在 Mac 上本地執行，按需啟用 AI。
+  primary: 開始使用
+  primaryLink: /guide/installation
+  secondary: 使用指南
+  secondaryLink: /guide/usage
+categories:
+  - name: 寫作
+    badge: WR
+    desc: 潤飾、擴展和改寫文案
+    color: "#ef6400"
+  - name: 開發者
+    badge: DV
+    desc: 解釋程式碼並產生程式碼片段
+    color: "#2563eb"
+  - name: 效率
+    badge: PD
+    desc: 摘要和結構化筆記
+    color: "#059669"
+  - name: 翻譯
+    badge: TR
+    desc: 在語言之間翻譯
+    color: "#7c3aed"
+  - name: 社交
+    badge: SO
+    desc: 草擬回覆和貼文
+    color: "#d97706"
+  - name: 分析
+    badge: AN
+    desc: 從文字中提取洞察
+    color: "#0891b2"
+steps:
+  - num: "01"
+    title: 安裝並啟動
+    desc: 從 Mac App Store 或 GitHub 下載，然後從選單列啟動。授予所需權限即可。
+  - num: "02"
+    title: 複製任意內容
+    desc: 剪貼板歷史會自動記錄。開啟選單列即可瀏覽和搜尋歷史記錄。
+  - num: "03"
+    title: 執行動作
+    desc: 選擇內建工具或 AI 動作 — 或開啟自動執行，在複製的瞬間自動轉換。
+faqs:
+  - question: ClipboardxAI 是免費的嗎？
+    answer: 應用免費下載。內建本地工具無需帳號。雲端 AI 動作使用您自己的 API 金鑰，費用直接支付給 AI 服務商。
+  - question: 支援哪些 macOS 版本？
+    answer: ClipboardxAI 需要 macOS 14 Sonoma 或更高版本，針對 Apple Silicon（M 系列）最佳化，同時支援 Intel。
+  - question: 可以離線使用嗎？
+    answer: 可以。剪貼板歷史和內建本地工具 — 擷取連結、統計字數、摺疊空行等 — 完全在 Mac 上執行，無需網路連線。
+  - question: 我的剪貼板資料安全嗎？
+    answer: 剪貼板歷史保留在您的裝置上。雲端 AI 為可選功能，僅將內容傳送至您設定的服務商，使用儲存在鑰匙圈中的金鑰。我們從不接收或儲存您的剪貼內容。
+  - question: 支援哪些 AI 服務商？
+    answer: 任何 OpenAI 相容的服務商：DeepSeek、MiniMax、智譜 GLM、Kimi（月之暗面）、Mistral 和本地 Ollama — 以及 OpenAI、Anthropic 和 Gemini。
 ---

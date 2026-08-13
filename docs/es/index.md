@@ -77,4 +77,72 @@ features:
     details: Instala acciones de IA creadas por la comunidad con un clic. Explora paquetes de Escritura, Desarrollador, Productividad, Traducir, Social y Análisis.
     link: /es/marketplace
     linkText: Explorar mercado
+
+floatingCards:
+  - Resumen Inteligente
+  - Traducción Instantánea
+  - Local y Privado
+sections:
+  featuresTitle: Características principales
+  featuresSubtitle: Todo lo que necesitas para que tu portapapeles funcione mejor en macOS
+  categoriesTitle: Categorías de acciones
+  categoriesSubtitle: Explora acciones de IA listas para usar en el mercado
+  howTitle: Cómo funciona
+  howSubtitle: Simple e intuitivo, como debería ser macOS
+  faqTitle: Preguntas frecuentes
+  faqSubtitle: Respuestas rápidas para usuarios de macOS
+openMarketplace: Abrir el mercado
+cta:
+  title: ¿Listo para hacer tu portapapeles más inteligente?
+  description: Descarga ClipboardxAI y convierte cada copia en una acción — privada en tu Mac, con IA cuando la necesites.
+  primary: Empezar
+  primaryLink: /guide/installation
+  secondary: Cómo usar
+  secondaryLink: /guide/usage
+categories:
+  - name: Escritura
+    badge: WR
+    desc: Pulir, ampliar y reescribir textos
+    color: "#ef6400"
+  - name: Desarrollador
+    badge: DV
+    desc: Explicar código y generar fragmentos
+    color: "#2563eb"
+  - name: Productividad
+    badge: PD
+    desc: Resumir y estructurar notas
+    color: "#059669"
+  - name: Traducir
+    badge: TR
+    desc: Traducir entre idiomas
+    color: "#7c3aed"
+  - name: Social
+    badge: SO
+    desc: Redactar respuestas y publicaciones
+    color: "#d97706"
+  - name: Análisis
+    badge: AN
+    desc: Extraer información del texto
+    color: "#0891b2"
+steps:
+  - num: "01"
+    title: Instalar y abrir
+    desc: Descarga desde el Mac App Store o GitHub y ábrelo desde la barra de menú. Concede los permisos necesarios.
+  - num: "02"
+    title: Copiar cualquier cosa
+    desc: Tu historial del portapapeles se captura automáticamente. Abre la barra de menú para buscar clips anteriores.
+  - num: "03"
+    title: Ejecutar una acción
+    desc: Elige una herramienta integrada o una acción de IA — o activa la ejecución automática para transformar cada copia al instante.
+faqs:
+  - question: ¿ClipboardxAI es gratis?
+    answer: La app es gratuita. Las herramientas locales integradas funcionan sin cuenta. Las acciones de IA en la nube usan tu propia clave de API, por lo que pagas directamente al proveedor de IA.
+  - question: ¿Qué versiones de macOS son compatibles?
+    answer: ClipboardxAI requiere macOS 14 Sonoma o posterior, optimizado para Apple Silicon (serie M) con soporte para Intel.
+  - question: ¿Funciona sin conexión?
+    answer: Sí. El historial del portapapeles y las herramientas locales integradas — extraer enlaces, contar palabras, colapsar líneas en blanco y más — se ejecutan completamente en tu Mac sin conexión a internet.
+  - question: ¿Mis datos del portapapeles son privados?
+    answer: Tu historial permanece en tu dispositivo. La IA en la nube es opcional y envía contenido solo al proveedor que configures, usando una clave almacenada en tu Keychain. Nunca recibimos ni almacenamos tus clips.
+  - question: ¿Qué proveedores de IA son compatibles?
+    answer: Cualquier proveedor compatible con OpenAI — DeepSeek, MiniMax, Zhipu GLM, Kimi (Moonshot), Mistral y Ollama local — además de OpenAI, Anthropic y Gemini.
 ---

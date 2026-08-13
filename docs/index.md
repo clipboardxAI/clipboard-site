@@ -77,4 +77,72 @@ features:
     details: Install community-made AI actions in one click. Browse Writing, Developer, Productivity, Translate, Social and Analytics packs.
     link: /marketplace
     linkText: Browse marketplace
+
+floatingCards:
+  - Smart Summarize
+  - Instant Translate
+  - Local & Private
+sections:
+  featuresTitle: Key Features
+  featuresSubtitle: Everything you need to make your clipboard work harder on macOS
+  categoriesTitle: Action Categories
+  categoriesSubtitle: Browse ready-made AI actions in the marketplace
+  howTitle: How It Works
+  howSubtitle: Simple and intuitive, just like macOS should be
+  faqTitle: Frequently Asked Questions
+  faqSubtitle: Quick answers for macOS users
+openMarketplace: Open the Marketplace
+cta:
+  title: Ready to Make Your Clipboard Smarter?
+  description: Download ClipboardxAI and turn every copy into an action — private on your Mac, powered by AI when you want it.
+  primary: Get Started
+  primaryLink: /guide/installation
+  secondary: How to Use
+  secondaryLink: /guide/usage
+categories:
+  - name: Writing
+    badge: WR
+    desc: Polish, expand and rewrite copy
+    color: "#ef6400"
+  - name: Developer
+    badge: DV
+    desc: Explain code and generate snippets
+    color: "#2563eb"
+  - name: Productivity
+    badge: PD
+    desc: Summarize and structure notes
+    color: "#059669"
+  - name: Translate
+    badge: TR
+    desc: Translate between languages
+    color: "#7c3aed"
+  - name: Social
+    badge: SO
+    desc: Draft replies and posts
+    color: "#d97706"
+  - name: Analytics
+    badge: AN
+    desc: Extract insight from text
+    color: "#0891b2"
+steps:
+  - num: "01"
+    title: Install & Launch
+    desc: Download from the Mac App Store or GitHub, then launch from the menu bar. Grant the permissions it needs.
+  - num: "02"
+    title: Copy Anything
+    desc: Your clipboard history is captured automatically. Open the menu bar to browse and search past clips.
+  - num: "03"
+    title: Run an Action
+    desc: Pick a built-in tool or AI action — or flip on auto-run to transform every copy the instant you make it.
+faqs:
+  - question: Is ClipboardxAI free?
+    answer: The app is free to download. Built-in local tools work with no account. Cloud AI actions use your own provider API key, so you only pay the AI provider directly.
+  - question: Which macOS versions are supported?
+    answer: ClipboardxAI requires macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel support.
+  - question: Does it work offline?
+    answer: Yes. Clipboard history and the built-in local tools — extract links, count stats, collapse blank lines, and more — run entirely on your Mac with no internet connection.
+  - question: Is my clipboard data private?
+    answer: Your clipboard history stays on your device. Cloud AI is opt-in and sends content only to the provider you configure, using a key stored in your Keychain. We never receive or store your clips.
+  - question: Which AI providers are supported?
+    answer: Any OpenAI-compatible provider — DeepSeek, MiniMax, Zhipu GLM, Kimi (Moonshot), Mistral, and local Ollama — plus OpenAI, Anthropic and Gemini.
 ---

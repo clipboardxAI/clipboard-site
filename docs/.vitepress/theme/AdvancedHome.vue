@@ -1,7 +1,7 @@
 <template>
   <div class="advanced-home">
     <!-- Shared navigation (brand + menu + i18n switcher + appearance) -->
-    <SiteNav />
+    <SiteNav :id="lang"/>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -143,19 +143,17 @@ import { withBase, useData } from 'vitepress'
 import HomeActions from './HomeActions.vue'
 import SiteNav from './SiteNav.vue'
 import SiteFooter from './SiteFooter.vue'
-import { homeContent, localeLink, SUPPORTED_LANGS, type Lang } from './i18n'
+import { localeLink } from './locale'
 
 interface Props {
   data: any
 }
 
-defineProps<Props>()
+const props = defineProps<Props>()
 
 const { lang } = useData()
-const currentLang = computed<Lang>(() =>
-  SUPPORTED_LANGS.includes(lang.value as Lang) ? (lang.value as Lang) : 'en'
-)
-const content = computed(() => homeContent[currentLang.value])
+// All page content now comes from the markdown frontmatter (`data`).
+const content = computed(() => props.data || {})
 
 // SVG icon render functions for floating cards
 const floatingIcons = [
@@ -180,7 +178,7 @@ const featureColors = [
 ]
 
 const categories = computed(() =>
-  content.value.categories.map(c => ({
+  (content.value.categories || []).map((c: any) => ({
     ...c,
     link: localeLink('/marketplace/', lang.value),
   }))

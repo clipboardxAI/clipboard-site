@@ -105,40 +105,49 @@ const STR = {
 }
 
 // ── Build a themeConfig for a given locale ────────────────────────
-function tc(S: typeof STR.en, marketplaceLink: string) {
+// All *internal* links are prefixed with the locale segment so the
+// default VitePress nav / sidebar / footer resolve to the localized
+// page in every language. External (http/https/mailto) links are left
+// untouched.
+function tc(S: typeof STR.en, lang: string) {
+  const base = !lang || lang === 'en' ? '' : `/${lang}`
+  const L = (p: string) =>
+    /^https?:\/\//.test(p) || p.startsWith('mailto:') || p.startsWith(base)
+      ? p
+      : `${base}${p}`
   return {
     nav: [
-      { text: S.home, link: '/' },
-      { text: S.marketplace, link: marketplaceLink },
-      { text: S.ecosystem, link: '/ecosystem/' },
-      { text: S.guide, link: '/guide/introduction' },
-      { text: S.faq, link: '/guide/faq' },
+      { text: S.home, link: L('/') },
+      { text: S.marketplace, link: `${base}/marketplace/` },
+      { text: S.ecosystem, link: L('/ecosystem/') },
+      { text: S.guide, link: L('/guide/introduction') },
+      { text: S.faq, link: L('/guide/faq') },
       { text: S.github, link: 'https://github.com/clipboardxAI' },
     ],
     sidebar: [
       {
         text: S.ecosystem,
         items: [
-          { text: S.ecosystem, link: '/ecosystem/' },
+          { text: S.ecosystem, link: L('/ecosystem/') },
         ],
       },
       {
         text: S.guideGroup,
         items: [
-          { text: S.intro, link: '/guide/introduction' },
-          { text: S.install, link: '/guide/installation' },
-          { text: S.usage, link: '/guide/usage' },
-          { text: S.permissions, link: '/guide/permissions' },
-          { text: S.troubleshooting, link: '/guide/troubleshooting' },
-          { text: S.faq, link: '/guide/faq' },
+          { text: S.intro, link: L('/guide/introduction') },
+          { text: S.install, link: L('/guide/installation') },
+          { text: S.usage, link: L('/guide/usage') },
+          { text: S.permissions, link: L('/guide/permissions') },
+          { text: S.troubleshooting, link: L('/guide/troubleshooting') },
+          { text: S.faq, link: L('/guide/faq') },
         ],
       },
       {
         text: S.legalGroup,
         items: [
-          { text: S.privacy, link: '/guide/privacy' },
-          { text: S.privacyChoices, link: '/guide/privacy-choices' },
-          { text: S.terms, link: '/guide/terms' },
+          { text: S.privacy, link: L('/guide/privacy') },
+          { text: S.privacyChoices, link: L('/guide/privacy-choices') },
+          { text: S.terms, link: L('/guide/terms') },
         ],
       },
     ],
@@ -149,28 +158,28 @@ function tc(S: typeof STR.en, marketplaceLink: string) {
         {
           text: S.product,
           items: [
-            { text: S.about, link: '/guide/introduction' },
-            { text: S.features, link: '/#features' },
-            { text: S.marketplace, link: marketplaceLink },
-            { text: S.ecosystem, link: '/ecosystem/' },
-            { text: S.install, link: '/guide/installation' },
+            { text: S.about, link: L('/guide/introduction') },
+            { text: S.features, link: L('/#features') },
+            { text: S.marketplace, link: `${base}/marketplace/` },
+            { text: S.ecosystem, link: L('/ecosystem/') },
+            { text: S.install, link: L('/guide/installation') },
           ],
         },
         {
           text: S.support,
           items: [
-            { text: S.documentation, link: '/guide/introduction' },
-            { text: S.faq, link: '/guide/faq' },
-            { text: S.troubleshooting, link: '/guide/troubleshooting' },
+            { text: S.documentation, link: L('/guide/introduction') },
+            { text: S.faq, link: L('/guide/faq') },
+            { text: S.troubleshooting, link: L('/guide/troubleshooting') },
             { text: S.contact, link: 'mailto:clipboardxai@w3cub.com' },
           ],
         },
         {
           text: S.company,
           items: [
-            { text: S.about, link: '/guide/introduction' },
-            { text: S.privacy, link: '/guide/privacy' },
-            { text: S.terms, link: '/guide/terms' },
+            { text: S.about, link: L('/guide/introduction') },
+            { text: S.privacy, link: L('/guide/privacy') },
+            { text: S.terms, link: L('/guide/terms') },
             { text: S.github, link: 'https://github.com/clipboardxAI' },
           ],
         },
@@ -271,48 +280,48 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en',
-      themeConfig: tc(STR.en, '/marketplace/'),
+      themeConfig: tc(STR.en, 'en'),
     },
     'zh-CN': {
       label: '简体中文',
       lang: 'zh-CN',
       link: '/zh-CN/',
-      themeConfig: tc(STR['zh-CN'], '/zh-CN/marketplace/'),
+      themeConfig: tc(STR['zh-CN'], 'zh-CN'),
       markdown: MD['zh-CN'],
     },
     'zh-TW': {
       label: '繁體中文',
       lang: 'zh-TW',
       link: '/zh-TW/',
-      themeConfig: tc(STR['zh-TW'], '/zh-TW/marketplace/'),
+      themeConfig: tc(STR['zh-TW'], 'zh-TW'),
       markdown: MD['zh-TW'],
     },
     ja: {
       label: '日本語',
       lang: 'ja',
       link: '/ja/',
-      themeConfig: tc(STR.ja, '/ja/marketplace/'),
+      themeConfig: tc(STR.ja, 'ja'),
       markdown: MD.ja,
     },
     de: {
       label: 'Deutsch',
       lang: 'de',
       link: '/de/',
-      themeConfig: tc(STR.de, '/de/marketplace/'),
+      themeConfig: tc(STR.de, 'de'),
       markdown: MD.de,
     },
     es: {
       label: 'Español',
       lang: 'es',
       link: '/es/',
-      themeConfig: tc(STR.es, '/es/marketplace/'),
+      themeConfig: tc(STR.es, 'es'),
       markdown: MD.es,
     },
     fr: {
       label: 'Français',
       lang: 'fr',
       link: '/fr/',
-      themeConfig: tc(STR.fr, '/fr/marketplace/'),
+      themeConfig: tc(STR.fr, 'fr'),
       markdown: MD.fr,
     },
   },
