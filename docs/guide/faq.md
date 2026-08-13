@@ -14,7 +14,7 @@ A: Download from the [Mac App Store](/) (recommended) or grab the latest build f
 
 **Q: Is ClipboardxAI free?**
 
-A: The app is free to download. Built-in local tools need no account. Cloud AI actions use *your own* provider API key, so you only pay the AI provider directly — there is no paid tier in the app.
+A: ClipboardxAI is a paid app on the Mac App Store. After purchase, all built-in local tools are included — no account required. Cloud AI actions use *your own* provider API key, so you only pay the AI provider directly.
 
 **Q: Which AI providers are supported?**
 

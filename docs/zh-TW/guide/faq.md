@@ -14,7 +14,7 @@ A: 請從 [Mac App Store](/zh-TW/)（推薦）下載，或從 [GitHub Releases](
 
 **Q: ClipboardxAI 是免費的嗎？**
 
-A: 應用程式可免費下載。內建本地工具不需要任何帳號。雲端 AI 動作使用*你自己的*供應商 API key，因此你只需直接支付 AI 供應商的費用——應用程式內沒有付費方案。
+A: ClipboardxAI 是 Mac App Store 上的付費應用程式。購買後所有內建本地工具均已包含，不需要帳號。雲端 AI 動作使用*你自己的*供應商 API key，費用直接支付給 AI 供應商——應用程式內無需額外付費。
 
 **Q: 支援哪些 AI 供應商？**
 

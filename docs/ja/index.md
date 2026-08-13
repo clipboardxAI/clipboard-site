@@ -136,7 +136,7 @@ steps:
     desc: 内蔵ツールや AI アクションを選択 — または自動実行を有効にして、コピーした瞬間に自動変換します。
 faqs:
   - question: ClipboardxAI は無料ですか？
-    answer: アプリは無料でダウンロードできます。内蔵のローカルツールにアカウントは不要です。クラウド AI アクションはご自身の API キーを使用し、料金は AI サービス提供者に直接支払われます。
+    answer: ClipboardxAI は Mac App Store で提供される有料アプリです。購入後は内蔵のローカルツールがすべて含まれ、アカウントは不要です。クラウド AI アクションはご自身の API キーを使用し、料金は AI サービス提供者に直接支払われます。
   - question: 対応している macOS のバージョンは？
     answer: ClipboardxAI は macOS 14 Sonoma 以降が必要です。Apple Silicon（M シリーズ）に最適化されており、Intel もサポートしています。
   - question: オフラインで使えますか？

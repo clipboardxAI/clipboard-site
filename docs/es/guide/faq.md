@@ -14,7 +14,7 @@ R: Descárguelo desde la [Mac App Store](/es/) (recomendado) o obtenga la últim
 
 **P: ¿Es gratuito ClipboardxAI?**
 
-R: La aplicación es gratuita para descargar. Las herramientas locales integradas no requieren cuenta. Las acciones de IA en la nube usan la API key de *su propio* proveedor, por lo que solo paga al proveedor de IA directamente — no hay ningún nivel de pago en la aplicación.
+R: ClipboardxAI es una app de pago en el Mac App Store. Tras la compra, todas las herramientas locales integradas están incluidas y no se requiere cuenta. Las acciones de IA en la nube usan la API key de *su propio* proveedor, por lo que solo paga al proveedor de IA directamente — no hay ninguna capa de pago adicional en la aplicación.
 
 **P: ¿Qué proveedores de IA son compatibles?**
 

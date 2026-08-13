@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
-import { h } from 'vue'
+import { h, defineComponent } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import AdvancedHome from './AdvancedHome.vue'
 import MarketplaceView from './MarketplaceView.vue'
@@ -8,26 +8,48 @@ import './custom.css'
 
 export default {
   extends: DefaultTheme,
-  Layout() {
-    const route = useRoute()
-    const { frontmatter } = useData()
-    // Matches root home (/) and every locale home: /zh-CN/, /ja/, etc.
-    const isHomePage = route.path === '/' || /^\/(zh-CN|zh-TW|ja|de|es|fr)\/?$/.test(route.path)
-    // Matches /marketplace and every locale: /zh-CN|zh-TW|ja|de|es|fr/marketplace
-    const isMarketplace = /^\/(zh-CN|zh-TW|ja|de|es|fr)?\/?(marketplace)(\/.*)?$/.test(route.path)
+  // NOTE: Layout MUST be a stateful component (defineComponent), NOT a bare
+  // function. A bare function is a *functional* component rendered inline inside
+  // VitePressApp's render effect — and VitePressApp renders `() => h(Theme.Layout)`
+  // exactly once (it has no reactive deps of its own), so a functional Layout
+  // never re-runs on client-side navigation. That made the homepage/marketplace
+  // swap the URL but never re-render with the new locale's frontmatter.
+  //
+  // A stateful component has its OWN reactive render effect. Reading route.path
+  // and frontmatter.value inside the returned render function makes it re-render
+  // on every navigation (exactly like VitePress' default Layout.vue), so the
+  // correct localized page data flows into AdvancedHome / MarketplaceView.
+  Layout: defineComponent({
+    name: 'ClipboardxLayout',
+    setup() {
+      const route = useRoute()
+      const { frontmatter } = useData()
 
-    if (isHomePage) {
-      return h(AdvancedHome, { data: frontmatter.value })
-    }
+      // Reactive getters (called inside the render below so Vue tracks route.path).
+      const isHomePage = () =>
+        route.path === '/' ||
+        /^\/(zh-CN|zh-TW|ja|de|es|fr)\/?$/.test(route.path)
 
-    if (isMarketplace) {
-      return h(MarketplaceView)
-    }
+      const isMarketplace = () =>
+        /^\/(zh-CN|zh-TW|ja|de|es|fr)?\/?(marketplace)(\/.*)?$/.test(route.path)
 
-    return h(DefaultTheme.Layout, {
-      sidebar: false
-    }, {
-      'home-hero-info-after': () => h(HomeActions),
-    })
-  },
+      return () => {
+        if (isHomePage()) {
+          // `:key` forces a clean remount per URL, exactly like <Content>
+          // swapping route.component — guarantees no stale locale state.
+          return h(AdvancedHome, { data: frontmatter.value, key: route.path })
+        }
+
+        if (isMarketplace()) {
+          return h(MarketplaceView, { key: route.path })
+        }
+
+        return h(
+          DefaultTheme.Layout,
+          { sidebar: false },
+          { 'home-hero-info-after': () => h(HomeActions) }
+        )
+      }
+    },
+  }),
 }

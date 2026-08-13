@@ -14,7 +14,7 @@ R : Téléchargez depuis le [Mac App Store](/fr/) (recommandé) ou récupérez l
 
 **Q : ClipboardxAI est-il gratuit ?**
 
-R : L'application est gratuite à télécharger. Les outils locaux intégrés ne nécessitent aucun compte. Les actions IA cloud utilisent la clé API *de votre propre* fournisseur, vous ne payez donc directement que le fournisseur d'IA — il n'y a aucun niveau payant dans l'application.
+R : ClipboardxAI est une application payante sur le Mac App Store. Après l'achat, tous les outils locaux intégrés sont inclus et aucun compte n'est requis. Les actions IA cloud utilisent la clé API *de votre propre* fournisseur, vous ne payez donc directement que le fournisseur d'IA — il n'y a aucun niveau payant supplémentaire dans l'application.
 
 **Q : Quels fournisseurs d'IA sont pris en charge ?**
 

@@ -136,7 +136,7 @@ steps:
     desc: 选择内置工具或 AI 动作 — 或开启自动运行，在复制的瞬间自动转换。
 faqs:
   - question: ClipboardxAI 是免费的吗？
-    answer: 应用免费下载。内置本地工具无需账号。云端 AI 动作使用您自己的 API 密钥，费用直接支付给 AI 服务商。
+    answer: ClipboardxAI 是 Mac App Store 上的付费应用。购买后所有内置本地工具均已包含 —— 无需账号。云端 AI 动作使用您自己的 API 密钥，费用直接支付给 AI 服务商。
   - question: 支持哪些 macOS 版本？
     answer: ClipboardxAI 需要 macOS 14 Sonoma 或更高版本，针对 Apple Silicon（M 系列）优化，同时支持 Intel。
   - question: 可以离线使用吗？

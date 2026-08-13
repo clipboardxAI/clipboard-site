@@ -136,7 +136,7 @@ steps:
     desc: Pick a built-in tool or AI action — or flip on auto-run to transform every copy the instant you make it.
 faqs:
   - question: Is ClipboardxAI free?
-    answer: The app is free to download. Built-in local tools work with no account. Cloud AI actions use your own provider API key, so you only pay the AI provider directly.
+    answer: ClipboardxAI is a paid app on the Mac App Store. All built-in local tools are included after purchase — no account needed. Cloud AI actions use your own provider API key, so you only pay the AI provider directly.
   - question: Which macOS versions are supported?
     answer: ClipboardxAI requires macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel support.
   - question: Does it work offline?

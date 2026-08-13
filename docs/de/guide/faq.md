@@ -14,7 +14,7 @@ A: Laden Sie es aus dem [Mac App Store](/de/) (empfohlen) herunter oder holen Si
 
 **F: Ist ClipboardxAI kostenlos?**
 
-A: Die App ist kostenlos herunterladbar. Eingebaute lokale Werkzeuge benötigen kein Konto. Cloud-KI-Aktionen verwenden den API-Schlüssel *Ihres eigenen* Anbieters, sodass Sie den KI-Anbieter direkt bezahlen — es gibt keine kostenpflichtige Stufe in der App.
+A: ClipboardxAI ist eine kostenpflichtige App im Mac App Store. Nach dem Kauf sind alle eingebauten lokalen Werkzeuge enthalten und es wird kein Konto benötigt. Cloud-KI-Aktionen verwenden den API-Schlüssel *Ihres eigenen* Anbieters, sodass Sie den KI-Anbieter direkt bezahlen — es gibt keine zusätzliche kostenpflichtige Stufe in der App.
 
 **F: Welche KI-Anbieter werden unterstützt?**
 

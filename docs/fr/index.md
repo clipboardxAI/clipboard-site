@@ -136,7 +136,7 @@ steps:
     desc: Choisissez un outil intégré ou une action IA — ou activez l'exécution automatique pour transformer chaque copie à l'instant.
 faqs:
   - question: ClipboardxAI est-il gratuit ?
-    answer: L'application est gratuite. Les outils locaux intégrés fonctionnent sans compte. Les actions IA dans le cloud utilisent votre propre clé API, vous payez donc directement le fournisseur d'IA.
+    answer: ClipboardxAI est une application payante sur le Mac App Store. Après l'achat, tous les outils locaux intégrés sont inclus — aucun compte requis. Les actions IA dans le cloud utilisent votre propre clé API, vous payez donc directement le fournisseur d'IA.
   - question: Quelles versions de macOS sont prises en charge ?
     answer: ClipboardxAI nécessite macOS 14 Sonoma ou version ultérieure, optimisé pour Apple Silicon (série M) avec prise en charge d'Intel.
   - question: Fonctionne-t-il hors ligne ?
