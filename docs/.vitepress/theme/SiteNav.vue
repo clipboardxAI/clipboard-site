@@ -77,7 +77,7 @@ import { VPLink } from 'vitepress/theme'
 import VPNavBarMenu from 'vitepress/dist/client/theme-default/components/VPNavBarMenu.vue'
 import VPNavBarTranslations from 'vitepress/dist/client/theme-default/components/VPNavBarTranslations.vue'
 import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/VPSwitchAppearance.vue'
-import { localeLink } from './locale'
+// localeLink no longer needed — nav links are already prefixed in config.ts
 
 const { lang, theme, site } = useData()
 const route = useRoute()
@@ -90,13 +90,13 @@ const homeLink = computed(() =>
   !lang.value || lang.value === 'en' ? '/' : `/${lang.value}/`
 )
 
-// Current locale's nav items (each has text + link)
+// Current locale's nav items (each has text + link).
+// Links in theme.nav are already locale-prefixed by config.ts (tc()),
+// so we use them as-is — no extra localeLink() wrapping.
 const navItems = computed(() =>
   (theme.value.nav || []).map((item: any) => ({
     text: item.text,
-    link: isExternal(item.link)
-      ? item.link
-      : localeLink(item.link, lang.value),
+    link: item.link,
   }))
 )
 
