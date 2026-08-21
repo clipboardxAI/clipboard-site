@@ -60,7 +60,7 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 
 ```bash
 # Copy logs to Desktop for sharing
-cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/Clipboard\ x\ AI/*.log ~/Desktop/ 2>/dev/null
+cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/ClipboxAI/*.log ~/Desktop/ 2>/dev/null
 ```
 
 接著在 [GitHub](https://github.com/clipboxAI) 開啟一個 issue 並附上日誌。

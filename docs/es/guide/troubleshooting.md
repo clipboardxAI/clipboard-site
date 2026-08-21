@@ -60,7 +60,7 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 
 ```bash
 # Copiar los registros al Escritorio para compartirlos
-cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/Clipboard\ x\ AI/*.log ~/Desktop/ 2>/dev/null
+cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/ClipboxAI/*.log ~/Desktop/ 2>/dev/null
 ```
 
 A continuación, abra un issue en [GitHub](https://github.com/clipboxAI) y adjunte los registros.

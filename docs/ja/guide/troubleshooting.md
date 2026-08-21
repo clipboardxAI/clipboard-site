@@ -60,7 +60,7 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 
 ```bash
 # 共有用にログをデスクトップにコピー
-cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/Clipboard\ x\ AI/*.log ~/Desktop/ 2>/dev/null
+cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/ClipboxAI/*.log ~/Desktop/ 2>/dev/null
 ```
 
 その後、[GitHub](https://github.com/clipboxAI) で issue を作成し、ログを添付してください。

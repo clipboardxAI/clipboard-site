@@ -60,7 +60,7 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 
 ```bash
 # Copier les journaux sur le Bureau pour les partager
-cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/Clipboard\ x\ AI/*.log ~/Desktop/ 2>/dev/null
+cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/ClipboxAI/*.log ~/Desktop/ 2>/dev/null
 ```
 
 Ouvrez ensuite un ticket sur [GitHub](https://github.com/clipboxAI) et joignez les journaux.
