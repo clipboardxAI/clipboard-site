@@ -17,7 +17,7 @@ We welcome contributions to improve ClipboxAI! Whether you're fixing a bug, addi
 ### Translations
 - ClipboxAI supports multiple languages via i18n JSON files.
 - Contribute translations for missing or incomplete languages.
-- See `ClipboardXAI/Resources/i18n/` for existing translations.
+- See `ClipboxAI/Resources/i18n/` for existing translations.
 
 ### Code Contributions
 - The app is written in **Swift 6 + SwiftUI**.

@@ -20,7 +20,7 @@
 
 - ClipboxAI 透過 i18n JSON 檔案支援多種語言。
 - 請為缺失或不完整的語言貢獻翻譯。
-- 請參見 `ClipboardXAI/Resources/i18n/` 以查看現有的翻譯。
+- 請參見 `ClipboxAI/Resources/i18n/` 以查看現有的翻譯。
 
 ### 程式碼貢獻（Code Contributions）
 

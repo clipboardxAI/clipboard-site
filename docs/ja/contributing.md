@@ -20,7 +20,7 @@ ClipboxAI の改善にご協力いただきありがとうございます！ バ
 
 - ClipboxAI は i18n JSON ファイルを通じて複数言語に対応しています。
 - 不足している、または不完全な言語の翻訳にご協力ください。
-- 既存の翻訳については `ClipboardXAI/Resources/i18n/` を参照してください。
+- 既存の翻訳については `ClipboxAI/Resources/i18n/` を参照してください。
 
 ### コードの貢献（Code Contributions）
 
