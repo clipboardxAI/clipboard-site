@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "ClipboardxAI"
+  name: "ClipboxAI"
   text: "Deine Zwischenablage, aufgewertet mit KI"
   tagline: "Ein smarter Zwischenablagen-Manager für macOS. Fasse zusammen, übersetze, transformiere und automatisiere alles, was du kopierst — mit integrierten lokalen Werkzeugen und optionaler Cloud-KI."
   image:
     src: /hero-illustration.png
-    alt: ClipboardxAI
+    alt: ClipboxAI
   actions:
     - theme: brand
       text: Loslegen
@@ -94,7 +94,7 @@ sections:
 openMarketplace: Markt öffnen
 cta:
   title: Bereit, deine Zwischenablage schlau zu machen?
-  description: Lade ClipboardxAI herunter und verwandle jedes Kopieren in eine Aktion — privat auf deinem Mac, mit AI wenn du willst.
+  description: Lade ClipboxAI herunter und verwandle jedes Kopieren in eine Aktion — privat auf deinem Mac, mit AI wenn du willst.
   primary: Loslegen
   primaryLink: /guide/installation
   secondary: Anwendung
@@ -135,10 +135,10 @@ steps:
     title: Aktion ausführen
     desc: Wähle ein integriertes Werkzeug oder eine KI-Aktion — oder aktiviere Auto-Run, um jede Kopie sofort zu transformieren.
 faqs:
-  - question: Ist ClipboardxAI kostenlos?
-    answer: ClipboardxAI ist eine kostenpflichtige App im Mac App Store. Nach dem Kauf sind alle integrierten lokalen Werkzeuge enthalten — kein Konto erforderlich. Cloud-KI-Aktionen verwenden deinen eigenen API-Schlüssel, du zahlst also direkt an den KI-Anbieter.
+  - question: Ist ClipboxAI kostenlos?
+    answer: ClipboxAI ist eine kostenpflichtige App im Mac App Store. Nach dem Kauf sind alle integrierten lokalen Werkzeuge enthalten — kein Konto erforderlich. Cloud-KI-Aktionen verwenden deinen eigenen API-Schlüssel, du zahlst also direkt an den KI-Anbieter.
   - question: Welche macOS-Versionen werden unterstützt?
-    answer: ClipboardxAI benötigt macOS 14 Sonoma oder neuer, optimiert für Apple Silicon (M-Serie) mit Intel-Unterstützung.
+    answer: ClipboxAI benötigt macOS 14 Sonoma oder neuer, optimiert für Apple Silicon (M-Serie) mit Intel-Unterstützung.
   - question: Funktioniert es offline?
     answer: Ja. Zwischenablagen-Historie und integrierte lokale Werkzeuge — Links extrahieren, Statistiken zählen, Leerzeilen entfernen und mehr — laufen vollständig auf deinem Mac ohne Internetverbindung.
   - question: Sind meine Zwischenablagedaten privat?

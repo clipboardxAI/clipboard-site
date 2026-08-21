@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-ClipboardxAI est un gestionnaire de presse-papiers intelligent pour macOS. Votre confidentialité est notre priorité.
+ClipboxAI est un gestionnaire de presse-papiers intelligent pour macOS. Votre confidentialité est notre priorité.
 
 ## Conception locale d'abord
 
@@ -11,7 +11,7 @@ ClipboardxAI est un gestionnaire de presse-papiers intelligent pour macOS. Votre
 
 ## IA cloud (facultatif)
 
-ClipboardxAI peut utiliser optionnellement des fournisseurs d'IA cloud (tels que DeepSeek, MiniMax, GLM, Kimi, Mistral, ou un serveur Ollama local) pour alimenter des actions avancées comme le résumé, la traduction et les invites personnalisées.
+ClipboxAI peut utiliser optionnellement des fournisseurs d'IA cloud (tels que DeepSeek, MiniMax, GLM, Kimi, Mistral, ou un serveur Ollama local) pour alimenter des actions avancées comme le résumé, la traduction et les invites personnalisées.
 
 - Lorsqu'elle est activée, le texte sélectionné ou le contenu du presse-papiers est envoyé **directement au fournisseur que vous configurez**, en utilisant **votre propre clé API**.
 - Votre clé API est stockée uniquement dans le Keychain de votre Mac et n'est jamais téléversée vers nous.
@@ -45,16 +45,16 @@ Vous pouvez gérer ces permissions dans **Réglages système → Confidentialit�
 
 ## Achats intégrés / Licence
 
-Les achats de licence (le cas échéant) sont traités par Apple via le Mac App Store. ClipboardxAI ne reçoit ni ne stocke vos informations de paiement. Les reçus de licence sont stockés localement pour vérifier la propriété.
+Les achats de licence (le cas échéant) sont traités par Apple via le Mac App Store. ClipboxAI ne reçoit ni ne stocke vos informations de paiement. Les reçus de licence sont stockés localement pour vérifier la propriété.
 
 ## Services tiers
 
-ClipboardxAI n'inclut en soi aucune analytique, publicité ou service de suivi tiers. Lorsque vous activez un fournisseur d'IA cloud, vos requêtes sont traitées par ce fournisseur selon sa propre politique de confidentialité.
+ClipboxAI n'inclut en soi aucune analytique, publicité ou service de suivi tiers. Lorsque vous activez un fournisseur d'IA cloud, vos requêtes sont traitées par ce fournisseur selon sa propre politique de confidentialité.
 
 ## Demandes relatives à la confidentialité
 
-Étant donné que ClipboardxAI stocke toutes les données localement sur votre appareil, nous ne détenons aucune donnée personnelle sur nos serveurs. Si vous avez des questions sur la confidentialité, contactez-nous.
+Étant donné que ClipboxAI stocke toutes les données localement sur votre appareil, nous ne détenons aucune donnée personnelle sur nos serveurs. Si vous avez des questions sur la confidentialité, contactez-nous.
 
 ## Contact
 
-Pour toute question sur la confidentialité, ouvrez un ticket sur [GitHub Issues](https://github.com/clipboardxAI/clipboard-site/issues) ou envoyez-nous un e-mail à clipboardxai@w3cub.com.
+Pour toute question sur la confidentialité, ouvrez un ticket sur [GitHub Issues](https://github.com/clipboxAI/clipboard-site/issues) ou envoyez-nous un e-mail à clipboxai@w3cub.com.

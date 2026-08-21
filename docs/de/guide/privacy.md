@@ -1,6 +1,6 @@
 # Datenschutzerklärung
 
-ClipboardxAI ist ein intelligenter Zwischenablagen-Manager für macOS. Ihre Privatsphäre hat für uns Priorität.
+ClipboxAI ist ein intelligenter Zwischenablagen-Manager für macOS. Ihre Privatsphäre hat für uns Priorität.
 
 ## Local-First-Design
 
@@ -11,7 +11,7 @@ ClipboardxAI ist ein intelligenter Zwischenablagen-Manager für macOS. Ihre Priv
 
 ## Cloud-KI (Optional)
 
-ClipboardxAI kann optional Cloud-KI-Anbieter (wie DeepSeek, MiniMax, GLM, Kimi, Mistral oder einen lokalen Ollama-Server) nutzen, um erweiterte Aktionen wie Zusammenfassen, Übersetzen und benutzerdefinierte Prompts auszuführen.
+ClipboxAI kann optional Cloud-KI-Anbieter (wie DeepSeek, MiniMax, GLM, Kimi, Mistral oder einen lokalen Ollama-Server) nutzen, um erweiterte Aktionen wie Zusammenfassen, Übersetzen und benutzerdefinierte Prompts auszuführen.
 
 - Wenn aktiviert, wird der ausgewählte Text oder Zwischenablage-Inhalt **direkt an den von Ihnen konfigurierten Anbieter** gesendet, unter Verwendung **Ihres eigenen API-Schlüssels**.
 - Ihr API-Schlüssel wird ausschließlich im Keychain Ihres Macs gespeichert und niemals zu uns hochgeladen.
@@ -45,16 +45,16 @@ Sie können diese Berechtigungen jederzeit in **Systemeinstellungen → Datensch
 
 ## In-App-Käufe / Lizenz
 
-Lizenzkäufe (falls vorhanden) werden von Apple über den Mac App Store abgewickelt. ClipboardxAI empfängt oder speichert Ihre Zahlungsdaten nicht. Lizenz-Belege werden lokal gespeichert, um den Besitz zu verifizieren.
+Lizenzkäufe (falls vorhanden) werden von Apple über den Mac App Store abgewickelt. ClipboxAI empfängt oder speichert Ihre Zahlungsdaten nicht. Lizenz-Belege werden lokal gespeichert, um den Besitz zu verifizieren.
 
 ## Drittanbieter-Dienste
 
-ClipboardxAI selbst enthält keine Analysen, Werbung oder Tracking-Dienste von Drittanbietern. Wenn Sie einen Cloud-KI-Anbieter aktivieren, werden Ihre Anfragen von diesem Anbieter gemäß dessen eigener Datenschutzerklärung bearbeitet.
+ClipboxAI selbst enthält keine Analysen, Werbung oder Tracking-Dienste von Drittanbietern. Wenn Sie einen Cloud-KI-Anbieter aktivieren, werden Ihre Anfragen von diesem Anbieter gemäß dessen eigener Datenschutzerklärung bearbeitet.
 
 ## Datenschutz-Anfragen
 
-Da ClipboardxAI alle Daten lokal auf Ihrem Gerät speichert, halten wir keine personenbezogenen Daten auf unseren Servern vor. Wenn Sie Fragen zum Datenschutz haben, kontaktieren Sie uns bitte.
+Da ClipboxAI alle Daten lokal auf Ihrem Gerät speichert, halten wir keine personenbezogenen Daten auf unseren Servern vor. Wenn Sie Fragen zum Datenschutz haben, kontaktieren Sie uns bitte.
 
 ## Kontakt
 
-Für Datenschutz-Fragen öffnen Sie ein Issue unter [GitHub Issues](https://github.com/clipboardxAI/clipboard-site/issues) oder schreiben Sie uns an clipboardxai@w3cub.com.
+Für Datenschutz-Fragen öffnen Sie ein Issue unter [GitHub Issues](https://github.com/clipboxAI/clipboard-site/issues) oder schreiben Sie uns an clipboxai@w3cub.com.

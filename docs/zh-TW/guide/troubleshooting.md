@@ -1,6 +1,6 @@
 # 疑難排解
 
-本頁彙整 ClipboardxAI 在 macOS 上的常見問題及其解決方式。
+本頁彙整 ClipboxAI 在 macOS 上的常見問題及其解決方式。
 
 ## 應用程式無法啟動或在啟動時崩潰
 
@@ -39,7 +39,7 @@
 
 檢查清單：
 
-1. 深層連結 `clipboardxai://install?action=<id>` 必須由已安裝的應用程式處理——請確認 ClipboardxAI 已安裝並正在執行。
+1. 深層連結 `clipboxai://install?action=<id>` 必須由已安裝的應用程式處理——請確認 ClipboxAI 已安裝並正在執行。
 2. 若你的瀏覽器封鎖該深層連結，請複製它並手動開啟，或從應用程式內的 **Marketplace** 分頁安裝。
 3. 確認該動作 ID 仍已在 marketplace 中發佈。
 
@@ -47,7 +47,7 @@
 
 若要重設設定並清除本地資料：
 
-1. 退出 ClipboardxAI。
+1. 退出 ClipboxAI。
 2. 移除容器（這會刪除歷史紀錄與設定）：
 
 ```bash
@@ -63,14 +63,14 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/Clipboard\ x\ AI/*.log ~/Desktop/ 2>/dev/null
 ```
 
-接著在 [GitHub](https://github.com/clipboardxAI) 開啟一個 issue 並附上日誌。
+接著在 [GitHub](https://github.com/clipboxAI) 開啟一個 issue 並附上日誌。
 
 ## 回報問題
 
 開啟 issue 時，請包含：
 
 - macOS 版本（Apple 選單 → About This Mac）
-- ClipboardxAI 版本（應用程式選單 → About）
+- ClipboxAI 版本（應用程式選單 → About）
 - 重現步驟
 - 日誌（見上方）
 

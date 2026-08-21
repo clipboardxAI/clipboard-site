@@ -193,7 +193,7 @@ function glyph(a: Action): string {
 
 // ── Install deep link ─────────────────────────────────────────
 function install(a: Action) {
-  window.location.href = `clipboardxai://install?action=${encodeURIComponent(a.id)}`
+  window.location.href = `clipboxai://install?action=${encodeURIComponent(a.id)}`
 }
 
 // ── Load catalog ──────────────────────────────────────────────

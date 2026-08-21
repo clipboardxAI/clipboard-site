@@ -1,8 +1,8 @@
 # 常见问题（FAQ）
 
-**问：什么是 ClipboardxAI？**
+**问：什么是 ClipboxAI？**
 
-答：ClipboardxAI 是一款面向 macOS 的智能剪贴板管理器。它会将你复制的一切内容保存为可搜索的历史记录，并让你对其执行操作——总结、翻译、整理文本，或发送给云端 AI 模型。
+答：ClipboxAI 是一款面向 macOS 的智能剪贴板管理器。它会将你复制的一切内容保存为可搜索的历史记录，并让你对其执行操作——总结、翻译、整理文本，或发送给云端 AI 模型。
 
 **问：支持哪些 macOS 版本？**
 
@@ -10,11 +10,11 @@
 
 **问：如何安装？**
 
-答：从 [Mac App Store](/zh-CN/)（推荐）下载，或从 ~~[GitHub Releases](https://github.com/clipboardxAI) 获取最新版本~~。详见[安装指南](/zh-CN/guide/installation)。
+答：从 [Mac App Store](/zh-CN/)（推荐）下载，或从 ~~[GitHub Releases](https://github.com/clipboxAI) 获取最新版本~~。详见[安装指南](/zh-CN/guide/installation)。
 
-**问：ClipboardxAI 免费吗？**
+**问：ClipboxAI 免费吗？**
 
-答：ClipboardxAI 是 Mac App Store 上的付费应用。购买后所有内置本地工具均已包含，无需账号。云端 AI 操作使用*你自己的*提供商 API key，费用直接支付给 AI 提供商——应用内无需额外付费。
+答：ClipboxAI 是 Mac App Store 上的付费应用。购买后所有内置本地工具均已包含，无需账号。云端 AI 操作使用*你自己的*提供商 API key，费用直接支付给 AI 提供商——应用内无需额外付费。
 
 **问：支持哪些 AI 提供商？**
 
@@ -38,7 +38,7 @@
 
 **问：如何报告错误或请求功能？**
 
-答：在 [GitHub 仓库](https://github.com/clipboardxAI) 上提交 issue。请附上你的 macOS 版本、应用版本与复现步骤。
+答：在 [GitHub 仓库](https://github.com/clipboxAI) 上提交 issue。请附上你的 macOS 版本、应用版本与复现步骤。
 
 **问：我的数据保存在哪里？**
 

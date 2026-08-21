@@ -1,8 +1,8 @@
 # Introduction
 
-## À propos de ClipboardxAI
+## À propos de ClipboxAI
 
-**ClipboardxAI** est un gestionnaire de presse-papiers intelligent pour macOS. À chaque fois que vous copiez du texte, du code ou un lien, il est enregistré dans un historique consultable depuis votre barre de menus. En un clic — ou de façon totalement automatique — vous pouvez exécuter une action sur cet élément : le résumer, le traduire, le mettre en forme, ou le confier à un modèle d'IA cloud.
+**ClipboxAI** est un gestionnaire de presse-papiers intelligent pour macOS. À chaque fois que vous copiez du texte, du code ou un lien, il est enregistré dans un historique consultable depuis votre barre de menus. En un clic — ou de façon totalement automatique — vous pouvez exécuter une action sur cet élément : le résumer, le traduire, le mettre en forme, ou le confier à un modèle d'IA cloud.
 
 Il repose sur deux types d'outils :
 
@@ -17,7 +17,7 @@ Tout ce que vous copiez est capturé automatiquement et conservé dans un histor
 
 ### ⚡ Suggestions intelligentes
 
-ClipboardxAI propose les actions les plus pertinentes pour l'élément en cours. Acceptez une suggestion, ou parcourez la liste complète des outils.
+ClipboxAI propose les actions les plus pertinentes pour l'élément en cours. Acceptez une suggestion, ou parcourez la liste complète des outils.
 
 ### 🛠️ Outils locaux intégrés
 
@@ -40,7 +40,7 @@ Envoyez l'élément en cours à un modèle cloud pour :
 
 ### 🛒 Marketplace d'actions
 
-Parcourez les actions IA créées par la communauté et installez-les en un clic via un lien profond (`clipboardxai://install?action=<id>`). Les catégories comprennent Écriture, Développeur, Productivité, Traduction, Réseaux sociaux et Analyse.
+Parcourez les actions IA créées par la communauté et installez-les en un clic via un lien profond (`clipboxai://install?action=<id>`). Les catégories comprennent Écriture, Développeur, Productivité, Traduction, Réseaux sociaux et Analyse.
 
 ### 🔒 Privé par conception
 
@@ -60,4 +60,4 @@ L'application et ce site prennent en charge 7 langues : anglais, chinois simplif
 
 ## Pour commencer
 
-Si vous découvrez ClipboardxAI, commencez par le [Guide d'installation](/fr/guide/installation) pour faire fonctionner l'application sur votre Mac, puis lisez [Utilisation](/fr/guide/usage) pour comprendre le fonctionnement des actions.
+Si vous découvrez ClipboxAI, commencez par le [Guide d'installation](/fr/guide/installation) pour faire fonctionner l'application sur votre Mac, puis lisez [Utilisation](/fr/guide/usage) pour comprendre le fonctionnement des actions.

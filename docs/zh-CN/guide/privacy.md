@@ -1,6 +1,6 @@
 # 隐私政策
 
-ClipboardxAI 是一款面向 macOS 的智能剪贴板管理器。你的隐私是我们的首要考量。
+ClipboxAI 是一款面向 macOS 的智能剪贴板管理器。你的隐私是我们的首要考量。
 
 ## 本地优先设计（Local-First Design）
 
@@ -11,7 +11,7 @@ ClipboardxAI 是一款面向 macOS 的智能剪贴板管理器。你的隐私是
 
 ## 云端 AI（可选，Cloud AI）
 
-ClipboardxAI 可选择使用云端 AI 提供商（如 DeepSeek、MiniMax、GLM、Kimi、Mistral，或本地 Ollama 服务器）来支撑总结、翻译、自定义提示等高级操作。
+ClipboxAI 可选择使用云端 AI 提供商（如 DeepSeek、MiniMax、GLM、Kimi、Mistral，或本地 Ollama 服务器）来支撑总结、翻译、自定义提示等高级操作。
 
 - 启用后，所选文本或剪贴内容会使用**你自己的 API key**，**直接发送到你配置的提供商**。
 - 你的 API key 仅保存在你 Mac 的 Keychain 中，绝不会上传给我们。
@@ -45,16 +45,16 @@ ClipboardxAI 可选择使用云端 AI 提供商（如 DeepSeek、MiniMax、GLM�
 
 ## 应用内购买 / 许可
 
-许可购买（如有）由 Apple 通过 Mac App Store 处理。ClipboardxAI 不接收或存储你的支付信息。许可凭证保存在本地以验证所有权。
+许可购买（如有）由 Apple 通过 Mac App Store 处理。ClipboxAI 不接收或存储你的支付信息。许可凭证保存在本地以验证所有权。
 
 ## 第三方服务
 
-ClipboardxAI 本身不包含任何第三方分析、广告或追踪服务。当你启用某个云端 AI 提供商时，你的请求由该提供商按其自身的隐私政策处理。
+ClipboxAI 本身不包含任何第三方分析、广告或追踪服务。当你启用某个云端 AI 提供商时，你的请求由该提供商按其自身的隐私政策处理。
 
 ## 隐私请求
 
-由于 ClipboardxAI 将所有数据本地保存在你的设备上，我们的服务器上不持有任何个人数据。如果你对隐私有疑问，请联系我们。
+由于 ClipboxAI 将所有数据本地保存在你的设备上，我们的服务器上不持有任何个人数据。如果你对隐私有疑问，请联系我们。
 
 ## 联系方式
 
-如有隐私相关问题，请在 [GitHub Issues](https://github.com/clipboardxAI/clipboard-site/issues) 上提交 issue，或发送邮件至 clipboardxai@w3cub.com。
+如有隐私相关问题，请在 [GitHub Issues](https://github.com/clipboxAI/clipboard-site/issues) 上提交 issue，或发送邮件至 clipboxai@w3cub.com。

@@ -1,4 +1,4 @@
-# ClipboardxAI Site — Project Memory
+# ClipboxAI Site — Project Memory
 
 ## Architecture
 

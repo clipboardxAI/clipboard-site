@@ -1,21 +1,21 @@
 # Contribution
 
-Nous accueillons avec plaisir les contributions pour améliorer ClipboardxAI ! Que vous corrigiez un bug, ajoutiez une fonctionnalité, traduisiez ou amélioriez la documentation, votre aide est appréciée.
+Nous accueillons avec plaisir les contributions pour améliorer ClipboxAI ! Que vous corrigiez un bug, ajoutiez une fonctionnalité, traduisiez ou amélioriez la documentation, votre aide est appréciée.
 
 ## Façons de contribuer
 
 ### Rapports de bug
-- Vérifiez d'abord les [tickets](https://github.com/clipboardxAI/issues) existants.
-- Incluez la version de macOS, la version de ClipboardxAI et les étapes pour reproduire.
+- Vérifiez d'abord les [tickets](https://github.com/clipboxAI/issues) existants.
+- Incluez la version de macOS, la version de ClipboxAI et les étapes pour reproduire.
 - Joignez un texte d'exemple (aucun contenu de presse-papiers sensible, s'il vous plaît) si utile.
 
 ### Demandes de fonctionnalités
 - Décrivez la fonctionnalité et le cas d'usage.
-- Expliquez en quoi elle bénéficierait aux utilisateurs de ClipboardxAI.
+- Expliquez en quoi elle bénéficierait aux utilisateurs de ClipboxAI.
 - Vérifiez qu'elle correspond à la philosophie locale d'abord et respectueuse de la vie privée.
 
 ### Traductions
-- ClipboardxAI prend en charge plusieurs langues via des fichiers JSON i18n.
+- ClipboxAI prend en charge plusieurs langues via des fichiers JSON i18n.
 - Contribuez des traductions pour les langues manquantes ou incomplètes.
 - Voir `ClipboardXAI/Resources/i18n/` pour les traductions existantes.
 
@@ -109,4 +109,4 @@ Ce projet suit un code de conduite. En participant, vous acceptez :
 
 ## Des questions ?
 
-Si vous avez des questions sur la contribution, consultez les [tickets](https://github.com/clipboardxAI/issues) existants ou créez-en un nouveau. Merci d'aider à améliorer ClipboardxAI ! 🎉
+Si vous avez des questions sur la contribution, consultez les [tickets](https://github.com/clipboxAI/issues) existants ou créez-en un nouveau. Merci d'aider à améliorer ClipboxAI ! 🎉

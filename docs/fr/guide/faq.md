@@ -1,8 +1,8 @@
 # FAQ
 
-**Q : Qu'est-ce que ClipboardxAI ?**
+**Q : Qu'est-ce que ClipboxAI ?**
 
-R : ClipboardxAI est un gestionnaire de presse-papiers intelligent pour macOS. Il conserve un historique consultable de tout ce que vous copiez et vous permet d'exécuter des actions dessus — résumer, traduire, mettre en forme le texte, ou l'envoyer à un modèle d'IA cloud.
+R : ClipboxAI est un gestionnaire de presse-papiers intelligent pour macOS. Il conserve un historique consultable de tout ce que vous copiez et vous permet d'exécuter des actions dessus — résumer, traduire, mettre en forme le texte, ou l'envoyer à un modèle d'IA cloud.
 
 **Q : Quelles versions de macOS sont prises en charge ?**
 
@@ -10,11 +10,11 @@ R : macOS 14 Sonoma ou version ultérieure, optimisé pour Apple Silicon (série
 
 **Q : Comment l'installer ?**
 
-R : Téléchargez depuis le [Mac App Store](/fr/) (recommandé) ou récupérez la dernière version depuis ~~[GitHub Releases](https://github.com/clipboardxAI)~~. Voir le [Guide d'installation](/fr/guide/installation).
+R : Téléchargez depuis le [Mac App Store](/fr/) (recommandé) ou récupérez la dernière version depuis ~~[GitHub Releases](https://github.com/clipboxAI)~~. Voir le [Guide d'installation](/fr/guide/installation).
 
-**Q : ClipboardxAI est-il gratuit ?**
+**Q : ClipboxAI est-il gratuit ?**
 
-R : ClipboardxAI est une application payante sur le Mac App Store. Après l'achat, tous les outils locaux intégrés sont inclus et aucun compte n'est requis. Les actions IA cloud utilisent la clé API *de votre propre* fournisseur, vous ne payez donc directement que le fournisseur d'IA — il n'y a aucun niveau payant supplémentaire dans l'application.
+R : ClipboxAI est une application payante sur le Mac App Store. Après l'achat, tous les outils locaux intégrés sont inclus et aucun compte n'est requis. Les actions IA cloud utilisent la clé API *de votre propre* fournisseur, vous ne payez donc directement que le fournisseur d'IA — il n'y a aucun niveau payant supplémentaire dans l'application.
 
 **Q : Quels fournisseurs d'IA sont pris en charge ?**
 
@@ -38,7 +38,7 @@ R : La version du Mac App Store se met à jour automatiquement. ~~Pour les versi
 
 **Q : Comment signaler des bugs ou demander des fonctionnalités ?**
 
-R : Ouvrez un ticket sur le [dépôt GitHub](https://github.com/clipboardxAI). Incluez votre version de macOS, la version de l'application et les étapes pour reproduire.
+R : Ouvrez un ticket sur le [dépôt GitHub](https://github.com/clipboxAI). Incluez votre version de macOS, la version de l'application et les étapes pour reproduire.
 
 **Q : Où sont stockées mes données ?**
 

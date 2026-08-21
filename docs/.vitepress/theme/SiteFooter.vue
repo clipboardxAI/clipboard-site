@@ -30,7 +30,7 @@ import { computed } from 'vue'
 import { useData } from 'vitepress'
 
 const { theme } = useData()
-const siteTitle = computed(() => theme.value.siteTitle ?? 'ClipboardxAI')
+const siteTitle = computed(() => theme.value.siteTitle ?? 'ClipboxAI')
 
 interface FooterItem { text: string; link: string }
 interface FooterGroup { text: string; items: FooterItem[] }

@@ -1,8 +1,8 @@
 # Preguntas frecuentes
 
-**P: ¿Qué es ClipboardxAI?**
+**P: ¿Qué es ClipboxAI?**
 
-R: ClipboardxAI es un gestor de portapapeles inteligente para macOS. Mantiene un historial buscable de todo lo que copia y le permite ejecutar acciones sobre él — resumir, traducir, ordenar texto o enviarlo a un modelo de IA en la nube.
+R: ClipboxAI es un gestor de portapapeles inteligente para macOS. Mantiene un historial buscable de todo lo que copia y le permite ejecutar acciones sobre él — resumir, traducir, ordenar texto o enviarlo a un modelo de IA en la nube.
 
 **P: ¿Qué versiones de macOS son compatibles?**
 
@@ -10,11 +10,11 @@ R: macOS 14 Sonoma o posterior, optimizado para Apple Silicon (serie M) con comp
 
 **P: ¿Cómo lo instalo?**
 
-R: Descárguelo desde la [Mac App Store](/es/) (recomendado) o obtenga la última compilación desde ~~[GitHub Releases](https://github.com/clipboardxAI)~~. Consulte la [Guía de instalación](/es/guide/installation).
+R: Descárguelo desde la [Mac App Store](/es/) (recomendado) o obtenga la última compilación desde ~~[GitHub Releases](https://github.com/clipboxAI)~~. Consulte la [Guía de instalación](/es/guide/installation).
 
-**P: ¿Es gratuito ClipboardxAI?**
+**P: ¿Es gratuito ClipboxAI?**
 
-R: ClipboardxAI es una app de pago en el Mac App Store. Tras la compra, todas las herramientas locales integradas están incluidas y no se requiere cuenta. Las acciones de IA en la nube usan la API key de *su propio* proveedor, por lo que solo paga al proveedor de IA directamente — no hay ninguna capa de pago adicional en la aplicación.
+R: ClipboxAI es una app de pago en el Mac App Store. Tras la compra, todas las herramientas locales integradas están incluidas y no se requiere cuenta. Las acciones de IA en la nube usan la API key de *su propio* proveedor, por lo que solo paga al proveedor de IA directamente — no hay ninguna capa de pago adicional en la aplicación.
 
 **P: ¿Qué proveedores de IA son compatibles?**
 
@@ -38,7 +38,7 @@ R: La versión de la Mac App Store se actualiza automáticamente. ~~Para las com
 
 **P: ¿Cómo informo de errores o solicito funciones?**
 
-R: Abra un issue en el [repositorio de GitHub](https://github.com/clipboardxAI). Incluya su versión de macOS, la versión de la aplicación y los pasos para reproducirlo.
+R: Abra un issue en el [repositorio de GitHub](https://github.com/clipboxAI). Incluya su versión de macOS, la versión de la aplicación y los pasos para reproducirlo.
 
 **P: ¿Dónde se almacenan mis datos?**
 

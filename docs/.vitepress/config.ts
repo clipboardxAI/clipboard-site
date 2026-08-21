@@ -13,7 +13,7 @@ const STR = {
     legalGroup: 'Legal',
     privacy: 'Privacy Policy', privacyChoices: 'Privacy Choices', terms: 'Terms of Service',
     footerMessage: 'Built for macOS — smart clipboard actions, powered by AI.',
-    footerCopyright: 'Copyright © 2026 ClipboardxAI Project. All rights reserved.',
+    footerCopyright: 'Copyright © 2026 ClipboxAI Project. All rights reserved.',
     product: 'Product', about: 'About', features: 'Features',
     support: 'Support', documentation: 'Documentation', contact: 'Contact',
     company: 'Company',
@@ -27,7 +27,7 @@ const STR = {
     legalGroup: '法律',
     privacy: '隐私政策', privacyChoices: '隐私选项', terms: '服务条款',
     footerMessage: '为 macOS 打造 — 智能剪贴板操作，由 AI 驱动。',
-    footerCopyright: '© 2026 ClipboardxAI 项目。保留所有权利。',
+    footerCopyright: '© 2026 ClipboxAI 项目。保留所有权利。',
     product: '产品', about: '关于', features: '功能',
     support: '支持', documentation: '文档', contact: '联系我们',
     company: '公司',
@@ -41,7 +41,7 @@ const STR = {
     legalGroup: '法律',
     privacy: '隱私政策', privacyChoices: '隱私選項', terms: '服務條款',
     footerMessage: '為 macOS 打造 — 智慧剪貼板操作，由 AI 驅動。',
-    footerCopyright: '© 2026 ClipboardxAI 專案。保留所有權利。',
+    footerCopyright: '© 2026 ClipboxAI 專案。保留所有權利。',
     product: '產品', about: '關於', features: '功能',
     support: '支援', documentation: '文件', contact: '聯絡我們',
     company: '公司',
@@ -55,7 +55,7 @@ const STR = {
     legalGroup: '法務',
     privacy: 'プライバシーポリシー', privacyChoices: 'プライバシーの選択', terms: '利用規約',
     footerMessage: 'macOS のために — AI で動くスマートなクリップボード操作。',
-    footerCopyright: '© 2026 ClipboardxAI プロジェクト. All rights reserved.',
+    footerCopyright: '© 2026 ClipboxAI プロジェクト. All rights reserved.',
     product: '製品', about: '概要', features: '機能',
     support: 'サポート', documentation: 'ドキュメント', contact: 'お問い合わせ',
     company: '企業',
@@ -69,7 +69,7 @@ const STR = {
     legalGroup: 'Rechtliches',
     privacy: 'Datenschutz', privacyChoices: 'Datenschutz-Einstellungen', terms: 'Nutzungsbedingungen',
     footerMessage: 'Für macOS entwickelt — smarte Zwischenablagen-Aktionen, unterstützt von KI.',
-    footerCopyright: '© 2026 ClipboardxAI-Projekt. Alle Rechte vorbehalten.',
+    footerCopyright: '© 2026 ClipboxAI-Projekt. Alle Rechte vorbehalten.',
     product: 'Produkt', about: 'Über', features: 'Funktionen',
     support: 'Support', documentation: 'Dokumentation', contact: 'Kontakt',
     company: 'Unternehmen',
@@ -83,7 +83,7 @@ const STR = {
     legalGroup: 'Legal',
     privacy: 'Política de privacidad', privacyChoices: 'Opciones de privacidad', terms: 'Términos del servicio',
     footerMessage: 'Creado para macOS — acciones inteligentes para el portapapeles, impulsadas por IA.',
-    footerCopyright: '© 2026 Proyecto ClipboardxAI. Todos los derechos reservados.',
+    footerCopyright: '© 2026 Proyecto ClipboxAI. Todos los derechos reservados.',
     product: 'Producto', about: 'Acerca de', features: 'Funciones',
     support: 'Soporte', documentation: 'Documentación', contact: 'Contacto',
     company: 'Empresa',
@@ -97,7 +97,7 @@ const STR = {
     legalGroup: 'Légal',
     privacy: 'Politique de confidentialité', privacyChoices: 'Choix de confidentialité', terms: 'Conditions d’utilisation',
     footerMessage: 'Conçu pour macOS — des actions intelligentes pour le presse-papiers, propulsées par l’IA.',
-    footerCopyright: '© 2026 Projet ClipboardxAI. Tous droits réservés.',
+    footerCopyright: '© 2026 Projet ClipboxAI. Tous droits réservés.',
     product: 'Produit', about: 'À propos', features: 'Fonctionnalités',
     support: 'Assistance', documentation: 'Documentation', contact: 'Contact',
     company: 'Société',
@@ -122,7 +122,7 @@ function tc(S: typeof STR.en, lang: string) {
       { text: S.ecosystem, link: L('/ecosystem/') },
       { text: S.guide, link: L('/guide/introduction') },
       { text: S.faq, link: L('/guide/faq') },
-      { text: S.github, link: 'https://github.com/clipboardxAI' },
+      { text: S.github, link: 'https://github.com/clipboxAI' },
     ],
     sidebar: [
       {
@@ -171,7 +171,7 @@ function tc(S: typeof STR.en, lang: string) {
             { text: S.documentation, link: L('/guide/introduction') },
             { text: S.faq, link: L('/guide/faq') },
             { text: S.troubleshooting, link: L('/guide/troubleshooting') },
-            { text: S.contact, link: 'mailto:clipboardxai@w3cub.com' },
+            { text: S.contact, link: 'mailto:clipboxai@w3cub.com' },
           ],
         },
         {
@@ -180,7 +180,7 @@ function tc(S: typeof STR.en, lang: string) {
             { text: S.about, link: L('/guide/introduction') },
             { text: S.privacy, link: L('/guide/privacy') },
             { text: S.terms, link: L('/guide/terms') },
-            { text: S.github, link: 'https://github.com/clipboardxAI' },
+            { text: S.github, link: 'https://github.com/clipboxAI' },
           ],
         },
       ],
@@ -230,9 +230,9 @@ const MD = {
 
 export default defineConfig({
   base: '/',
-  title: 'ClipboardxAI',
-  titleTemplate: 'ClipboardxAI — :title',
-  description: 'ClipboardxAI — Smart clipboard actions for macOS, powered by AI. Transform, summarize, translate and automate your clipboard with built-in and cloud AI tools.',
+  title: 'ClipboxAI',
+  titleTemplate: 'ClipboxAI — :title',
+  description: 'ClipboxAI — Smart clipboard actions for macOS, powered by AI. Transform, summarize, translate and automate your clipboard with built-in and cloud AI tools.',
   lastUpdated: true,
   head: [
     // Favicons
@@ -244,36 +244,36 @@ export default defineConfig({
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
 
     // SEO
-    ['meta', { name: 'keywords', content: 'clipboard, ai, macos, clipboard manager, smart actions, summarize, translate, automate, clipboardxai' }],
-    ['meta', { name: 'author', content: 'ClipboardxAI Project' }],
+    ['meta', { name: 'keywords', content: 'clipboard, ai, macos, clipboard manager, smart actions, summarize, translate, automate, clipboxai' }],
+    ['meta', { name: 'author', content: 'ClipboxAI Project' }],
 
     // Open Graph / Facebook
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'ClipboardxAI' }],
+    ['meta', { property: 'og:site_name', content: 'ClipboxAI' }],
     ['meta', { property: 'og:url', content: 'https://clipboard.w3cub.com/' }],
-    ['meta', { property: 'og:title', content: 'ClipboardxAI — Smart Clipboard Actions Powered by AI' }],
+    ['meta', { property: 'og:title', content: 'ClipboxAI — Smart Clipboard Actions Powered by AI' }],
     ['meta', { property: 'og:description', content: 'Transform, summarize, translate and automate your clipboard with built-in and cloud AI tools on macOS. Native, fast, and private.' }],
     ['meta', { property: 'og:image', content: 'https://clipboard.w3cub.com/preview.png' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
-    ['meta', { property: 'og:image:alt', content: 'ClipboardxAI Preview' }],
+    ['meta', { property: 'og:image:alt', content: 'ClipboxAI Preview' }],
 
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:url', content: 'https://clipboard.w3cub.com/' }],
-    ['meta', { name: 'twitter:title', content: 'ClipboardxAI — Smart Clipboard Actions Powered by AI' }],
+    ['meta', { name: 'twitter:title', content: 'ClipboxAI — Smart Clipboard Actions Powered by AI' }],
     ['meta', { name: 'twitter:description', content: 'Transform, summarize, translate and automate your clipboard with built-in and cloud AI tools on macOS. Native, fast, and private.' }],
     ['meta', { name: 'twitter:image', content: 'https://clipboard.w3cub.com/preview.png' }],
-    ['meta', { name: 'twitter:image:alt', content: 'ClipboardxAI Preview' }],
+    ['meta', { name: 'twitter:image:alt', content: 'ClipboxAI Preview' }],
   ],
   themeConfig: {
-    siteTitle: 'ClipboardxAI',
+    siteTitle: 'ClipboxAI',
     logo: '/logo.png',
     search: {
       provider: 'local',
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/clipboardxAI' },
+      { icon: 'github', link: 'https://github.com/clipboxAI' },
     ],
   },
   locales: {

@@ -2,7 +2,7 @@
 
 ## Zwischenablagen-Verlauf
 
-ClipboardxAI läuft in Ihrer **Menüleiste**. Jedes Mal, wenn Sie etwas kopieren, wird es Ihrem Verlauf hinzugefügt.
+ClipboxAI läuft in Ihrer **Menüleiste**. Jedes Mal, wenn Sie etwas kopieren, wird es Ihrem Verlauf hinzugefügt.
 
 - Klicken Sie auf das Menüleisten-Symbol, um das Verlaufs-Panel zu öffnen.
 - Fahren Sie mit der Maus über einen Eintrag und drücken Sie den Aktions-Shortcut, oder klicken Sie, um ihn zurück in die Zwischenablage zu kopieren.
@@ -52,7 +52,7 @@ Falls kein Schlüssel festgelegt ist, erinnert Sie das Konfigurations-Banner im 
 ## Marketplace
 
 1. Öffnen Sie den **Marketplace** aus dem KI-Werkzeug-Fenster (oder der [Marketplace](/de/marketplace/)-Seite der Website).
-2. Klicken Sie bei einer Aktion auf **Install**. Dadurch wird die App über den Deep-Link `clipboardxai://install?action=<id>` geöffnet und die Aktion Ihrer Liste **Installed** hinzugefügt.
+2. Klicken Sie bei einer Aktion auf **Install**. Dadurch wird die App über den Deep-Link `clipboxai://install?action=<id>` geöffnet und die Aktion Ihrer Liste **Installed** hinzugefügt.
 
 ## Tastenkürzel
 
@@ -67,7 +67,7 @@ Falls kein Schlüssel festgelegt ist, erinnert Sie das Konfigurations-Banner im 
 
 ## Einstellungen
 
-Öffnen Sie **ClipboardxAI → Einstellungen** (oder `Cmd+,`):
+Öffnen Sie **ClipboxAI → Einstellungen** (oder `Cmd+,`):
 
 - **General**: Sprache, Start beim Anmelden, Erscheinungsbild-Theme.
 - **AI**: Cloud-Anbieter, Modell und API-Schlüssel (Keychain).

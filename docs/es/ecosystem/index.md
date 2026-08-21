@@ -34,7 +34,7 @@ Cuando el usuario hace clic en **Instalar**, Clipboard x AI registra la acción 
 - `{{files}}` — ruta(s) absoluta(s) del archivo del elemento actual del portapapeles
   (separadas por saltos de línea si hay varios archivos).
 - `{{text}}` — el contenido de texto sin formato.
-- `{{returnURL}}` — una URL de retorno opcional `clipboardxai://callback?…` para
+- `{{returnURL}}` — una URL de retorno opcional `clipboxai://callback?…` para
   idas y vueltas estilo x-callback-url (se usa una vez que la aplicación hermana la implemente).
 
 Si la aplicación de destino **no está instalada**, la acción se oculta del panel
@@ -57,9 +57,9 @@ extensiones de Finder de NueZip y Nicasa son implementaciones de referencia de l
 Mantenemos el catálogo en un repositorio público para que cualquiera pueda contribuir con una acción:
 
 - 📦 **Enviar una acción** (o solicitar que se añada su aplicación) mediante
-  [clipboardxAI/marketplace · Issues](https://github.com/clipboardxAI/marketplace/issues)
+  [clipboxAI/marketplace · Issues](https://github.com/clipboxAI/marketplace/issues)
 - 🔀 O abra una pull request contra
-  [`clipboardxai-marketplace`](https://github.com/clipboardxAI/marketplace)
+  [`clipboxai-marketplace`](https://github.com/clipboxAI/marketplace)
   añadiendo el JSON de su acción.
 
 ### Directrices
@@ -77,4 +77,4 @@ Mantenemos el catálogo en un repositorio público para que cualquiera pueda con
 - **Contexto** — las acciones se disparan desde el portapapeles, el Finder o cualquier lugar donde
   ya trabaje el usuario.
 
-[→ Abrir un issue de integración](https://github.com/clipboardxAI/marketplace/issues)
+[→ Abrir un issue de integración](https://github.com/clipboxAI/marketplace/issues)

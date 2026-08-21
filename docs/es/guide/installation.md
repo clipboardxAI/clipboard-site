@@ -1,25 +1,25 @@
 # Instalación
 
-ClipboardxAI está disponible para macOS.
+ClipboxAI está disponible para macOS.
 
 ## Opciones de descarga
 
 ### Mac App Store (recomendado)
 
-- **Descargar**: busque **ClipboardxAI** en la Mac App Store, o abra el enlace desde la [página de inicio](/es/).
+- **Descargar**: busque **ClipboxAI** en la Mac App Store, o abra el enlace desde la [página de inicio](/es/).
 - La versión de la Mac App Store ofrece actualizaciones automáticas e integración perfecta con macOS.
 
 > ~~Si aún no hay un enlace de la Mac App Store disponible, utilice la compilación de GitHub Releases que aparece a continuación.~~
 
 ### ~~GitHub Releases (alternativa)~~ (no disponible por ahora)
 
-~~Puede descargar la última compilación directamente desde [GitHub Releases](https://github.com/clipboardxAI). Tenga en cuenta que esta versión no recibe actualizaciones automáticas.~~
+~~Puede descargar la última compilación directamente desde [GitHub Releases](https://github.com/clipboxAI). Tenga en cuenta que esta versión no recibe actualizaciones automáticas.~~
 
 ## Pasos de instalación
 
 ### Mac App Store
 
-1. Abra el enlace de descarga anterior o busque "ClipboardxAI" en la Mac App Store.
+1. Abra el enlace de descarga anterior o busque "ClipboxAI" en la Mac App Store.
 2. Haga clic en **Obtener** para descargar la aplicación.
 3. La aplicación se instala automáticamente — ábrala desde **Aplicaciones** o **Launchpad**.
 
@@ -27,14 +27,14 @@ ClipboardxAI está disponible para macOS.
 
 1. ~~Descargue el último `.dmg` desde la página de Releases.~~
 2. ~~Haga doble clic en el `.dmg` descargado para abrirlo.~~
-3. ~~Arrastre el icono `ClipboardxAI.app` a su carpeta **Aplicaciones**.~~
+3. ~~Arrastre el icono `ClipboxAI.app` a su carpeta **Aplicaciones**.~~
 4. ~~Expulse la imagen montada y abra la aplicación desde **Aplicaciones**.~~
 
 Si macOS impide abrir la aplicación (Gatekeeper), abra **Configuración del sistema → Privacidad y seguridad** y haga clic en **Abrir de todos modos**, o haga clic derecho en la aplicación y elija **Abrir**.
 
 ## Primer inicio
 
-En el primer inicio, ClipboardxAI le guía a través de una breve configuración:
+En el primer inicio, ClipboxAI le guía a través de una breve configuración:
 
 - **Habilitar el elemento de la barra de menú** para que la aplicación resida en su barra de menú.
 - **Conceder permisos** que necesita para supervisar el portapapeles en segundo plano (consulte [Permisos](/es/guide/permissions)).
@@ -49,10 +49,10 @@ Conceda los permisos cuando se lo soliciten. Puede cambiarlos en cualquier momen
 
 ## Desinstalación
 
-Para eliminar ClipboardxAI:
+Para eliminar ClipboxAI:
 
 1. Salga de la aplicación.
-2. Arrastre `ClipboardxAI.app` desde `Applications` a la Papelera.
+2. Arrastre `ClipboxAI.app` desde `Applications` a la Papelera.
 3. (Opcional) Elimine los datos locales:
 
 ```bash

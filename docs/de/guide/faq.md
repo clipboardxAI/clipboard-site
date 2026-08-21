@@ -1,8 +1,8 @@
 # FAQ
 
-**F: Was ist ClipboardxAI?**
+**F: Was ist ClipboxAI?**
 
-A: ClipboardxAI ist ein intelligenter Zwischenablagen-Manager für macOS. Er hält einen durchsuchbaren Verlauf aller kopierten Inhalte vor und ermöglicht es, Aktionen darauf auszuführen — zusammenfassen, übersetzen, Text aufräumen oder an ein Cloud-KI-Modell senden.
+A: ClipboxAI ist ein intelligenter Zwischenablagen-Manager für macOS. Er hält einen durchsuchbaren Verlauf aller kopierten Inhalte vor und ermöglicht es, Aktionen darauf auszuführen — zusammenfassen, übersetzen, Text aufräumen oder an ein Cloud-KI-Modell senden.
 
 **F: Welche macOS-Versionen werden unterstützt?**
 
@@ -10,11 +10,11 @@ A: macOS 14 Sonoma oder neuer, optimiert für Apple Silicon (M-Serie) mit Intel-
 
 **F: Wie installiere ich es?**
 
-A: Laden Sie es aus dem [Mac App Store](/de/) (empfohlen) herunter oder holen Sie sich den neuesten Build von ~~[GitHub Releases](https://github.com/clipboardxAI)~~. Siehe die [Installationsanleitung](/de/guide/installation).
+A: Laden Sie es aus dem [Mac App Store](/de/) (empfohlen) herunter oder holen Sie sich den neuesten Build von ~~[GitHub Releases](https://github.com/clipboxAI)~~. Siehe die [Installationsanleitung](/de/guide/installation).
 
-**F: Ist ClipboardxAI kostenlos?**
+**F: Ist ClipboxAI kostenlos?**
 
-A: ClipboardxAI ist eine kostenpflichtige App im Mac App Store. Nach dem Kauf sind alle eingebauten lokalen Werkzeuge enthalten und es wird kein Konto benötigt. Cloud-KI-Aktionen verwenden den API-Schlüssel *Ihres eigenen* Anbieters, sodass Sie den KI-Anbieter direkt bezahlen — es gibt keine zusätzliche kostenpflichtige Stufe in der App.
+A: ClipboxAI ist eine kostenpflichtige App im Mac App Store. Nach dem Kauf sind alle eingebauten lokalen Werkzeuge enthalten und es wird kein Konto benötigt. Cloud-KI-Aktionen verwenden den API-Schlüssel *Ihres eigenen* Anbieters, sodass Sie den KI-Anbieter direkt bezahlen — es gibt keine zusätzliche kostenpflichtige Stufe in der App.
 
 **F: Welche KI-Anbieter werden unterstützt?**
 
@@ -38,7 +38,7 @@ A: Die Mac-App-Store-Version wird automatisch aktualisiert. ~~Für GitHub-Builds
 
 **F: Wie melde ich Fehler oder schlage Funktionen vor?**
 
-A: Öffnen Sie ein Issue im [GitHub-Repository](https://github.com/clipboardxAI). Geben Sie Ihre macOS-Version, App-Version und Schritte zur Reproduktion an.
+A: Öffnen Sie ein Issue im [GitHub-Repository](https://github.com/clipboxAI). Geben Sie Ihre macOS-Version, App-Version und Schritte zur Reproduktion an.
 
 **F: Wo werden meine Daten gespeichert?**
 

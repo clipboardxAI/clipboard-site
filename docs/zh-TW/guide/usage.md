@@ -2,7 +2,7 @@
 
 ## 剪貼簿歷史
 
-ClipboardxAI 從你的**選單列**運作。每當你複製某樣東西時，它就會被加入你的歷史紀錄中。
+ClipboxAI 從你的**選單列**運作。每當你複製某樣東西時，它就會被加入你的歷史紀錄中。
 
 - 點擊選單列圖示以開啟歷史面板。
 - 將游標停留在某個項目上並按下動作快捷鍵，或點擊將它複製回剪貼板。
@@ -52,7 +52,7 @@ AI 工具會顯示「雲端」標記；本地工具則顯示「裝置」標記�
 ## Marketplace
 
 1. 從 AI 工具視窗開啟 **Marketplace**（或網站的 [Marketplace](/zh-TW/marketplace/) 頁面）。
-2. 點擊某個動作上的 **Install（安裝）**。這會透過深層連結 `clipboardxai://install?action=<id>` 開啟應用程式，並將該動作加入你的**已安裝**清單。
+2. 點擊某個動作上的 **Install（安裝）**。這會透過深層連結 `clipboxai://install?action=<id>` 開啟應用程式，並將該動作加入你的**已安裝**清單。
 
 ## 鍵盤快捷鍵
 
@@ -67,7 +67,7 @@ AI 工具會顯示「雲端」標記；本地工具則顯示「裝置」標記�
 
 ## 設定
 
-開啟 **ClipboardxAI → Settings（設定）**（或 `Cmd+,`）：
+開啟 **ClipboxAI → Settings（設定）**（或 `Cmd+,`）：
 
 - **General（一般）**：語言、登入時啟動、外觀主題。
 - **AI**：雲端供應商、模型與 API key（Keychain）。

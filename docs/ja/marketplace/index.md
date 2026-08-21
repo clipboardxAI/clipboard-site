@@ -1,9 +1,9 @@
 ---
 title: アクションマーケット
-description: コミュニティが厳選した ClipboardxAI の AI アクションを閲覧・インストール。
+description: コミュニティが厳選した ClipboxAI の AI アクションを閲覧・インストール。
 marketplace:
   eyebrow: アクションマーケット
-  title: ClipboardxAI · アクションマーケット
+  title: ClipboxAI · アクションマーケット
   desc: コミュニティが厳選したクリップボード用 AI アクション。閲覧後「インストール」をタップするとアプリが開き、ワンタップで追加できます。
   all: すべて
   install: インストール

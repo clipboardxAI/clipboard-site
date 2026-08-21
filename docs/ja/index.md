@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "ClipboardxAI"
+  name: "ClipboxAI"
   text: "クリップボードを AI でアップグレード"
   tagline: "macOS のスマートクリップボードマネージャー。コピーしたものを要約、翻訳、変換、自動化 — ローカルツールとクラウド AI を搭載。"
   image:
     src: /hero-illustration.png
-    alt: ClipboardxAI
+    alt: ClipboxAI
   actions:
     - theme: brand
       text: はじめる
@@ -94,7 +94,7 @@ sections:
 openMarketplace: アクションマーケットを開く
 cta:
   title: クリップボードをもっと賢くしますか？
-  description: ClipboardxAI をダウンロードして、すべてのコピーをアクションに変えましょう — Mac 上でローカルに動作し、AI は必要に応じて有効化できます。
+  description: ClipboxAI をダウンロードして、すべてのコピーをアクションに変えましょう — Mac 上でローカルに動作し、AI は必要に応じて有効化できます。
   primary: はじめる
   primaryLink: /guide/installation
   secondary: 使い方ガイド
@@ -135,10 +135,10 @@ steps:
     title: アクションを実行
     desc: 内蔵ツールや AI アクションを選択 — または自動実行を有効にして、コピーした瞬間に自動変換します。
 faqs:
-  - question: ClipboardxAI は無料ですか？
-    answer: ClipboardxAI は Mac App Store で提供される有料アプリです。購入後は内蔵のローカルツールがすべて含まれ、アカウントは不要です。クラウド AI アクションはご自身の API キーを使用し、料金は AI サービス提供者に直接支払われます。
+  - question: ClipboxAI は無料ですか？
+    answer: ClipboxAI は Mac App Store で提供される有料アプリです。購入後は内蔵のローカルツールがすべて含まれ、アカウントは不要です。クラウド AI アクションはご自身の API キーを使用し、料金は AI サービス提供者に直接支払われます。
   - question: 対応している macOS のバージョンは？
-    answer: ClipboardxAI は macOS 14 Sonoma 以降が必要です。Apple Silicon（M シリーズ）に最適化されており、Intel もサポートしています。
+    answer: ClipboxAI は macOS 14 Sonoma 以降が必要です。Apple Silicon（M シリーズ）に最適化されており、Intel もサポートしています。
   - question: オフラインで使えますか？
     answer: はい。クリップボード履歴と内蔵ローカルツール — リンクの抽出、文字数カウント、空行の折りたたみなど — は Mac 上で完全に動作し、ネットワーク接続は不要です。
   - question: クリップボードデータは安全ですか？

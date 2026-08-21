@@ -2,7 +2,7 @@
 
 ## Historique du presse-papiers
 
-ClipboardxAI s'exécute depuis votre **barre de menus**. À chaque fois que vous copiez quelque chose, il est ajouté à votre historique.
+ClipboxAI s'exécute depuis votre **barre de menus**. À chaque fois que vous copiez quelque chose, il est ajouté à votre historique.
 
 - Cliquez sur l'icône de la barre de menus pour ouvrir le panneau d'historique.
 - Survolez un élément et appuyez sur le raccourci de l'action, ou cliquez pour le recopier dans le presse-papiers.
@@ -52,7 +52,7 @@ Si aucune clé n'est définie, la bannière de configuration vous le rappelle da
 ## Marketplace
 
 1. Ouvrez le **Marketplace** depuis la fenêtre Outil IA (ou la page [Marketplace](/fr/marketplace/) du site).
-2. Cliquez sur **Installer** sur une action. Cela ouvre l'application via le lien profond `clipboardxai://install?action=<id>` et ajoute l'action à votre liste **Installés**.
+2. Cliquez sur **Installer** sur une action. Cela ouvre l'application via le lien profond `clipboxai://install?action=<id>` et ajoute l'action à votre liste **Installés**.
 
 ## Raccourcis clavier
 
@@ -67,7 +67,7 @@ Si aucune clé n'est définie, la bannière de configuration vous le rappelle da
 
 ## Réglages
 
-Ouvrez **ClipboardxAI → Réglages** (ou `Cmd+,`) :
+Ouvrez **ClipboxAI → Réglages** (ou `Cmd+,`) :
 
 - **Général** : langue, lancement à la connexion, thème d'apparence.
 - **IA** : fournisseur cloud, modèle et clé API (Keychain).

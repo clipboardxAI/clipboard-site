@@ -1,8 +1,8 @@
 # Introduction
 
-## About ClipboardxAI
+## About ClipboxAI
 
-**ClipboardxAI** is a smart clipboard manager for macOS. Every time you copy text, code, or a link, it's saved to a searchable history in your menu bar. With one click — or completely automatically — you can run an action on that clip: summarize it, translate it, tidy it up, or hand it to a cloud AI model.
+**ClipboxAI** is a smart clipboard manager for macOS. Every time you copy text, code, or a link, it's saved to a searchable history in your menu bar. With one click — or completely automatically — you can run an action on that clip: summarize it, translate it, tidy it up, or hand it to a cloud AI model.
 
 It is built around two kinds of tools:
 
@@ -15,7 +15,7 @@ It is built around two kinds of tools:
 Everything you copy is captured automatically and kept in a searchable history. Jump back to any previous clip from the menu bar — no more lost snippets.
 
 ### ⚡ Smart Suggestions
-ClipboardxAI suggests the most relevant actions for the current clip. Accept a suggestion, or browse the full list of tools.
+ClipboxAI suggests the most relevant actions for the current clip. Accept a suggestion, or browse the full list of tools.
 
 ### 🛠️ Built-in Local Tools
 Offline, private, instant:
@@ -35,7 +35,7 @@ Send the current clip to a cloud model to:
 - Run any action from the **Marketplace**.
 
 ### 🛒 Action Marketplace
-Browse community-made AI actions and install them in one click via a deep link (`clipboardxai://install?action=<id>`). Categories include Writing, Developer, Productivity, Translate, Social, and Analytics.
+Browse community-made AI actions and install them in one click via a deep link (`clipboxai://install?action=<id>`). Categories include Writing, Developer, Productivity, Translate, Social, and Analytics.
 
 ### 🔒 Private by Design
 Your clipboard history stays on your device. Cloud AI is **opt-in**: when enabled, content is sent only to the provider *you* choose, using an API key stored in your Keychain. We never receive or store your clips, and there is no analytics or telemetry.
@@ -54,4 +54,4 @@ The app and this site support English, 简体中文 (Simplified Chinese), 繁體
 
 ## Getting Started
 
-If you're new to ClipboardxAI, start with the [Installation Guide](/guide/installation) to get the app running on your Mac, then read [Usage](/guide/usage) to learn how actions work.
+If you're new to ClipboxAI, start with the [Installation Guide](/guide/installation) to get the app running on your Mac, then read [Usage](/guide/usage) to learn how actions work.

@@ -1,14 +1,14 @@
 # macOS 权限
 
-ClipboardxAI 可能会请求几项 macOS 权限，以带来最佳体验。本页说明每项权限的用途以及如何管理。
+ClipboxAI 可能会请求几项 macOS 权限，以带来最佳体验。本页说明每项权限的用途以及如何管理。
 
 ## 剪贴板 / 自动化（Clipboard / Automation）
 
-为了在后台捕获剪贴板并将结果粘贴回去，ClipboardxAI 使用 macOS 的自动化（Automation）访问。
+为了在后台捕获剪贴板并将结果粘贴回去，ClipboxAI 使用 macOS 的自动化（Automation）访问。
 
 **用途**：在你复制时读取当前粘贴板，并在你运行操作时将结果写回。
 
-**管理方式**：**系统设置 → 隐私与安全性 → 自动化（System Settings → Privacy & Security → Automation）** → 启用 **ClipboardxAI**。
+**管理方式**：**系统设置 → 隐私与安全性 → 自动化（System Settings → Privacy & Security → Automation）** → 启用 **ClipboxAI**。
 
 在首次启动时按提示授予访问权限。你可以随时管理或撤销该权限。
 
@@ -18,15 +18,15 @@ ClipboardxAI 可能会请求几项 macOS 权限，以带来最佳体验。本页
 
 **用途**：打开历史面板并通过快捷键运行操作，即使应用当前未聚焦。
 
-**管理方式**：**系统设置 → 隐私与安全性 → 辅助功能（System Settings → Privacy & Security → Accessibility）** → 启用 **ClipboardxAI**。
+**管理方式**：**系统设置 → 隐私与安全性 → 辅助功能（System Settings → Privacy & Security → Accessibility）** → 启用 **ClipboxAI**。
 
 ## 通知（可选，Notifications）
 
-当某项长时间运行的操作完成或需要关注时，ClipboardxAI 可能会显示通知。
+当某项长时间运行的操作完成或需要关注时，ClipboxAI 可能会显示通知。
 
 **用途**：在操作完成或需要配置时提醒你。
 
-**管理方式**：**系统设置 → 通知（System Settings → Notifications）** → **ClipboardxAI**。
+**管理方式**：**系统设置 → 通知（System Settings → Notifications）** → **ClipboxAI**。
 
 ## 完全磁盘访问（可选，Full Disk Access）
 
@@ -41,7 +41,7 @@ ClipboardxAI 可能会请求几项 macOS 权限，以带来最佳体验。本页
 如果权限对话框被关闭或状态不一致，你可以使用 `tccutil` 重置 macOS 的权限提示：
 
 ```bash
-# 为 ClipboardxAI 重置自动化 / 辅助功能提示
+# 为 ClipboxAI 重置自动化 / 辅助功能提示
 tccutil reset All com.w3cub.clipboard
 ```
 
@@ -51,6 +51,6 @@ tccutil reset All com.w3cub.clipboard
 
 - 如果剪贴板历史未捕获复制内容，请检查是否已授予 **自动化（Automation）** 权限。
 - 如果全局快捷键无效，请检查 **辅助功能（Accessibility）** 权限。
-- 更改权限后，务必退出并重新打开 ClipboardxAI，更改才会生效。
+- 更改权限后，务必退出并重新打开 ClipboxAI，更改才会生效。
 
 如需更多帮助，请访问[故障排除指南](/zh-CN/guide/troubleshooting)。

@@ -33,7 +33,7 @@ Clipboard x AI 是一个剪贴板中枢。但繁重的任务——文件压缩�
 
 - `{{files}}` —— 当前剪贴条目的绝对文件路径（多个文件以换行分隔）。
 - `{{text}}` —— 纯文本内容。
-- `{{returnURL}}` —— 一个可选的 `clipboardxai://callback?…` 返回 URL，用于 x-callback-url 风格的往返调用（在同类应用实现后使用）。
+- `{{returnURL}}` —— 一个可选的 `clipboxai://callback?…` 返回 URL，用于 x-callback-url 风格的往返调用（在同类应用实现后使用）。
 
 如果目标应用**尚未安装**，该操作会从面板中隐藏，直到用户安装它——不会出现失效按钮。
 
@@ -52,9 +52,9 @@ Clipboard x AI 是一个剪贴板中枢。但繁重的任务——文件压缩�
 我们将目录保存在公开仓库中，任何人都可以贡献一个操作：
 
 - 📦 **提交一个操作**（或申请添加你的应用），通过
-  [clipboardxAI/marketplace · Issues](https://github.com/clipboardxAI/marketplace/issues)
+  [clipboxAI/marketplace · Issues](https://github.com/clipboxAI/marketplace/issues)
 - 🔀 或针对
-  [`clipboardxai-marketplace`](https://github.com/clipboardxAI/marketplace)
+  [`clipboxai-marketplace`](https://github.com/clipboxAI/marketplace)
   发起 Pull Request，添加你的操作 JSON。
 
 ### 指南
@@ -70,4 +70,4 @@ Clipboard x AI 是一个剪贴板中枢。但繁重的任务——文件压缩�
 - **分发**——你的应用操作会出现在每位用户的 Clipboard x AI Marketplace 中。
 - **上下文**——操作从剪贴板、Finder，或用户已有的任意工作位置触发。
 
-[→ 提交集成 issue](https://github.com/clipboardxAI/marketplace/issues)
+[→ 提交集成 issue](https://github.com/clipboxAI/marketplace/issues)

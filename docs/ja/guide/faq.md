@@ -1,8 +1,8 @@
 # よくある質問（FAQ）
 
-**Q: ClipboardxAI とは何ですか？**
+**Q: ClipboxAI とは何ですか？**
 
-A: ClipboardxAI は macOS 向けのスマートなクリップボードマネージャーです。コピーしたものすべての検索可能な履歴を保持し、その上でアクションを実行できます — 要約、翻訳、テキストの整理、あるいはクラウドの AI モデルへの送信です。
+A: ClipboxAI は macOS 向けのスマートなクリップボードマネージャーです。コピーしたものすべての検索可能な履歴を保持し、その上でアクションを実行できます — 要約、翻訳、テキストの整理、あるいはクラウドの AI モデルへの送信です。
 
 **Q: どの macOS バージョンに対応していますか？**
 
@@ -10,11 +10,11 @@ A: macOS 14 Sonoma 以降で、Apple Silicon（M シリーズ）向けに最適�
 
 **Q: どうやってインストールしますか？**
 
-A: [Mac App Store](/ja/)（推奨）からダウンロードするか、~~[GitHub Releases](https://github.com/clipboardxAI) から最新のビルドを取得してください~~。[インストールガイド](/ja/guide/installation)を参照してください。
+A: [Mac App Store](/ja/)（推奨）からダウンロードするか、~~[GitHub Releases](https://github.com/clipboxAI) から最新のビルドを取得してください~~。[インストールガイド](/ja/guide/installation)を参照してください。
 
-**Q: ClipboardxAI は無料ですか？**
+**Q: ClipboxAI は無料ですか？**
 
-A: ClipboardxAI は Mac App Store で提供される有料アプリです。購入後は内蔵のローカルツールがすべて含まれ、アカウントは不要です。クラウド AI アクションは *ご自身の* プロバイダーの API key を使用するため、お支払いは AI プロバイダーへ直接となり、アプリ内での追加課金はありません。
+A: ClipboxAI は Mac App Store で提供される有料アプリです。購入後は内蔵のローカルツールがすべて含まれ、アカウントは不要です。クラウド AI アクションは *ご自身の* プロバイダーの API key を使用するため、お支払いは AI プロバイダーへ直接となり、アプリ内での追加課金はありません。
 
 **Q: どの AI プロバイダーに対応していますか？**
 
@@ -38,7 +38,7 @@ A: Mac App Store 版は自動的に更新されます。~~GitHub ビルドの場
 
 **Q: バグを報告したり機能をリクエストしたりするには？**
 
-A: [GitHub リポジトリ](https://github.com/clipboardxAI)で issue を作成してください。macOS のバージョン、アプリのバージョン、再現手順を含めてください。
+A: [GitHub リポジトリ](https://github.com/clipboxAI)で issue を作成してください。macOS のバージョン、アプリのバージョン、再現手順を含めてください。
 
 **Q: データはどこに保存されますか？**
 

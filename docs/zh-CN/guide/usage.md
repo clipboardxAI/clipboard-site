@@ -2,7 +2,7 @@
 
 ## 剪贴板历史
 
-ClipboardxAI 运行在**菜单栏**中。每当你复制内容时，它都会添加到历史记录。
+ClipboxAI 运行在**菜单栏**中。每当你复制内容时，它都会添加到历史记录。
 
 - 点击菜单栏图标，打开历史面板。
 - 将鼠标悬停在某个条目上并按下操作快捷键，或点击将其复制回粘贴板。
@@ -52,7 +52,7 @@ AI 工具显示「云」标识；本地工具显示「设备」标识，因此�
 ## 操作市场（Marketplace）
 
 1. 从 AI 工具窗口打开 **Marketplace**（或站点的 [Marketplace](/zh-CN/marketplace/) 页面）。
-2. 在某个操作上点击 **安装（Install）**。这会通过深链接 `clipboardxai://install?action=<id>` 打开应用，并将该操作添加到你的 **已安装（Installed）** 列表。
+2. 在某个操作上点击 **安装（Install）**。这会通过深链接 `clipboxai://install?action=<id>` 打开应用，并将该操作添加到你的 **已安装（Installed）** 列表。
 
 ## 键盘快捷键
 
@@ -67,7 +67,7 @@ AI 工具显示「云」标识；本地工具显示「设备」标识，因此�
 
 ## 设置
 
-打开 **ClipboardxAI → 设置（Settings）**（或按 `Cmd+,`）：
+打开 **ClipboxAI → 设置（Settings）**（或按 `Cmd+,`）：
 
 - **通用（General）**：语言、登录时启动、外观主题。
 - **AI**：云端提供商、模型与 API key（Keychain）。

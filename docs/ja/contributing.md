@@ -1,24 +1,24 @@
 # コントリビューション
 
-ClipboardxAI の改善にご協力いただきありがとうございます！ バグ修正、機能追加、翻訳、ドキュメントの改善など、どのような形でのご貢献も歓迎します。
+ClipboxAI の改善にご協力いただきありがとうございます！ バグ修正、機能追加、翻訳、ドキュメントの改善など、どのような形でのご貢献も歓迎します。
 
 ## 貢献の方法
 
 ### バグ報告（Bug Reports）
 
-- まず既存の [issues](https://github.com/clipboardxAI/issues) を確認してください。
-- macOS のバージョン、ClipboardxAI のバージョン、再現手順を含めてください。
+- まず既存の [issues](https://github.com/clipboxAI/issues) を確認してください。
+- macOS のバージョン、ClipboxAI のバージョン、再現手順を含めてください。
 - 必要に応じてサンプルテキストを添付してください（機密のクリップボード内容はご遠慮ください）。
 
 ### 機能リクエスト（Feature Requests）
 
 - 機能とユースケースを説明してください。
-- ClipboardxAI のユーザーにどのように役立つかを説明してください。
+- ClipboxAI のユーザーにどのように役立つかを説明してください。
 - ローカルファーストでプライバシーを尊重する方針に合致するか確認してください。
 
 ### 翻訳（Translations）
 
-- ClipboardxAI は i18n JSON ファイルを通じて複数言語に対応しています。
+- ClipboxAI は i18n JSON ファイルを通じて複数言語に対応しています。
 - 不足している、または不完全な言語の翻訳にご協力ください。
 - 既存の翻訳については `ClipboardXAI/Resources/i18n/` を参照してください。
 
@@ -118,4 +118,4 @@ ClipboardxAI の改善にご協力いただきありがとうございます！ 
 
 ## 質問はありますか？
 
-コントリビューションについて質問がある場合は、既存の [issues](https://github.com/clipboardxAI/issues) を確認するか、新しい issue を作成してください。ClipboardxAI の改善にご協力いただきありがとうございます！ 🎉
+コントリビューションについて質問がある場合は、既存の [issues](https://github.com/clipboxAI/issues) を確認するか、新しい issue を作成してください。ClipboxAI の改善にご協力いただきありがとうございます！ 🎉

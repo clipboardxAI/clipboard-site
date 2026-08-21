@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "ClipboardxAI"
+  name: "ClipboxAI"
   text: "Your clipboard, upgraded with AI"
   tagline: "A smart clipboard manager for macOS. Summarize, translate, transform, and automate anything you copy — with built-in local tools and optional cloud AI."
   image:
     src: /hero-illustration.png
-    alt: ClipboardxAI
+    alt: ClipboxAI
   actions:
     - theme: brand
       text: Get Started
@@ -94,7 +94,7 @@ sections:
 openMarketplace: Open the Marketplace
 cta:
   title: Ready to Make Your Clipboard Smarter?
-  description: Download ClipboardxAI and turn every copy into an action — private on your Mac, powered by AI when you want it.
+  description: Download ClipboxAI and turn every copy into an action — private on your Mac, powered by AI when you want it.
   primary: Get Started
   primaryLink: /guide/installation
   secondary: How to Use
@@ -135,10 +135,10 @@ steps:
     title: Run an Action
     desc: Pick a built-in tool or AI action — or flip on auto-run to transform every copy the instant you make it.
 faqs:
-  - question: Is ClipboardxAI free?
-    answer: ClipboardxAI is a paid app on the Mac App Store. All built-in local tools are included after purchase — no account needed. Cloud AI actions use your own provider API key, so you only pay the AI provider directly.
+  - question: Is ClipboxAI free?
+    answer: ClipboxAI is a paid app on the Mac App Store. All built-in local tools are included after purchase — no account needed. Cloud AI actions use your own provider API key, so you only pay the AI provider directly.
   - question: Which macOS versions are supported?
-    answer: ClipboardxAI requires macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel support.
+    answer: ClipboxAI requires macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel support.
   - question: Does it work offline?
     answer: Yes. Clipboard history and the built-in local tools — extract links, count stats, collapse blank lines, and more — run entirely on your Mac with no internet connection.
   - question: Is my clipboard data private?

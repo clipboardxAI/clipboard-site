@@ -1,9 +1,9 @@
 ---
 title: Marketplace d’actions
-description: Parcourez et installez des actions IA sélectionnées par la communauté pour ClipboardxAI.
+description: Parcourez et installez des actions IA sélectionnées par la communauté pour ClipboxAI.
 marketplace:
   eyebrow: Marché d'actions
-  title: ClipboardxAI · Marché d'actions
+  title: ClipboxAI · Marché d'actions
   desc: Actions IA sélectionnées par la communauté pour votre presse-papiers. Parcourez et cliquez sur Installer pour ajouter l'action dans l'app.
   all: Tous
   install: Installer

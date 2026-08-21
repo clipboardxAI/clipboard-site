@@ -33,7 +33,7 @@ Clipboard x AI はクリップボードのハブです。しかし、ファイ�
 
 - `{{files}}` — 現在のクリップボード項目の絶対ファイルパス（複数ファイルの場合は改行区切り）。
 - `{{text}}` — プレーンテキストの内容。
-- `{{returnURL}}` — 任意の `clipboardxai://callback?…` リターン URL（x-callback-url スタイルの往復用。姉妹アプリが実装した場合に使用）。
+- `{{returnURL}}` — 任意の `clipboxai://callback?…` リターン URL（x-callback-url スタイルの往復用。姉妹アプリが実装した場合に使用）。
 
 対象アプリが **インストールされていない** 場合、ユーザーがインストールするまでそのアクションはパネルから非表示になります — 壊れたボタンは表示されません。
 
@@ -52,8 +52,8 @@ Clipboard x AI はクリップボードのハブです。しかし、ファイ�
 カタログは公開リポジトリで管理しているため、誰でもアクションを追加できます。
 
 - 📦 **アクションを提出する**（またはアプリの追加をリクエストする）—
-  [clipboardxAI/marketplace · Issues](https://github.com/clipboardxAI/marketplace/issues)
-- 🔀 または [`clipboardxai-marketplace`](https://github.com/clipboardxAI/marketplace) に対して、
+  [clipboxAI/marketplace · Issues](https://github.com/clipboxAI/marketplace/issues)
+- 🔀 または [`clipboxai-marketplace`](https://github.com/clipboxAI/marketplace) に対して、
   あなたのアクションの JSON を追加するプルリクエストを作成する。
 
 ### ガイドライン
@@ -69,4 +69,4 @@ Clipboard x AI はクリップボードのハブです。しかし、ファイ�
 - **配布** — あなたのアプリのアクションが、すべてのユーザーの Clipboard x AI Marketplace に表示される。
 - **コンテキスト** — アクションは、ユーザーがすでに作業しているクリップボード、Finder、その他どこからでも起動する。
 
-[→ 統合の issue を作成する](https://github.com/clipboardxAI/marketplace/issues)
+[→ 統合の issue を作成する](https://github.com/clipboxAI/marketplace/issues)

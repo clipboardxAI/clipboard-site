@@ -1,8 +1,8 @@
 {
-  "name": "clipboardxai-site",
+  "name": "clipboxai-site",
   "version": "1.0.0",
   "type": "module",
-  "description": "Official website for ClipboardxAI — a macOS clipboard manager with AI actions, featuring documentation, FAQ, and Action Marketplace",
+  "description": "Official website for ClipboxAI — a macOS clipboard manager with AI actions, featuring documentation, FAQ, and Action Marketplace",
   "main": "index.js",
   "packageManager": "pnpm@10.26.0",
   "homepage": "https://clipboard.w3cub.com",

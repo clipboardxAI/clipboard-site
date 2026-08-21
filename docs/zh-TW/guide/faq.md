@@ -1,8 +1,8 @@
 # 常見問題（FAQ）
 
-**Q: 什麼是 ClipboardxAI？**
+**Q: 什麼是 ClipboxAI？**
 
-A: ClipboardxAI 是一款專為 macOS 打造的智慧剪貼簿管理工具。它會保存你所有複製內容的可搜尋歷史紀錄，並讓你對其執行動作——摘要、翻譯、整理文字，或是傳送給雲端 AI 模型。
+A: ClipboxAI 是一款專為 macOS 打造的智慧剪貼簿管理工具。它會保存你所有複製內容的可搜尋歷史紀錄，並讓你對其執行動作——摘要、翻譯、整理文字，或是傳送給雲端 AI 模型。
 
 **Q: 支援哪些 macOS 版本？**
 
@@ -10,11 +10,11 @@ A: macOS 14 Sonoma 或以上版本，針對 Apple Silicon（M 系列）最佳化
 
 **Q: 如何安裝？**
 
-A: 請從 [Mac App Store](/zh-TW/)（推薦）下載，或從 ~~[GitHub Releases](https://github.com/clipboardxAI) 取得最新的建置版本~~。請參見[安裝指南](/zh-TW/guide/installation)。
+A: 請從 [Mac App Store](/zh-TW/)（推薦）下載，或從 ~~[GitHub Releases](https://github.com/clipboxAI) 取得最新的建置版本~~。請參見[安裝指南](/zh-TW/guide/installation)。
 
-**Q: ClipboardxAI 是免費的嗎？**
+**Q: ClipboxAI 是免費的嗎？**
 
-A: ClipboardxAI 是 Mac App Store 上的付費應用程式。購買後所有內建本地工具均已包含，不需要帳號。雲端 AI 動作使用*你自己的*供應商 API key，費用直接支付給 AI 供應商——應用程式內無需額外付費。
+A: ClipboxAI 是 Mac App Store 上的付費應用程式。購買後所有內建本地工具均已包含，不需要帳號。雲端 AI 動作使用*你自己的*供應商 API key，費用直接支付給 AI 供應商——應用程式內無需額外付費。
 
 **Q: 支援哪些 AI 供應商？**
 
@@ -38,7 +38,7 @@ A: Mac App Store 版本會自動更新。~~若是 GitHub 版本，請下載最�
 
 **Q: 如何回報錯誤或提出功能建議？**
 
-A: 請在 [GitHub 儲存庫](https://github.com/clipboardxAI) 開啟一個 issue。請包含你的 macOS 版本、應用程式版本，以及重現步驟。
+A: 請在 [GitHub 儲存庫](https://github.com/clipboxAI) 開啟一個 issue。請包含你的 macOS 版本、應用程式版本，以及重現步驟。
 
 **Q: 我的資料儲存在哪裡？**
 

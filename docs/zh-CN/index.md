@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "ClipboardxAI"
+  name: "ClipboxAI"
   text: "你的剪贴板，由 AI 升级"
   tagline: "macOS 智能剪贴板管理器。总结、翻译、转换和自动化你复制的任何内容 — 内置本地工具和可选的云端 AI。"
   image:
     src: /hero-illustration.png
-    alt: ClipboardxAI
+    alt: ClipboxAI
   actions:
     - theme: brand
       text: 开始使用
@@ -94,7 +94,7 @@ sections:
 openMarketplace: 打开动作市场
 cta:
   title: 准备好让剪贴板更智能了吗？
-  description: 下载 ClipboardxAI，将每一次复制变成一次操作 — 在 Mac 上本地运行，按需启用 AI。
+  description: 下载 ClipboxAI，将每一次复制变成一次操作 — 在 Mac 上本地运行，按需启用 AI。
   primary: 开始使用
   primaryLink: /guide/installation
   secondary: 使用指南
@@ -135,10 +135,10 @@ steps:
     title: 运行动作
     desc: 选择内置工具或 AI 动作 — 或开启自动运行，在复制的瞬间自动转换。
 faqs:
-  - question: ClipboardxAI 是免费的吗？
-    answer: ClipboardxAI 是 Mac App Store 上的付费应用。购买后所有内置本地工具均已包含 —— 无需账号。云端 AI 动作使用您自己的 API 密钥，费用直接支付给 AI 服务商。
+  - question: ClipboxAI 是免费的吗？
+    answer: ClipboxAI 是 Mac App Store 上的付费应用。购买后所有内置本地工具均已包含 —— 无需账号。云端 AI 动作使用您自己的 API 密钥，费用直接支付给 AI 服务商。
   - question: 支持哪些 macOS 版本？
-    answer: ClipboardxAI 需要 macOS 14 Sonoma 或更高版本，针对 Apple Silicon（M 系列）优化，同时支持 Intel。
+    answer: ClipboxAI 需要 macOS 14 Sonoma 或更高版本，针对 Apple Silicon（M 系列）优化，同时支持 Intel。
   - question: 可以离线使用吗？
     answer: 可以。剪贴板历史和内置本地工具 — 提取链接、统计字数、折叠空行等 — 完全在 Mac 上运行，无需网络连接。
   - question: 我的剪贴板数据安全吗？

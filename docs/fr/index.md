@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "ClipboardxAI"
+  name: "ClipboxAI"
   text: "Votre presse-papiers, amélioré par l'IA"
   tagline: "Un gestionnaire intelligent de presse-papiers pour macOS. Résumez, traduisez, transformez et automatisez tout ce que vous copiez — avec des outils locaux intégrés et une IA cloud en option."
   image:
     src: /hero-illustration.png
-    alt: ClipboardxAI
+    alt: ClipboxAI
   actions:
     - theme: brand
       text: Commencer
@@ -94,7 +94,7 @@ sections:
 openMarketplace: Ouvrir le marketplace
 cta:
   title: Prêt à rendre votre presse-papiers plus intelligent ?
-  description: Téléchargez ClipboardxAI et transformez chaque copie en action — privée sur votre Mac, propulsée par IA à la demande.
+  description: Téléchargez ClipboxAI et transformez chaque copie en action — privée sur votre Mac, propulsée par IA à la demande.
   primary: Commencer
   primaryLink: /guide/installation
   secondary: Mode d'emploi
@@ -135,10 +135,10 @@ steps:
     title: Lancer une action
     desc: Choisissez un outil intégré ou une action IA — ou activez l'exécution automatique pour transformer chaque copie à l'instant.
 faqs:
-  - question: ClipboardxAI est-il gratuit ?
-    answer: ClipboardxAI est une application payante sur le Mac App Store. Après l'achat, tous les outils locaux intégrés sont inclus — aucun compte requis. Les actions IA dans le cloud utilisent votre propre clé API, vous payez donc directement le fournisseur d'IA.
+  - question: ClipboxAI est-il gratuit ?
+    answer: ClipboxAI est une application payante sur le Mac App Store. Après l'achat, tous les outils locaux intégrés sont inclus — aucun compte requis. Les actions IA dans le cloud utilisent votre propre clé API, vous payez donc directement le fournisseur d'IA.
   - question: Quelles versions de macOS sont prises en charge ?
-    answer: ClipboardxAI nécessite macOS 14 Sonoma ou version ultérieure, optimisé pour Apple Silicon (série M) avec prise en charge d'Intel.
+    answer: ClipboxAI nécessite macOS 14 Sonoma ou version ultérieure, optimisé pour Apple Silicon (série M) avec prise en charge d'Intel.
   - question: Fonctionne-t-il hors ligne ?
     answer: Oui. L'historique du presse-papiers et les outils locaux intégrés — extraire des liens, compter des mots, supprimer les lignes vides, etc. — fonctionnent entièrement sur votre Mac sans connexion internet.
   - question: Mes données de presse-papiers sont-elles privées ?

@@ -1,21 +1,21 @@
 # Contributing
 
-We welcome contributions to improve ClipboardxAI! Whether you're fixing a bug, adding a feature, translating, or improving documentation, your help is appreciated.
+We welcome contributions to improve ClipboxAI! Whether you're fixing a bug, adding a feature, translating, or improving documentation, your help is appreciated.
 
 ## Ways to Contribute
 
 ### Bug Reports
-- Check existing [issues](https://github.com/clipboardxAI/issues) first.
-- Include macOS version, ClipboardxAI version, and steps to reproduce.
+- Check existing [issues](https://github.com/clipboxAI/issues) first.
+- Include macOS version, ClipboxAI version, and steps to reproduce.
 - Attach sample text (no sensitive clipboard content, please) if helpful.
 
 ### Feature Requests
 - Describe the feature and the use case.
-- Explain why it would benefit ClipboardxAI users.
+- Explain why it would benefit ClipboxAI users.
 - Check if it fits the local-first, privacy-respecting philosophy.
 
 ### Translations
-- ClipboardxAI supports multiple languages via i18n JSON files.
+- ClipboxAI supports multiple languages via i18n JSON files.
 - Contribute translations for missing or incomplete languages.
 - See `ClipboardXAI/Resources/i18n/` for existing translations.
 
@@ -109,4 +109,4 @@ This project follows a code of conduct. By participating, you agree to:
 
 ## Questions?
 
-If you have questions about contributing, check existing [issues](https://github.com/clipboardxAI/issues) or create a new one. Thank you for helping improve ClipboardxAI! 🎉
+If you have questions about contributing, check existing [issues](https://github.com/clipboxAI/issues) or create a new one. Thank you for helping improve ClipboxAI! 🎉

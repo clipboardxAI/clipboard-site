@@ -1,10 +1,10 @@
 # Personalización
 
-Haga que ClipboardxAI funcione a su manera. Esta guía cubre los ajustes que puede ajustar.
+Haga que ClipboxAI funcione a su manera. Esta guía cubre los ajustes que puede ajustar.
 
 ## General
 
-Abra **ClipboardxAI → Ajustes** (o pulse `Cmd+,`).
+Abra **ClipboxAI → Ajustes** (o pulse `Cmd+,`).
 
 - **Idioma**: Inglés, 简体中文, 繁體中文, 日本語.
 - **Inicio al iniciar sesión**: inicia la aplicación automáticamente al iniciar sesión.

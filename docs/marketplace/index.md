@@ -1,9 +1,9 @@
 ---
 title: Action Marketplace
-description: Browse and install community-curated AI actions for ClipboardxAI.
+description: Browse and install community-curated AI actions for ClipboxAI.
 marketplace:
   eyebrow: Action Marketplace
-  title: ClipboardxAI · Action Marketplace
+  title: ClipboxAI · Action Marketplace
   desc: Community-curated AI actions for your clipboard. Browse, then click Install to open the app and add the action in one tap.
   all: All
   install: Install

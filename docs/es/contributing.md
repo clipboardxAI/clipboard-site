@@ -1,21 +1,21 @@
 # Contribuir
 
-¡Aceptamos contribuciones para mejorar ClipboardxAI! Ya corrija un error, añada una función, traduzca o mejore la documentación, su ayuda es apreciada.
+¡Aceptamos contribuciones para mejorar ClipboxAI! Ya corrija un error, añada una función, traduzca o mejore la documentación, su ayuda es apreciada.
 
 ## Formas de contribuir
 
 ### Informes de errores
-- Consulte primero los [issues](https://github.com/clipboardxAI/issues) existentes.
-- Incluya la versión de macOS, la versión de ClipboardxAI y los pasos para reproducirlo.
+- Consulte primero los [issues](https://github.com/clipboxAI/issues) existentes.
+- Incluya la versión de macOS, la versión de ClipboxAI y los pasos para reproducirlo.
 - Adjunte texto de muestra (sin contenido sensible del portapapeles, por favor) si es útil.
 
 ### Solicitudes de funciones
 - Describa la función y el caso de uso.
-- Explique por qué beneficiaría a los usuarios de ClipboardxAI.
+- Explique por qué beneficiaría a los usuarios de ClipboxAI.
 - Compruebe si encaja en la filosofía local-primero y respetuosa con la privacidad.
 
 ### Traducciones
-- ClipboardxAI admite varios idiomas mediante archivos JSON de i18n.
+- ClipboxAI admite varios idiomas mediante archivos JSON de i18n.
 - Contribuya con traducciones para idiomas faltantes o incompletos.
 - Consulte `ClipboardXAI/Resources/i18n/` para ver las traducciones existentes.
 
@@ -109,4 +109,4 @@ Este proyecto sigue un código de conducta. Al participar, usted acepta:
 
 ## ¿Preguntas?
 
-Si tiene preguntas sobre cómo contribuir, consulte los [issues](https://github.com/clipboardxAI/issues) existentes o cree uno nuevo. ¡Gracias por ayudar a mejorar ClipboardxAI! 🎉
+Si tiene preguntas sobre cómo contribuir, consulte los [issues](https://github.com/clipboxAI/issues) existentes o cree uno nuevo. ¡Gracias por ayudar a mejorar ClipboxAI! 🎉

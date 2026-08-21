@@ -1,26 +1,26 @@
 # Terms of Service
 
-These Terms govern your use of ClipboardxAI. By downloading, installing, or using ClipboardxAI, you agree to these Terms. If you do not agree, do not use the application.
+These Terms govern your use of ClipboxAI. By downloading, installing, or using ClipboxAI, you agree to these Terms. If you do not agree, do not use the application.
 
 ## License and Use
 
-ClipboardxAI is provided under the license terms included with each release. You are granted a limited, non-exclusive, non-transferable license to use the application on your Mac in accordance with the license terms.
+ClipboxAI is provided under the license terms included with each release. You are granted a limited, non-exclusive, non-transferable license to use the application on your Mac in accordance with the license terms.
 
 ## Local-First Operation
 
-ClipboardxAI runs locally on your device for clipboard management and on-device features. No clipboard history is transmitted to our servers.
+ClipboxAI runs locally on your device for clipboard management and on-device features. No clipboard history is transmitted to our servers.
 
 ## Cloud AI Providers
 
-ClipboardxAI may connect to third-party AI providers that you configure. Your use of those providers is governed by their respective terms and privacy policies. ClipboardxAI is not responsible for the content, availability, or practices of third-party providers.
+ClipboxAI may connect to third-party AI providers that you configure. Your use of those providers is governed by their respective terms and privacy policies. ClipboxAI is not responsible for the content, availability, or practices of third-party providers.
 
 ## Purchases
 
-A full-feature license (if offered) is available via the Mac App Store. All purchases are processed by Apple. ClipboardxAI does not handle payment information. Purchase restoration is supported for reinstalls.
+A full-feature license (if offered) is available via the Mac App Store. All purchases are processed by Apple. ClipboxAI does not handle payment information. Purchase restoration is supported for reinstalls.
 
 ## User Responsibilities
 
-- Use ClipboardxAI lawfully and in compliance with applicable rules.
+- Use ClipboxAI lawfully and in compliance with applicable rules.
 - Do not attempt to decompile, reverse engineer, or modify the app in violation of the license.
 - You are responsible for the content you send to third-party AI providers and must comply with those providers' acceptable-use policies.
 
@@ -30,7 +30,7 @@ Please review the [Privacy Policy](/guide/privacy) for information about data pr
 
 ## No Warranty
 
-ClipboardxAI is provided "as is" without warranties of any kind. To the fullest extent permitted by law, the maintainers disclaim all warranties, whether express, implied, statutory or otherwise, including merchantability and fitness for a particular purpose.
+ClipboxAI is provided "as is" without warranties of any kind. To the fullest extent permitted by law, the maintainers disclaim all warranties, whether express, implied, statutory or otherwise, including merchantability and fitness for a particular purpose.
 
 ## Limitation of Liability
 
@@ -47,8 +47,8 @@ We may update these Terms from time to time. Continued use after changes constit
 ## Contact
 
 For questions about these Terms, open an issue at the project repository:
-`https://github.com/clipboardxAI/clipboard-site/issues`
+`https://github.com/clipboxAI/clipboard-site/issues`
 
-Or email us at: clipboardxai@w3cub.com
+Or email us at: clipboxai@w3cub.com
 
 *Last updated: August 5, 2026*

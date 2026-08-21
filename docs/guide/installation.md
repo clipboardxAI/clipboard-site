@@ -1,25 +1,25 @@
 # Installation
 
-ClipboardxAI is available for macOS.
+ClipboxAI is available for macOS.
 
 ## Download Options
 
 ### Mac App Store (Recommended)
 
-- **Download**: Search for **ClipboardxAI** on the Mac App Store, or open the link from the [home page](/).
+- **Download**: Search for **ClipboxAI** on the Mac App Store, or open the link from the [home page](/).
 - The Mac App Store version provides automatic updates and seamless macOS integration.
 
 > ~~If a Mac App Store link is not yet available, use the GitHub Releases build below.~~
 
 ### ~~GitHub Releases (Alternative)~~ (not available yet)
 
-~~You can download the latest build directly from [GitHub Releases](https://github.com/clipboardxAI). Note that this version does not receive automatic updates.~~
+~~You can download the latest build directly from [GitHub Releases](https://github.com/clipboxAI). Note that this version does not receive automatic updates.~~
 
 ## Installation Steps
 
 ### Mac App Store
 
-1. Open the download link above or search for "ClipboardxAI" in the Mac App Store.
+1. Open the download link above or search for "ClipboxAI" in the Mac App Store.
 2. Click **Get** to download the app.
 3. The app installs automatically — launch it from **Applications** or **Launchpad**.
 
@@ -27,14 +27,14 @@ ClipboardxAI is available for macOS.
 
 1. ~~Download the latest `.dmg` from the Releases page.~~
 2. ~~Double-click the downloaded `.dmg` to open it.~~
-3. ~~Drag the `ClipboardxAI.app` icon into your **Applications** folder.~~
+3. ~~Drag the `ClipboxAI.app` icon into your **Applications** folder.~~
 4. ~~Eject the mounted image and open the app from **Applications**.~~
 
 If macOS prevents opening the app (Gatekeeper), open **System Settings → Privacy & Security** and click **Open Anyway**, or right-click the app and choose **Open**.
 
 ## First Launch
 
-On first launch, ClipboardxAI guides you through a short setup:
+On first launch, ClipboxAI guides you through a short setup:
 
 - **Enable the menu bar item** so the app lives in your menu bar.
 - **Grant permissions** it needs to monitor the clipboard in the background (see [Permissions](/guide/permissions)).
@@ -49,10 +49,10 @@ Grant permissions when prompted. You can change them any time in **System Settin
 
 ## Uninstall
 
-To remove ClipboardxAI:
+To remove ClipboxAI:
 
 1. Quit the app.
-2. Drag `ClipboardxAI.app` from `Applications` to the Trash.
+2. Drag `ClipboxAI.app` from `Applications` to the Trash.
 3. (Optional) Remove local data:
 
 ```bash

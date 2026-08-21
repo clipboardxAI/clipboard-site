@@ -1,18 +1,18 @@
 # 指南
 
-欢迎来到 ClipboardxAI 用户指南！本部分包含你在 Mac 上使用 ClipboardxAI 所需了解的一切。
+欢迎来到 ClipboxAI 用户指南！本部分包含你在 Mac 上使用 ClipboxAI 所需了解的一切。
 
 ## 开始使用
 
-刚接触 ClipboardxAI？从这里开始：
+刚接触 ClipboxAI？从这里开始：
 
-- **[简介](guide/introduction.md)** —— 了解 ClipboardxAI 是什么及其核心功能
-- **[安装](guide/installation.md)** —— 在 Mac 上下载并安装 ClipboardxAI
+- **[简介](guide/introduction.md)** —— 了解 ClipboxAI 是什么及其核心功能
+- **[安装](guide/installation.md)** —— 在 Mac 上下载并安装 ClipboxAI
 - **[使用说明](guide/usage.md)** —— 如何使用剪贴板历史并运行操作
 
 ## 设置与帮助
 
-- **[权限说明](guide/permissions.md)** —— 了解 ClipboardxAI 使用的 macOS 权限
+- **[权限说明](guide/permissions.md)** —— 了解 ClipboxAI 使用的 macOS 权限
 - **[自定义](guide/customize.md)** —— 调整 AI 配置、操作与隐私
 - **[故障排除](guide/troubleshooting.md)** —— 常见问题的解决方案
 - **[常见问题](guide/faq.md)** —— 常见问题解答
@@ -21,7 +21,7 @@
 
 - **[隐私政策](guide/privacy.md)** —— 我们如何处理你的数据
 - **[隐私选择](guide/privacy-choices.md)** —— 你的隐私权利
-- **[服务条款](guide/terms.md)** —— 管辖你使用 ClipboardxAI 的条款
+- **[服务条款](guide/terms.md)** —— 管辖你使用 ClipboxAI 的条款
 
 ## 快速链接
 

@@ -1,6 +1,6 @@
 # Solución de problemas
 
-Esta página recopila problemas comunes con ClipboardxAI en macOS y cómo resolverlos.
+Esta página recopila problemas comunes con ClipboxAI en macOS y cómo resolverlos.
 
 ## La aplicación no arranca o se cierra al iniciar
 
@@ -39,7 +39,7 @@ Síntomas: al hacer clic en **Instalar** no pasa nada, o la aplicación no se ab
 
 Lista de comprobación:
 
-1. El enlace profundo `clipboardxai://install?action=<id>` debe ser gestionado por la aplicación instalada — asegúrese de que ClipboardxAI está instalado y en ejecución.
+1. El enlace profundo `clipboxai://install?action=<id>` debe ser gestionado por la aplicación instalada — asegúrese de que ClipboxAI está instalado y en ejecución.
 2. Si su navegador bloquea el enlace profundo, cópielo y ábralo manualmente, o instale desde la pestaña **Marketplace** de la propia aplicación.
 3. Compruebe que el ID de la acción sigue publicado en el marketplace.
 
@@ -47,7 +47,7 @@ Lista de comprobación:
 
 Para restablecer los ajustes y borrar los datos locales:
 
-1. Salga de ClipboardxAI.
+1. Salga de ClipboxAI.
 2. Elimine el contenedor (esto borra el historial y los ajustes):
 
 ```bash
@@ -63,14 +63,14 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/Clipboard\ x\ AI/*.log ~/Desktop/ 2>/dev/null
 ```
 
-A continuación, abra un issue en [GitHub](https://github.com/clipboardxAI) y adjunte los registros.
+A continuación, abra un issue en [GitHub](https://github.com/clipboxAI) y adjunte los registros.
 
 ## Informar de un problema
 
 Al abrir un issue, incluya:
 
 - Versión de macOS (menú Apple → Acerca de este Mac)
-- Versión de ClipboardxAI (menú de la aplicación → Acerca de)
+- Versión de ClipboxAI (menú de la aplicación → Acerca de)
 - Pasos para reproducirlo
 - Registros (ver arriba)
 

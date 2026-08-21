@@ -1,6 +1,6 @@
 # トラブルシューティング
 
-このページは、macOS 上の ClipboardxAI でよくある問題とその解決方法をまとめたものです。
+このページは、macOS 上の ClipboxAI でよくある問題とその解決方法をまとめたものです。
 
 ## アプリが起動しない、または起動時にクラッシュする
 
@@ -39,7 +39,7 @@
 
 チェックリスト：
 
-1. ディープリンク `clipboardxai://install?action=<id>` はインストール済みのアプリで処理される必要があります — ClipboardxAI がインストールされ、動作していることを確認してください。
+1. ディープリンク `clipboxai://install?action=<id>` はインストール済みのアプリで処理される必要があります — ClipboxAI がインストールされ、動作していることを確認してください。
 2. ブラウザーがディープリンクをブロックする場合は、リンクをコピーして手動で開くか、アプリ内の **Marketplace** タブからインストールしてください。
 3. そのアクション ID がマーケットプレイスにまだ公開されているか確認してください。
 
@@ -47,7 +47,7 @@
 
 設定をリセットし、ローカルデータを消去するには：
 
-1. ClipboardxAI を終了します。
+1. ClipboxAI を終了します。
 2. コンテナを削除します（これにより履歴と設定が削除されます）：
 
 ```bash
@@ -63,14 +63,14 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/Clipboard\ x\ AI/*.log ~/Desktop/ 2>/dev/null
 ```
 
-その後、[GitHub](https://github.com/clipboardxAI) で issue を作成し、ログを添付してください。
+その後、[GitHub](https://github.com/clipboxAI) で issue を作成し、ログを添付してください。
 
 ## 問題を報告する
 
 issue を作成する際は、以下を含めてください。
 
 - macOS のバージョン（Apple メニュー → この Mac について）
-- ClipboardxAI のバージョン（アプリメニュー → バージョン情報）
+- ClipboxAI のバージョン（アプリメニュー → バージョン情報）
 - 再現手順
 - ログ（上記参照）
 

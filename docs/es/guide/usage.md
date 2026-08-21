@@ -2,7 +2,7 @@
 
 ## Historial del portapapeles
 
-ClipboardxAI se ejecuta desde su **barra de menú**. Cada vez que copia algo, se añade a su historial.
+ClipboxAI se ejecuta desde su **barra de menú**. Cada vez que copia algo, se añade a su historial.
 
 - Haga clic en el icono de la barra de menú para abrir el panel de historial.
 - Pase el cursor sobre un elemento y pulse el atajo de la acción, o haga clic para copiarlo de nuevo al portapapeles.
@@ -52,7 +52,7 @@ Si no se ha establecido ninguna clave, el banner de configuración le lo recuerd
 ## Marketplace
 
 1. Abra **Marketplace** desde la ventana de la Herramienta de IA (o la página [Marketplace](/es/marketplace/) del sitio).
-2. Haga clic en **Instalar** en una acción. Esto abre la aplicación mediante el enlace profundo `clipboardxai://install?action=<id>` y añade la acción a su lista de **Instaladas**.
+2. Haga clic en **Instalar** en una acción. Esto abre la aplicación mediante el enlace profundo `clipboxai://install?action=<id>` y añade la acción a su lista de **Instaladas**.
 
 ## Atajos de teclado
 
@@ -67,7 +67,7 @@ Si no se ha establecido ninguna clave, el banner de configuración le lo recuerd
 
 ## Ajustes
 
-Abra **ClipboardxAI → Ajustes** (o `Cmd+,`):
+Abra **ClipboxAI → Ajustes** (o `Cmd+,`):
 
 - **General**: idioma, inicio al iniciar sesión, tema de apariencia.
 - **IA**: proveedor en la nube, modelo y API key (Keychain).

@@ -1,10 +1,10 @@
 # Opciones de privacidad
 
-ClipboardxAI es una aplicación local-primero. Dado que sus datos permanecen en su dispositivo, no recopilamos, vendemos ni compartimos ninguna información personal.
+ClipboxAI es una aplicación local-primero. Dado que sus datos permanecen en su dispositivo, no recopilamos, vendemos ni compartimos ninguna información personal.
 
 ## Datos que conservamos localmente
 
-ClipboardxAI almacena todos los datos localmente en su Mac:
+ClipboxAI almacena todos los datos localmente en su Mac:
 
 - Historial del portapapeles y preferencias de la aplicación
 - Acciones personalizadas y configuración
@@ -19,7 +19,7 @@ Las funciones de IA en la nube están **desactivadas por defecto**. Envían el c
 
 ## Sus derechos
 
-Dado que ClipboardxAI no recopila ni almacena datos personales en nuestros servidores, no hay datos personales a los que podamos acceder, eliminar o transferir. Todos sus datos se pueden gestionar directamente dentro de la aplicación o eliminando la carpeta del contenedor de la aplicación:
+Dado que ClipboxAI no recopila ni almacena datos personales en nuestros servidores, no hay datos personales a los que podamos acceder, eliminar o transferir. Todos sus datos se pueden gestionar directamente dentro de la aplicación o eliminando la carpeta del contenedor de la aplicación:
 
 ```bash
 rm -rf ~/Library/Containers/com.w3cub.clipboard
@@ -27,9 +27,9 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 
 ## No venta
 
-ClipboardxAI no vende ninguna información personal. No usamos servicios de analítica, publicidad o seguimiento de terceros de ningún tipo.
+ClipboxAI no vende ninguna información personal. No usamos servicios de analítica, publicidad o seguimiento de terceros de ningún tipo.
 
 ## Contacto
 
 Si tiene preguntas sobre las opciones de privacidad, abra un issue en:
-`https://github.com/clipboardxAI/clipboard-site/issues`
+`https://github.com/clipboxAI/clipboard-site/issues`

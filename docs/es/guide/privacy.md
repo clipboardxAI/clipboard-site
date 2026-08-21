@@ -1,6 +1,6 @@
 # Política de privacidad
 
-ClipboardxAI es un gestor de portapapeles inteligente para macOS. Su privacidad es nuestra prioridad.
+ClipboxAI es un gestor de portapapeles inteligente para macOS. Su privacidad es nuestra prioridad.
 
 ## Diseño local-primero
 
@@ -11,7 +11,7 @@ ClipboardxAI es un gestor de portapapeles inteligente para macOS. Su privacidad 
 
 ## IA en la nube (opcional)
 
-ClipboardxAI puede usar opcionalmente proveedores de IA en la nube (como DeepSeek, MiniMax, GLM, Kimi, Mistral o un servidor Ollama local) para potenciar acciones avanzadas como resumir, traducir y avisos personalizados.
+ClipboxAI puede usar opcionalmente proveedores de IA en la nube (como DeepSeek, MiniMax, GLM, Kimi, Mistral o un servidor Ollama local) para potenciar acciones avanzadas como resumir, traducir y avisos personalizados.
 
 - Cuando se activa, el texto seleccionado o el contenido del portapapeles se envía **directamente al proveedor que configure**, usando **su propia API key**.
 - Su API key solo se almacena en el Keychain de su Mac y nunca se nos sube.
@@ -45,16 +45,16 @@ Puede gestionar estos permisos en **Configuración del sistema → Privacidad y 
 
 ## Compras dentro de la aplicación / Licencia
 
-Las compras de licencia (si las hay) las procesa Apple a través de la Mac App Store. ClipboardxAI no recibe ni almacena su información de pago. Los recibos de licencia se almacenan localmente para verificar la titularidad.
+Las compras de licencia (si las hay) las procesa Apple a través de la Mac App Store. ClipboxAI no recibe ni almacena su información de pago. Los recibos de licencia se almacenan localmente para verificar la titularidad.
 
 ## Servicios de terceros
 
-ClipboardxAI en sí no incluye ningún servicio de analítica, publicidad o seguimiento de terceros. Cuando activa un proveedor de IA en la nube, sus solicitudes las gestiona ese proveedor bajo su propia política de privacidad.
+ClipboxAI en sí no incluye ningún servicio de analítica, publicidad o seguimiento de terceros. Cuando activa un proveedor de IA en la nube, sus solicitudes las gestiona ese proveedor bajo su propia política de privacidad.
 
 ## Solicitudes de privacidad
 
-Dado que ClipboardxAI almacena todos los datos localmente en su dispositivo, no conservamos ningún dato personal en nuestros servidores. Si tiene preguntas sobre la privacidad, póngase en contacto con nosotros.
+Dado que ClipboxAI almacena todos los datos localmente en su dispositivo, no conservamos ningún dato personal en nuestros servidores. Si tiene preguntas sobre la privacidad, póngase en contacto con nosotros.
 
 ## Contacto
 
-Para preguntas sobre privacidad, abra un issue en [GitHub Issues](https://github.com/clipboardxAI/clipboard-site/issues) o envíenos un correo a clipboardxai@w3cub.com.
+Para preguntas sobre privacidad, abra un issue en [GitHub Issues](https://github.com/clipboxAI/clipboard-site/issues) o envíenos un correo a clipboxai@w3cub.com.

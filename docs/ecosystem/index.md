@@ -41,7 +41,7 @@ the target app via `NSWorkspace.open(_:)`:
 - `{{files}}` — absolute file path(s) of the current clipboard item
   (newline-separated for multiple files).
 - `{{text}}` — the plain-text content.
-- `{{returnURL}}` — an optional `clipboardxai://callback?…` return URL for
+- `{{returnURL}}` — an optional `clipboxai://callback?…` return URL for
   x-callback-url style round-trips (used once the sibling app implements it).
 
 If the target app is **not installed**, the action is hidden from the panel
@@ -64,9 +64,9 @@ Nicasa Finder extensions are reference implementations you can copy from.
 We keep the catalog in a public repo so anyone can contribute an action:
 
 - 📦 **Submit an action** (or request your app be added) via
-  [clipboardxAI/marketplace · Issues](https://github.com/clipboardxAI/marketplace/issues)
+  [clipboxAI/marketplace · Issues](https://github.com/clipboxAI/marketplace/issues)
 - 🔀 Or open a pull request against
-  [`clipboardxai-marketplace`](https://github.com/clipboardxAI/marketplace)
+  [`clipboxai-marketplace`](https://github.com/clipboxAI/marketplace)
   adding your action JSON.
 
 ### Guidelines
@@ -84,4 +84,4 @@ We keep the catalog in a public repo so anyone can contribute an action:
 - **Context** — actions fire from the clipboard, Finder, or anywhere the user
   already works.
 
-[→ Open an integration issue](https://github.com/clipboardxAI/marketplace/issues)
+[→ Open an integration issue](https://github.com/clipboxAI/marketplace/issues)

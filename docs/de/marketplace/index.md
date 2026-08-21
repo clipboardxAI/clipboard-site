@@ -1,9 +1,9 @@
 ---
 title: Aktionsmarkt
-description: Durchsuche und installiere von der Community kuratierte KI-Aktionen für ClipboardxAI.
+description: Durchsuche und installiere von der Community kuratierte KI-Aktionen für ClipboxAI.
 marketplace:
   eyebrow: Aktionsmarkt
-  title: ClipboardxAI · Aktionsmarkt
+  title: ClipboxAI · Aktionsmarkt
   desc: Community-kuratierte KI-Aktionen für deine Zwischenablage. Durchsuchen und auf Installieren tippen, um die Aktion in der App hinzuzufügen.
   all: Alle
   install: Installieren

@@ -1,24 +1,24 @@
 # 贡献指南
 
-我们欢迎你为改进 ClipboardxAI 做出贡献！无论是修复 bug、添加功能、翻译，还是完善文档，我们都感谢你的帮助。
+我们欢迎你为改进 ClipboxAI 做出贡献！无论是修复 bug、添加功能、翻译，还是完善文档，我们都感谢你的帮助。
 
 ## 贡献方式
 
 ### 错误报告（Bug Reports）
 
-- 先查看现有的 [issues](https://github.com/clipboardxAI/issues)。
-- 附上 macOS 版本、ClipboardxAI 版本与复现步骤。
+- 先查看现有的 [issues](https://github.com/clipboxAI/issues)。
+- 附上 macOS 版本、ClipboxAI 版本与复现步骤。
 - 如有助于排查，可附上示例文本（请勿包含敏感的剪贴板内容）。
 
 ### 功能请求（Feature Requests）
 
 - 描述该功能及其使用场景。
-- 说明它为何能造福 ClipboardxAI 用户。
+- 说明它为何能造福 ClipboxAI 用户。
 - 确认它是否符合本地优先、尊重隐私的理念。
 
 ### 翻译（Translations）
 
-- ClipboardxAI 通过 i18n JSON 文件支持多种语言。
+- ClipboxAI 通过 i18n JSON 文件支持多种语言。
 - 为缺失或不完整的语言贡献翻译。
 - 现有翻译请参阅 `ClipboardXAI/Resources/i18n/`。
 
@@ -119,4 +119,4 @@
 
 ## 有疑问？
 
-如果你对贡献有疑问，请查看现有的 [issues](https://github.com/clipboardxAI/issues) 或新建一个。感谢你帮助改进 ClipboardxAI！ 🎉
+如果你对贡献有疑问，请查看现有的 [issues](https://github.com/clipboxAI/issues) 或新建一个。感谢你帮助改进 ClipboxAI！ 🎉

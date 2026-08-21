@@ -1,6 +1,6 @@
 # Troubleshooting
 
-This page collects common problems with ClipboardxAI on macOS and how to resolve them.
+This page collects common problems with ClipboxAI on macOS and how to resolve them.
 
 ## The app won't start or crashes on launch
 
@@ -39,7 +39,7 @@ Symptoms: clicking **Install** does nothing, or the app doesn't open.
 
 Checklist:
 
-1. The deep link `clipboardxai://install?action=<id>` must be handled by the installed app — make sure ClipboardxAI is installed and running.
+1. The deep link `clipboxai://install?action=<id>` must be handled by the installed app — make sure ClipboxAI is installed and running.
 2. If your browser blocks the deep link, copy it and open it manually, or install from inside the app's **Marketplace** tab.
 3. Check that the action ID is still published in the marketplace.
 
@@ -47,7 +47,7 @@ Checklist:
 
 To reset settings and clear local data:
 
-1. Quit ClipboardxAI.
+1. Quit ClipboxAI.
 2. Remove the container (this deletes history and settings):
 
 ```bash
@@ -63,14 +63,14 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 cp ~/Library/Containers/com.w3cub.clipboard/Data/Library/Logs/Clipboard\ x\ AI/*.log ~/Desktop/ 2>/dev/null
 ```
 
-Then open an issue on [GitHub](https://github.com/clipboardxAI) and attach the logs.
+Then open an issue on [GitHub](https://github.com/clipboxAI) and attach the logs.
 
 ## Report an issue
 
 When opening an issue, include:
 
 - macOS version (Apple menu → About This Mac)
-- ClipboardxAI version (app menu → About)
+- ClipboxAI version (app menu → About)
 - Steps to reproduce
 - Logs (see above)
 

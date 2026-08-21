@@ -34,7 +34,7 @@ Lorsque l'utilisateur clique sur **Installer**, Clipboard x AI enregistre l'acti
 - `{{files}}` — chemin(s) absolu(s) du fichier de l'élément de presse-papiers actuel
   (séparés par des retours à la ligne pour plusieurs fichiers).
 - `{{text}}` — le contenu en texte brut.
-- `{{returnURL}}` — une URL de retour `clipboardxai://callback?…` optionnelle pour
+- `{{returnURL}}` — une URL de retour `clipboxai://callback?…` optionnelle pour
   des allers-retours de style x-callback-url (utilisée une fois l'application sœur implémentée).
 
 Si l'application cible **n'est pas installée**, l'action est masquée du panneau
@@ -57,9 +57,9 @@ Finder NueZip et Nicasa sont des implémentations de référence dont vous pouve
 Nous gardons le catalogue dans un dépôt public afin que chacun puisse contribuer une action :
 
 - 📦 **Soumettre une action** (ou demander l'ajout de votre application) via
-  [clipboardxAI/marketplace · Issues](https://github.com/clipboardxAI/marketplace/issues)
+  [clipboxAI/marketplace · Issues](https://github.com/clipboxAI/marketplace/issues)
 - 🔀 Ou ouvrez une pull request contre
-  [`clipboardxai-marketplace`](https://github.com/clipboardxAI/marketplace)
+  [`clipboxai-marketplace`](https://github.com/clipboxAI/marketplace)
   en ajoutant le JSON de votre action.
 
 ### Recommandations
@@ -77,4 +77,4 @@ Nous gardons le catalogue dans un dépôt public afin que chacun puisse contribu
 - **Contexte** — les actions se déclenchent depuis le presse-papiers, le Finder, ou là où
   l'utilisateur travaille déjà.
 
-[→ Ouvrir un ticket d'intégration](https://github.com/clipboardxAI/marketplace/issues)
+[→ Ouvrir un ticket d'intégration](https://github.com/clipboxAI/marketplace/issues)

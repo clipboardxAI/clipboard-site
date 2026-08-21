@@ -1,10 +1,10 @@
 # 隐私选择
 
-ClipboardxAI 是一款本地优先的应用。由于你的数据始终留在你的设备上，我们不会收集、出售或共享任何个人信息。
+ClipboxAI 是一款本地优先的应用。由于你的数据始终留在你的设备上，我们不会收集、出售或共享任何个人信息。
 
 ## 我们本地保存的数据
 
-ClipboardxAI 将所有数据保存在你的 Mac 本地：
+ClipboxAI 将所有数据保存在你的 Mac 本地：
 
 - 剪贴板历史与应用偏好
 - 自定义操作与配置
@@ -19,7 +19,7 @@ ClipboardxAI 将所有数据保存在你的 Mac 本地：
 
 ## 你的权利
 
-由于 ClipboardxAI 不在我们的服务器上收集或存储个人数据，因此我们没有任何可供访问、删除或转移的个人数据。你的所有数据都可以在应用内直接管理，或通过移除应用的容器文件夹来管理：
+由于 ClipboxAI 不在我们的服务器上收集或存储个人数据，因此我们没有任何可供访问、删除或转移的个人数据。你的所有数据都可以在应用内直接管理，或通过移除应用的容器文件夹来管理：
 
 ```bash
 rm -rf ~/Library/Containers/com.w3cub.clipboard
@@ -27,9 +27,9 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 
 ## 不出售声明（Do Not Sell）
 
-ClipboardxAI 不出售任何个人信息。我们不使用任何第三方的分析、广告或追踪服务。
+ClipboxAI 不出售任何个人信息。我们不使用任何第三方的分析、广告或追踪服务。
 
 ## 联系方式
 
 如果你对隐私选择有疑问，请在以下地址提交 issue：
-`https://github.com/clipboardxAI/clipboard-site/issues`
+`https://github.com/clipboxAI/clipboard-site/issues`

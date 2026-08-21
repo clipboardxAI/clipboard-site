@@ -1,10 +1,10 @@
 # 隱私權選擇
 
-ClipboardxAI 是一款本機優先的應用程式。由於你的資料保留在你的裝置上，我們不會蒐集、販售或分享任何個人資訊。
+ClipboxAI 是一款本機優先的應用程式。由於你的資料保留在你的裝置上，我們不會蒐集、販售或分享任何個人資訊。
 
 ## 我們在本地持有的資料
 
-ClipboardxAI 將所有資料儲存在你 Mac 的本地上：
+ClipboxAI 將所有資料儲存在你 Mac 的本地上：
 
 - 剪貼簿歷史與應用程式偏好設定
 - 自訂動作與設定
@@ -19,7 +19,7 @@ ClipboardxAI 將所有資料儲存在你 Mac 的本地上：
 
 ## 你的權利
 
-由於 ClipboardxAI 不會在我們的伺服器上蒐集或儲存個人資料，因此我們沒有任何可供存取、刪除或移轉的個人資料。你所有的資料都可以直接在應用程式內管理，或是透過移除應用程式的容器資料夾來處理：
+由於 ClipboxAI 不會在我們的伺服器上蒐集或儲存個人資料，因此我們沒有任何可供存取、刪除或移轉的個人資料。你所有的資料都可以直接在應用程式內管理，或是透過移除應用程式的容器資料夾來處理：
 
 ```bash
 rm -rf ~/Library/Containers/com.w3cub.clipboard
@@ -27,9 +27,9 @@ rm -rf ~/Library/Containers/com.w3cub.clipboard
 
 ## 不販售
 
-ClipboardxAI 不會販售任何個人資訊。我們不使用任何形式的第三方分析、廣告或追蹤服務。
+ClipboxAI 不會販售任何個人資訊。我們不使用任何形式的第三方分析、廣告或追蹤服務。
 
 ## 聯絡方式
 
 若你對隱私權選擇有任何疑問，請在以下位置開啟一個 issue：
-`https://github.com/clipboardxAI/clipboard-site/issues`
+`https://github.com/clipboxAI/clipboard-site/issues`

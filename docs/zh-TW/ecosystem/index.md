@@ -33,7 +33,7 @@ Clipboard x AI 是一個剪貼簿樞紐。但繁重的工作——檔案壓縮�
 
 - `{{files}}` — 目前剪貼簿項目的絕對檔案路徑（多個檔案時以換行分隔）。
 - `{{text}}` — 純文字內容。
-- `{{returnURL}}` — 選用的 `clipboardxai://callback?…` 回傳 URL，用於 x-callback-url 形式的來回往返（待同類應用程式實作後使用）。
+- `{{returnURL}}` — 選用的 `clipboxai://callback?…` 回傳 URL，用於 x-callback-url 形式的來回往返（待同類應用程式實作後使用）。
 
 若目標應用程式**尚未安裝**，該動作會從面板中隱藏，直到使用者安裝為止——不會出現損壞的按鈕。
 
@@ -52,9 +52,9 @@ Clipboard x AI 是一個剪貼簿樞紐。但繁重的工作——檔案壓縮�
 我們將目錄保存在公開儲存庫中，任何人都可以貢獻一個動作：
 
 - 📦 **提交動作**（或請求將你的應用程式加入），請至
-  [clipboardxAI/marketplace · Issues](https://github.com/clipboardxAI/marketplace/issues)
+  [clipboxAI/marketplace · Issues](https://github.com/clipboxAI/marketplace/issues)
 - 🔀 或對
-  [`clipboardxai-marketplace`](https://github.com/clipboardxAI/marketplace)
+  [`clipboxai-marketplace`](https://github.com/clipboxAI/marketplace)
   開啟一個 pull request，加入你的動作 JSON。
 
 ### 準則
@@ -70,4 +70,4 @@ Clipboard x AI 是一個剪貼簿樞紐。但繁重的工作——檔案壓縮�
 - **分發** — 你的應用程式動作會出現在 Clipboard x AI 市集中，面對每一位使用者。
 - **情境** — 動作從剪貼簿、Finder，或使用者原本就在工作的任何地方觸發。
 
-[→ 開啟整合 issue](https://github.com/clipboardxAI/marketplace/issues)
+[→ 開啟整合 issue](https://github.com/clipboxAI/marketplace/issues)

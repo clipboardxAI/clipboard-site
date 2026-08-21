@@ -1,10 +1,10 @@
 # 自訂
 
-讓 ClipboardxAI 依照你的方式運作。本指南涵蓋你可以調整的設定。
+讓 ClipboxAI 依照你的方式運作。本指南涵蓋你可以調整的設定。
 
 ## 一般（General）
 
-開啟 **ClipboardxAI → Settings（設定）**（或按下 `Cmd+,`）。
+開啟 **ClipboxAI → Settings（設定）**（或按下 `Cmd+,`）。
 
 - **Language（語言）**：English、简体中文、繁體中文、日本語。
 - **Launch at Login（登入時啟動）**：在你登入時自動啟動應用程式。

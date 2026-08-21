@@ -33,7 +33,7 @@ Wenn der Nutzer auf **Install** klickt, registriert Clipboard x AI die Aktion lo
 
 - `{{files}}` — absoluter(e) Dateipfad/Pfade des aktuellen Zwischenablage-Eintrags (bei mehreren Dateien durch Zeilenumbrüche getrennt).
 - `{{text}}` — der Klartext-Inhalt.
-- `{{returnURL}}` — eine optionale `clipboardxai://callback?…`-Rückgabe-URL für Round-Trips im x-callback-url-Stil (genutzt, sobald die Schwester-App sie implementiert).
+- `{{returnURL}}` — eine optionale `clipboxai://callback?…`-Rückgabe-URL für Round-Trips im x-callback-url-Stil (genutzt, sobald die Schwester-App sie implementiert).
 
 Falls die Ziel-App **nicht installiert** ist, wird die Aktion aus dem Panel ausgeblendet, bis der Nutzer sie installiert — keine defekten Buttons.
 
@@ -52,9 +52,9 @@ Das war's. Keine privaten APIs, kein gemeinsamer Code — nur ein Deeplink. Die 
 Wir halten den Katalog in einem öffentlichen Repo, sodass jeder eine Aktion beisteuern kann:
 
 - 📦 **Aktion einreichen** (oder beantragen, dass Ihre App hinzugefügt wird) über
-  [clipboardxAI/marketplace · Issues](https://github.com/clipboardxAI/marketplace/issues)
+  [clipboxAI/marketplace · Issues](https://github.com/clipboxAI/marketplace/issues)
 - 🔀 Oder öffnen Sie einen Pull Request gegen
-  [`clipboardxai-marketplace`](https://github.com/clipboardxAI/marketplace)
+  [`clipboxai-marketplace`](https://github.com/clipboxAI/marketplace)
   und fügen Sie Ihr Aktions-JSON hinzu.
 
 ### Richtlinien
@@ -70,4 +70,4 @@ Wir halten den Katalog in einem öffentlichen Repo, sodass jeder eine Aktion bei
 - **Distribution** — die Aktionen Ihrer App erscheinen im Clipboard x AI Marketplace für jeden Nutzer.
 - **Kontext** — Aktionen werden aus der Zwischenablage, dem Finder oder überall dort ausgelöst, wo der Nutzer bereits arbeitet.
 
-[→ Integrations-Issue öffnen](https://github.com/clipboardxAI/marketplace/issues)
+[→ Integrations-Issue öffnen](https://github.com/clipboxAI/marketplace/issues)

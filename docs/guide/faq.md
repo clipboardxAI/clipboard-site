@@ -1,8 +1,8 @@
 # FAQ
 
-**Q: What is ClipboardxAI?**
+**Q: What is ClipboxAI?**
 
-A: ClipboardxAI is a smart clipboard manager for macOS. It keeps a searchable history of everything you copy and lets you run actions on it — summarize, translate, tidy text, or send it to a cloud AI model.
+A: ClipboxAI is a smart clipboard manager for macOS. It keeps a searchable history of everything you copy and lets you run actions on it — summarize, translate, tidy text, or send it to a cloud AI model.
 
 **Q: Which macOS versions are supported?**
 
@@ -10,11 +10,11 @@ A: macOS 14 Sonoma or later, optimized for Apple Silicon (M-series) with Intel s
 
 **Q: How do I install it?**
 
-A: Download from the [Mac App Store](/) (recommended) or ~~grab the latest build from [GitHub Releases](https://github.com/clipboardxAI)~~. See the [Installation Guide](/guide/installation).
+A: Download from the [Mac App Store](/) (recommended) or ~~grab the latest build from [GitHub Releases](https://github.com/clipboxAI)~~. See the [Installation Guide](/guide/installation).
 
-**Q: Is ClipboardxAI free?**
+**Q: Is ClipboxAI free?**
 
-A: ClipboardxAI is a paid app on the Mac App Store. After purchase, all built-in local tools are included — no account required. Cloud AI actions use *your own* provider API key, so you only pay the AI provider directly.
+A: ClipboxAI is a paid app on the Mac App Store. After purchase, all built-in local tools are included — no account required. Cloud AI actions use *your own* provider API key, so you only pay the AI provider directly.
 
 **Q: Which AI providers are supported?**
 
@@ -38,7 +38,7 @@ A: The Mac App Store version updates automatically. ~~For GitHub builds, downloa
 
 **Q: How do I report bugs or request features?**
 
-A: Open an issue on the [GitHub repository](https://github.com/clipboardxAI). Include your macOS version, app version, and steps to reproduce.
+A: Open an issue on the [GitHub repository](https://github.com/clipboxAI). Include your macOS version, app version, and steps to reproduce.
 
 **Q: Where is my data stored?**
 

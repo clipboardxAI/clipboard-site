@@ -1,5 +1,5 @@
 #!/bin/bash
-# Sync the ClipboardxAI Action Marketplace build products into the site.
+# Sync the ClipboxAI Action Marketplace build products into the site.
 #
 # Usage:
 #   ./scripts/sync-marketplace.sh [PATH_TO_MARKETPLACE_REPO]
@@ -14,7 +14,7 @@
 
 set -e
 
-SRC="${1:-/Users/terry/nuecms-workspace/clipboardxai-marketplace}"
+SRC="${1:-/Users/terry/nuecms-workspace/clipboxai-marketplace}"
 DEST="docs/public/marketplace"
 
 if [ ! -d "$SRC" ]; then

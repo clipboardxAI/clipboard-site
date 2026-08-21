@@ -1,10 +1,10 @@
 # Anpassung
 
-Machen Sie ClipboardxAI so, wie Sie arbeiten. Dieser Leitfaden behandelt die Einstellungen, die Sie anpassen können.
+Machen Sie ClipboxAI so, wie Sie arbeiten. Dieser Leitfaden behandelt die Einstellungen, die Sie anpassen können.
 
 ## Allgemein
 
-Öffnen Sie **ClipboardxAI → Einstellungen** (oder drücken Sie `Cmd+,`).
+Öffnen Sie **ClipboxAI → Einstellungen** (oder drücken Sie `Cmd+,`).
 
 - **Language**: Englisch, 简体中文, 繁體中文, 日本語.
 - **Launch at Login**: startet die App automatisch bei der Anmeldung.

@@ -3,8 +3,8 @@
     <div class="nav-container">
       <div class="nav-brand">
         <VPLink :href="homeLink" class="brand-link">
-          <img src="/logo.png" alt="ClipboardxAI" class="brand-logo" />
-          <span class="brand-text">ClipboardxAI</span>
+          <img src="/logo.png" alt="ClipboxAI" class="brand-logo" />
+          <span class="brand-text">ClipboxAI</span>
         </VPLink>
       </div>
 

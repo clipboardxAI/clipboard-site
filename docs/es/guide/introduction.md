@@ -1,8 +1,8 @@
 # Introducción
 
-## Acerca de ClipboardxAI
+## Acerca de ClipboxAI
 
-**ClipboardxAI** es un gestor de portapapeles inteligente para macOS. Cada vez que copia texto, código o un enlace, se guarda en un historial buscable en su barra de menú. Con un clic — o de forma totalmente automática — puede ejecutar una acción sobre ese fragmento: resumirlo, traducirlo, ordenarlo o enviarlo a un modelo de IA en la nube.
+**ClipboxAI** es un gestor de portapapeles inteligente para macOS. Cada vez que copia texto, código o un enlace, se guarda en un historial buscable en su barra de menú. Con un clic — o de forma totalmente automática — puede ejecutar una acción sobre ese fragmento: resumirlo, traducirlo, ordenarlo o enviarlo a un modelo de IA en la nube.
 
 Se basa en dos tipos de herramientas:
 
@@ -17,7 +17,7 @@ Todo lo que copia se captura automáticamente y se guarda en un historial buscab
 
 ### ⚡ Sugerencias inteligentes
 
-ClipboardxAI sugiere las acciones más relevantes para el fragmento actual. Acepte una sugerencia o explore la lista completa de herramientas.
+ClipboxAI sugiere las acciones más relevantes para el fragmento actual. Acepte una sugerencia o explore la lista completa de herramientas.
 
 ### 🛠️ Herramientas locales integradas
 
@@ -40,7 +40,7 @@ Envíe el fragmento actual a un modelo en la nube para:
 
 ### 🛒 Marketplace de acciones
 
-Explore acciones de IA creadas por la comunidad e instálelas con un clic mediante un enlace profundo (`clipboardxai://install?action=<id>`). Las categorías incluyen Escritura, Desarrollador, Productividad, Traducir, Redes sociales y Analítica.
+Explore acciones de IA creadas por la comunidad e instálelas con un clic mediante un enlace profundo (`clipboxai://install?action=<id>`). Las categorías incluyen Escritura, Desarrollador, Productividad, Traducir, Redes sociales y Analítica.
 
 ### 🔒 Privado por diseño
 
@@ -60,4 +60,4 @@ La aplicación y este sitio son compatibles con 7 idiomas: inglés, chino simpli
 
 ## Primeros pasos
 
-Si es nuevo en ClipboardxAI, comience con la [Guía de instalación](/es/guide/installation) para poner la aplicación en marcha en su Mac y, a continuación, lea [Uso](/es/guide/usage) para aprender cómo funcionan las acciones.
+Si es nuevo en ClipboxAI, comience con la [Guía de instalación](/es/guide/installation) para poner la aplicación en marcha en su Mac y, a continuación, lea [Uso](/es/guide/usage) para aprender cómo funcionan las acciones.

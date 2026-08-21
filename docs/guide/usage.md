@@ -2,7 +2,7 @@
 
 ## Clipboard History
 
-ClipboardxAI runs from your **menu bar**. Every time you copy something, it's added to your history.
+ClipboxAI runs from your **menu bar**. Every time you copy something, it's added to your history.
 
 - Click the menu bar icon to open the history panel.
 - Hover an item and press the action shortcut, or click to copy it back to the pasteboard.
@@ -52,7 +52,7 @@ If no key is set, the config banner reminds you inside the AI Tool window.
 ## Marketplace
 
 1. Open **Marketplace** from the AI Tool window (or the site's [Marketplace](/marketplace/) page).
-2. Click **Install** on an action. This opens the app via the deep link `clipboardxai://install?action=<id>` and adds the action to your **Installed** list.
+2. Click **Install** on an action. This opens the app via the deep link `clipboxai://install?action=<id>` and adds the action to your **Installed** list.
 
 ## Keyboard Shortcuts
 
@@ -67,7 +67,7 @@ If no key is set, the config banner reminds you inside the AI Tool window.
 
 ## Settings
 
-Open **ClipboardxAI → Settings** (or `Cmd+,`):
+Open **ClipboxAI → Settings** (or `Cmd+,`):
 
 - **General**: Language, launch at login, appearance theme.
 - **AI**: Cloud provider, model, and API key (Keychain).

@@ -1,25 +1,25 @@
 # インストール
 
-ClipboardxAI は macOS 向けに提供されています。
+ClipboxAI は macOS 向けに提供されています。
 
 ## ダウンロード方法
 
 ### Mac App Store（推奨）
 
-- **ダウンロード**: Mac App Store で **ClipboardxAI** を検索するか、[ホームページ](/ja/)のリンクから開いてください。
+- **ダウンロード**: Mac App Store で **ClipboxAI** を検索するか、[ホームページ](/ja/)のリンクから開いてください。
 - Mac App Store 版は自動更新とシームレスな macOS 統合を提供します。
 
 > ~~Mac App Store のリンクがまだ利用できない場合は、以下の GitHub Releases ビルドをお使いください。~~
 
 ### ~~GitHub Releases（代替）~~（現在は提供されていません）
 
-~~最新のビルドは [GitHub Releases](https://github.com/clipboardxAI) から直接ダウンロードできます。このバージョンは自動更新に対応していません。~~
+~~最新のビルドは [GitHub Releases](https://github.com/clipboxAI) から直接ダウンロードできます。このバージョンは自動更新に対応していません。~~
 
 ## インストール手順
 
 ### Mac App Store
 
-1. 上記のダウンロードリンクを開くか、Mac App Store で "ClipboardxAI" を検索します。
+1. 上記のダウンロードリンクを開くか、Mac App Store で "ClipboxAI" を検索します。
 2. **Get** をクリックしてアプリをダウンロードします。
 3. アプリは自動的にインストールされます。**Applications** または **Launchpad** から起動してください。
 
@@ -27,14 +27,14 @@ ClipboardxAI は macOS 向けに提供されています。
 
 1. ~~Releases ページから最新の `.dmg` をダウンロードします。~~
 2. ~~ダウンロードした `.dmg` をダブルクリックして開きます。~~
-3. ~~`ClipboardxAI.app` アイコンを **Applications** フォルダーにドラッグします。~~
+3. ~~`ClipboxAI.app` アイコンを **Applications** フォルダーにドラッグします。~~
 4. ~~マウントされたイメージを取り出し、**Applications** からアプリを開きます。~~
 
 macOS がアプリの起動をブロックする場合（Gatekeeper）、**システム設定 → プライバシーとセキュリティ** を開き **このまま開く** をクリックするか、アプリを右クリックして **開く** を選択してください。
 
 ## 初回起動
 
-初回起動時に、ClipboardxAI は短いセットアップを案内します。
+初回起動時に、ClipboxAI は短いセットアップを案内します。
 
 - **メニューバー項目を有効にする** — アプリをメニューバーに常駐させます。
 - **必要な権限を付与する** — バックグラウンドでクリップボードを監視するために必要です（[権限](/ja/guide/permissions)を参照）。
@@ -49,10 +49,10 @@ macOS がアプリの起動をブロックする場合（Gatekeeper）、**シ�
 
 ## アンインストール
 
-ClipboardxAI を削除するには：
+ClipboxAI を削除するには：
 
 1. アプリを終了します。
-2. `ClipboardxAI.app` を `Applications` からゴミ箱にドラッグします。
+2. `ClipboxAI.app` を `Applications` からゴミ箱にドラッグします。
 3. （オプション）ローカルデータを削除します：
 
 ```bash

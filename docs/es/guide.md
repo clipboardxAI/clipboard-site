@@ -1,18 +1,18 @@
 # Guía
 
-¡Bienvenido a la Guía de usuario de ClipboardxAI! Esta sección contiene todo lo que necesita saber sobre el uso de ClipboardxAI en su Mac.
+¡Bienvenido a la Guía de usuario de ClipboxAI! Esta sección contiene todo lo que necesita saber sobre el uso de ClipboxAI en su Mac.
 
 ## Primeros pasos
 
-¿Es nuevo en ClipboardxAI? Empiece aquí:
+¿Es nuevo en ClipboxAI? Empiece aquí:
 
-- **[Introducción](guide/introduction.md)** — Conozca qué es ClipboardxAI y sus funciones principales
-- **[Instalación](guide/installation.md)** — Descargue e instale ClipboardxAI en su Mac
+- **[Introducción](guide/introduction.md)** — Conozca qué es ClipboxAI y sus funciones principales
+- **[Instalación](guide/installation.md)** — Descargue e instale ClipboxAI en su Mac
 - **[Uso](guide/usage.md)** — Cómo usar el historial del portapapeles y ejecutar acciones
 
 ## Configuración y ayuda
 
-- **[Permisos](guide/permissions.md)** — Comprenda los permisos de macOS que usa ClipboardxAI
+- **[Permisos](guide/permissions.md)** — Comprenda los permisos de macOS que usa ClipboxAI
 - **[Personalización](guide/customize.md)** — Ajuste la configuración de IA, las acciones y la privacidad
 - **[Solución de problemas](guide/troubleshooting.md)** — Soluciones a problemas comunes
 - **[Preguntas frecuentes](guide/faq.md)** — Preguntas frecuentes
@@ -21,7 +21,7 @@
 
 - **[Política de privacidad](guide/privacy.md)** — Cómo gestionamos sus datos
 - **[Opciones de privacidad](guide/privacy-choices.md)** — Sus derechos de privacidad
-- **[Términos del servicio](guide/terms.md)** — Términos que rigen su uso de ClipboardxAI
+- **[Términos del servicio](guide/terms.md)** — Términos que rigen su uso de ClipboxAI
 
 ## Enlaces rápidos
 

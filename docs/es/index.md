@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "ClipboardxAI"
+  name: "ClipboxAI"
   text: "Tu portapapeles, mejorado con IA"
   tagline: "Un gestor inteligente de portapapeles para macOS. Resume, traduce, transforma y automatiza todo lo que copias — con herramientas locales integradas e IA en la nube opcional."
   image:
     src: /hero-illustration.png
-    alt: ClipboardxAI
+    alt: ClipboxAI
   actions:
     - theme: brand
       text: Empezar
@@ -94,7 +94,7 @@ sections:
 openMarketplace: Abrir el mercado
 cta:
   title: ¿Listo para hacer tu portapapeles más inteligente?
-  description: Descarga ClipboardxAI y convierte cada copia en una acción — privada en tu Mac, con IA cuando la necesites.
+  description: Descarga ClipboxAI y convierte cada copia en una acción — privada en tu Mac, con IA cuando la necesites.
   primary: Empezar
   primaryLink: /guide/installation
   secondary: Cómo usar
@@ -135,10 +135,10 @@ steps:
     title: Ejecutar una acción
     desc: Elige una herramienta integrada o una acción de IA — o activa la ejecución automática para transformar cada copia al instante.
 faqs:
-  - question: ¿ClipboardxAI es gratis?
-    answer: ClipboardxAI es una app de pago en el Mac App Store. Tras la compra, todas las herramientas locales integradas están incluidas — no se requiere cuenta. Las acciones de IA en la nube usan tu propia clave de API, por lo que pagas directamente al proveedor de IA.
+  - question: ¿ClipboxAI es gratis?
+    answer: ClipboxAI es una app de pago en el Mac App Store. Tras la compra, todas las herramientas locales integradas están incluidas — no se requiere cuenta. Las acciones de IA en la nube usan tu propia clave de API, por lo que pagas directamente al proveedor de IA.
   - question: ¿Qué versiones de macOS son compatibles?
-    answer: ClipboardxAI requiere macOS 14 Sonoma o posterior, optimizado para Apple Silicon (serie M) con soporte para Intel.
+    answer: ClipboxAI requiere macOS 14 Sonoma o posterior, optimizado para Apple Silicon (serie M) con soporte para Intel.
   - question: ¿Funciona sin conexión?
     answer: Sí. El historial del portapapeles y las herramientas locales integradas — extraer enlaces, contar palabras, colapsar líneas en blanco y más — se ejecutan completamente en tu Mac sin conexión a internet.
   - question: ¿Mis datos del portapapeles son privados?
