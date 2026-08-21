@@ -1,12 +1,12 @@
 ---
 title: Ecosystem Partnership
-description: How third-party macOS apps plug into Clipboard x AI's Action Marketplace via outbound deep links.
+description: How third-party macOS apps plug into ClipboxAI's Action Marketplace via outbound deep links.
 layout: doc
 ---
 
 # Ecosystem Partnership
 
-Clipboard x AI is a clipboard hub. But heavy lifting — file compression, image
+ClipboxAI is a clipboard hub. But heavy lifting — file compression, image
 optimization, PDF work — is better done by specialized sibling apps. The
 **Action Marketplace** already ships a *third-party software* category where
 actions delegate straight to apps your users already have installed
@@ -34,7 +34,7 @@ instead of a prompt:
 }
 ```
 
-When the user clicks **Install**, Clipboard x AI registers the action locally.
+When the user clicks **Install**, ClipboxAI registers the action locally.
 When they trigger it on a clipboard item, the app fills the template and opens
 the target app via `NSWorkspace.open(_:)`:
 
@@ -53,7 +53,7 @@ To be a target, your macOS app only needs to:
 
 1. Register a URL scheme in `Info.plist` (`CFBundleURLTypes`).
 2. Handle the inbound URL — read `files` / `text` from the query and act on them.
-3. (Optional) Call the `returnURL` when done, so Clipboard x AI can show a
+3. (Optional) Call the `returnURL` when done, so ClipboxAI can show a
    "finished in &lt;App&gt;" toast.
 
 That's it. No private APIs, no shared code — just a deeplink. The NueZip and
@@ -79,7 +79,7 @@ We keep the catalog in a public repo so anyone can contribute an action:
 ## Why partner?
 
 - **Zero integration cost** — one deeplink, no SDK.
-- **Distribution** — your app's actions appear in the Clipboard x AI Marketplace
+- **Distribution** — your app's actions appear in the ClipboxAI Marketplace
   to every user.
 - **Context** — actions fire from the clipboard, Finder, or anywhere the user
   already works.

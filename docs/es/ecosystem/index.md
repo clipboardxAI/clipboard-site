@@ -1,12 +1,12 @@
 ---
 title: Colaboración del ecosistema
-description: Cómo las aplicaciones de terceros para macOS se integran en el Action Marketplace de Clipboard x AI mediante enlaces profundos salientes.
+description: Cómo las aplicaciones de terceros para macOS se integran en el Action Marketplace de ClipboxAI mediante enlaces profundos salientes.
 layout: doc
 ---
 
 # Colaboración del ecosistema
 
-Clipboard x AI es un centro de portapapeles. Pero el trabajo pesado — compresión de archivos, optimización de imágenes, trabajo con PDF — lo hacen mejor aplicaciones hermanas especializadas. El **Action Marketplace** ya incluye una categoría de *software de terceros* donde las acciones delegan directamente en aplicaciones que sus usuarios ya tienen instaladas ([NueZip](https://github.com/w3cub/nuezip), [Nicasa](https://github.com/w3cub/nicasa), …).
+ClipboxAI es un centro de portapapeles. Pero el trabajo pesado — compresión de archivos, optimización de imágenes, trabajo con PDF — lo hacen mejor aplicaciones hermanas especializadas. El **Action Marketplace** ya incluye una categoría de *software de terceros* donde las acciones delegan directamente en aplicaciones que sus usuarios ya tienen instaladas ([NueZip](https://github.com/w3cub/nuezip), [Nicasa](https://github.com/w3cub/nicasa), …).
 
 Esta página explica cómo funciona la integración y cómo **su** aplicación puede unirse.
 
@@ -29,7 +29,7 @@ Una acción de ecosistema es simplemente una entrada del marketplace con un desc
 }
 ```
 
-Cuando el usuario hace clic en **Instalar**, Clipboard x AI registra la acción localmente. Cuando la activa sobre un elemento del portapapeles, la aplicación rellena la plantilla y abre la aplicación de destino mediante `NSWorkspace.open(_:)`:
+Cuando el usuario hace clic en **Instalar**, ClipboxAI registra la acción localmente. Cuando la activa sobre un elemento del portapapeles, la aplicación rellena la plantilla y abre la aplicación de destino mediante `NSWorkspace.open(_:)`:
 
 - `{{files}}` — ruta(s) absoluta(s) del archivo del elemento actual del portapapeles
   (separadas por saltos de línea si hay varios archivos).
@@ -46,7 +46,7 @@ Para ser un destino, su aplicación para macOS solo necesita:
 
 1. Registrar un esquema de URL en `Info.plist` (`CFBundleURLTypes`).
 2. Gestionar la URL entrante — leer `files` / `text` de la consulta y actuar sobre ellos.
-3. (Opcional) Llamar a la `returnURL` al terminar, para que Clipboard x AI pueda mostrar
+3. (Opcional) Llamar a la `returnURL` al terminar, para que ClipboxAI pueda mostrar
    un aviso de "finalizado en &lt;App&gt;".
 
 Eso es todo. Sin APIs privadas, sin código compartido — solo un enlace profundo. Las
@@ -72,7 +72,7 @@ Mantenemos el catálogo en un repositorio público para que cualquiera pueda con
 ## ¿Por qué asociarse?
 
 - **Coste de integración cero** — un enlace profundo, sin SDK.
-- **Distribución** — las acciones de su aplicación aparecen en el Marketplace de Clipboard x AI
+- **Distribución** — las acciones de su aplicación aparecen en el Marketplace de ClipboxAI
   para cada usuario.
 - **Contexto** — las acciones se disparan desde el portapapeles, el Finder o cualquier lugar donde
   ya trabaje el usuario.

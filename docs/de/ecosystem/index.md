@@ -1,12 +1,12 @@
 ---
 title: Ecosystem-Partnerschaft
-description: Wie sich macOS-Apps von Drittanbietern über ausgehende Deep-Links in den Action Marketplace von Clipboard x AI einbinden.
+description: Wie sich macOS-Apps von Drittanbietern über ausgehende Deep-Links in den Action Marketplace von ClipboxAI einbinden.
 layout: doc
 ---
 
 # Ecosystem-Partnerschaft
 
-Clipboard x AI ist ein Zwischenablagen-Hub. Doch rechenintensive Aufgaben — Dateikompression, Bildoptimierung, PDF-Arbeiten — erledigen spezialisierte Schwester-Apps besser. Der **Action Marketplace** bietet bereits eine Kategorie *Drittanbieter-Software*, in der Aktionen direkt an Apps delegiert werden, die Ihre Nutzer bereits installiert haben ([NueZip](https://github.com/w3cub/nuezip), [Nicasa](https://github.com/w3cub/nicasa), …).
+ClipboxAI ist ein Zwischenablagen-Hub. Doch rechenintensive Aufgaben — Dateikompression, Bildoptimierung, PDF-Arbeiten — erledigen spezialisierte Schwester-Apps besser. Der **Action Marketplace** bietet bereits eine Kategorie *Drittanbieter-Software*, in der Aktionen direkt an Apps delegiert werden, die Ihre Nutzer bereits installiert haben ([NueZip](https://github.com/w3cub/nuezip), [Nicasa](https://github.com/w3cub/nicasa), …).
 
 Diese Seite erklärt, wie die Integration funktioniert und wie **Ihre** App beitreten kann.
 
@@ -29,7 +29,7 @@ Eine Ecosystem-Aktion ist lediglich ein Marketplace-Eintrag mit einem `execution
 }
 ```
 
-Wenn der Nutzer auf **Install** klickt, registriert Clipboard x AI die Aktion lokal. Wenn er sie bei einem Zwischenablage-Eintrag auslöst, füllt die App die Vorlage aus und öffnet die Ziel-App über `NSWorkspace.open(_:)`:
+Wenn der Nutzer auf **Install** klickt, registriert ClipboxAI die Aktion lokal. Wenn er sie bei einem Zwischenablage-Eintrag auslöst, füllt die App die Vorlage aus und öffnet die Ziel-App über `NSWorkspace.open(_:)`:
 
 - `{{files}}` — absoluter(e) Dateipfad/Pfade des aktuellen Zwischenablage-Eintrags (bei mehreren Dateien durch Zeilenumbrüche getrennt).
 - `{{text}}` — der Klartext-Inhalt.
@@ -43,7 +43,7 @@ Um ein Ziel zu sein, muss Ihre macOS-App nur:
 
 1. Ein URL-Schema in `Info.plist` registrieren (`CFBundleURLTypes`).
 2. Die eingehende URL verarbeiten — `files` / `text` aus der Abfrage lesen und darauf agieren.
-3. (Optional) Die `returnURL` beim Abschluss aufrufen, damit Clipboard x AI einen „in &lt;App&gt; fertiggestellt"-Toast anzeigen kann.
+3. (Optional) Die `returnURL` beim Abschluss aufrufen, damit ClipboxAI einen „in &lt;App&gt; fertiggestellt"-Toast anzeigen kann.
 
 Das war's. Keine privaten APIs, kein gemeinsamer Code — nur ein Deeplink. Die NueZip- und Nicasa-Finder-Erweiterungen sind Referenzimplementierungen, die Sie kopieren können.
 
@@ -67,7 +67,7 @@ Wir halten den Katalog in einem öffentlichen Repo, sodass jeder eine Aktion bei
 ## Warum partnerschaftlich?
 
 - **Zero integration cost** — ein Deeplink, kein SDK.
-- **Distribution** — die Aktionen Ihrer App erscheinen im Clipboard x AI Marketplace für jeden Nutzer.
+- **Distribution** — die Aktionen Ihrer App erscheinen im ClipboxAI Marketplace für jeden Nutzer.
 - **Kontext** — Aktionen werden aus der Zwischenablage, dem Finder oder überall dort ausgelöst, wo der Nutzer bereits arbeitet.
 
 [→ Integrations-Issue öffnen](https://github.com/clipboxAI/marketplace/issues)

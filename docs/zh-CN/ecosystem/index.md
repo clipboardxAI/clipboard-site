@@ -1,12 +1,12 @@
 ---
 title: 生态合作伙伴
-description: 第三方 macOS 应用如何通过出站深链接接入 Clipboard x AI 的 Action Marketplace。
+description: 第三方 macOS 应用如何通过出站深链接接入 ClipboxAI 的 Action Marketplace。
 layout: doc
 ---
 
 # 生态合作伙伴
 
-Clipboard x AI 是一个剪贴板中枢。但繁重的任务——文件压缩、图片优化、PDF 处理——更适合交给专门的同类应用去完成。**Action Marketplace** 已经内置了一个*第三方软件*分类，其中的操作会直接委派给你用户已安装的同类应用（[NueZip](https://github.com/w3cub/nuezip)、[Nicasa](https://github.com/w3cub/nicasa)，……）。
+ClipboxAI 是一个剪贴板中枢。但繁重的任务——文件压缩、图片优化、PDF 处理——更适合交给专门的同类应用去完成。**Action Marketplace** 已经内置了一个*第三方软件*分类，其中的操作会直接委派给你用户已安装的同类应用（[NueZip](https://github.com/w3cub/nuezip)、[Nicasa](https://github.com/w3cub/nicasa)，……）。
 
 本页说明该集成如何运作，以及**你的**应用如何加入。
 
@@ -29,7 +29,7 @@ Clipboard x AI 是一个剪贴板中枢。但繁重的任务——文件压缩�
 }
 ```
 
-当用户点击 **Install** 时，Clipboard x AI 会在本地注册该操作。当他们针对某个剪贴条目触发它时，应用会填充模板，并通过 `NSWorkspace.open(_:)` 打开目标应用：
+当用户点击 **Install** 时，ClipboxAI 会在本地注册该操作。当他们针对某个剪贴条目触发它时，应用会填充模板，并通过 `NSWorkspace.open(_:)` 打开目标应用：
 
 - `{{files}}` —— 当前剪贴条目的绝对文件路径（多个文件以换行分隔）。
 - `{{text}}` —— 纯文本内容。
@@ -43,7 +43,7 @@ Clipboard x AI 是一个剪贴板中枢。但繁重的任务——文件压缩�
 
 1. 在 `Info.plist` 中注册一个 URL scheme（`CFBundleURLTypes`）。
 2. 处理入站 URL——从查询参数中读取 `files` / `text` 并据此操作。
-3. （可选）完成后调用 `returnURL`，以便 Clipboard x AI 显示「在 &lt;App&gt; 中已完成」的提示。
+3. （可选）完成后调用 `returnURL`，以便 ClipboxAI 显示「在 &lt;App&gt; 中已完成」的提示。
 
 就这么简单。无需私有 API，无需共享代码——只需一个深链接。NueZip 与 Nicasa 的 Finder 扩展是可供你参考的实现。
 
@@ -67,7 +67,7 @@ Clipboard x AI 是一个剪贴板中枢。但繁重的任务——文件压缩�
 ## 为什么要合作？
 
 - **零集成成本**——一个深链接，无需 SDK。
-- **分发**——你的应用操作会出现在每位用户的 Clipboard x AI Marketplace 中。
+- **分发**——你的应用操作会出现在每位用户的 ClipboxAI Marketplace 中。
 - **上下文**——操作从剪贴板、Finder，或用户已有的任意工作位置触发。
 
 [→ 提交集成 issue](https://github.com/clipboxAI/marketplace/issues)
